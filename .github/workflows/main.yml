@@ -3,7 +3,7 @@ name: Auto Commit Changes
 on:
   schedule:
     # Runs every 15 minutes
-    - cron:  '*/15 * * * *'
+    - cron:  '*/59 * * * *'
 
 jobs:
   commit-and-push:
