@@ -205,6 +205,21 @@ Write a SimConfig to a JSON file.</p></div>
 <div class="desc"><p>OnScreenAlert(message: str, topic: str, severity: spaceteams.SC_Compute_Server.Severity) -&gt; None</p>
 <p>Send alert that is shown on all app screens, is deduplicated by topic name, and is erased after a few seconds.</p></div>
 </dd>
+<dt id="spaceteams.SC_Compute_Server.CaptureImage"><code class="name flex">
+<span>def <span class="ident">CaptureImage</span></span>(<span>...)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>CaptureImage(camera_en: spaceteams.SC_Compute_Server.Entity, properties: spaceteams.SC_Compute_Server.CaptureImageProperties) -&gt; int</p>
+<p>Capture an image from the given camera entity with the given properties.
+Use OnImageReceived() with the returned capture_id to react to the image.</p></div>
+</dd>
+<dt id="spaceteams.SC_Compute_Server.OnImageReceived"><code class="name flex">
+<span>def <span class="ident">OnImageReceived</span></span>(<span>...)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>OnImageReceived(capture_id: int, reaction: Callable[[spaceteams.SC_Compute_Server.CapturedImage], None]) -&gt; None</p>
+<p>React to an image received with the given capture_id. Reaction must be a function that takes a CapturedImage.</p></div>
+</dd>
 <dt id="spaceteams.SC_Compute_Server.SimGlobals_DeleteEntity"><code class="name flex">
 <span>def <span class="ident">SimGlobals_DeleteEntity</span></span>(<span>...)</span>
 </code></dt>
@@ -1654,7 +1669,7 @@ Also expresses the vector in the same frame (coordinate basis).</p></div>
 </code></dt>
 <dd>
 <div class="desc"><p>getName(self: spaceteams.SC_Compute_Server.Entity) -&gt; str</p>
-<p>Returns the name of the Entity</p></div>
+<p>returns the name of the Entity</p></div>
 </dd>
 <dt id="spaceteams.SC_Compute_Server.Entity.getId_str"><code class="name flex">
 <span>def <span class="ident">getId_str</span></span>(<span>...)</span>
@@ -1940,6 +1955,74 @@ Interim solution for modular propagators before we have PhysicalEffects.</p></di
 </li>
 </ul>
 </dd>
+<dt id="spaceteams.SC_Compute_Server.CaptureImageProperties"><code class="flex name class">
+<span>class <span class="ident">CaptureImageProperties</span></span>
+<span>(</span><span>...)</span>
+</code></dt>
+<dd>
+<div class="desc"><p><strong>init</strong>(self: spaceteams.SC_Compute_Server.CaptureImageProperties) -&gt; None</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>pybind11_builtins.pybind11_object</li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="spaceteams.SC_Compute_Server.CaptureImageProperties.CaptureID"><code class="name">prop <span class="ident">CaptureID</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="spaceteams.SC_Compute_Server.CaptureImageProperties.FOV"><code class="name">prop <span class="ident">FOV</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="spaceteams.SC_Compute_Server.CaptureImageProperties.EV"><code class="name">prop <span class="ident">EV</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="spaceteams.SC_Compute_Server.CaptureImageProperties.ResolutionX"><code class="name">prop <span class="ident">ResolutionX</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="spaceteams.SC_Compute_Server.CaptureImageProperties.ResolutionY"><code class="name">prop <span class="ident">ResolutionY</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="spaceteams.SC_Compute_Server.CapturedImage"><code class="flex name class">
+<span>class <span class="ident">CapturedImage</span></span>
+<span>(</span><span>...)</span>
+</code></dt>
+<dd>
+<div class="desc"><p><strong>init</strong>(self: spaceteams.SC_Compute_Server.CapturedImage) -&gt; None</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>pybind11_builtins.pybind11_object</li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="spaceteams.SC_Compute_Server.CapturedImage.properties"><code class="name">prop <span class="ident">properties</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="spaceteams.SC_Compute_Server.CapturedImage.timestamp"><code class="name">prop <span class="ident">timestamp</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="spaceteams.SC_Compute_Server.CapturedImage.PixelsR"><code class="name">prop <span class="ident">PixelsR</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="spaceteams.SC_Compute_Server.CapturedImage.PixelsG"><code class="name">prop <span class="ident">PixelsG</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="spaceteams.SC_Compute_Server.CapturedImage.PixelsB"><code class="name">prop <span class="ident">PixelsB</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
 </dl>
 </section>
 </article>
@@ -1979,6 +2062,8 @@ Interim solution for modular propagators before we have PhysicalEffects.</p></di
 <li><code><a title="spaceteams.SC_Compute_Server.GetSimEntity" href="#spaceteams.SC_Compute_Server.GetSimEntity">GetSimEntity</a></code></li>
 <li><code><a title="spaceteams.SC_Compute_Server.OnScreenLogMessage" href="#spaceteams.SC_Compute_Server.OnScreenLogMessage">OnScreenLogMessage</a></code></li>
 <li><code><a title="spaceteams.SC_Compute_Server.OnScreenAlert" href="#spaceteams.SC_Compute_Server.OnScreenAlert">OnScreenAlert</a></code></li>
+<li><code><a title="spaceteams.SC_Compute_Server.CaptureImage" href="#spaceteams.SC_Compute_Server.CaptureImage">CaptureImage</a></code></li>
+<li><code><a title="spaceteams.SC_Compute_Server.OnImageReceived" href="#spaceteams.SC_Compute_Server.OnImageReceived">OnImageReceived</a></code></li>
 <li><code><a title="spaceteams.SC_Compute_Server.SimGlobals_DeleteEntity" href="#spaceteams.SC_Compute_Server.SimGlobals_DeleteEntity">SimGlobals_DeleteEntity</a></code></li>
 <li><code><a title="spaceteams.SC_Compute_Server.SimGlobals_AddEntity" href="#spaceteams.SC_Compute_Server.SimGlobals_AddEntity">SimGlobals_AddEntity</a></code></li>
 <li><code><a title="spaceteams.SC_Compute_Server.SimGlobals_GetGlobalFrame" href="#spaceteams.SC_Compute_Server.SimGlobals_GetGlobalFrame">SimGlobals_GetGlobalFrame</a></code></li>
@@ -2293,6 +2378,26 @@ Interim solution for modular propagators before we have PhysicalEffects.</p></di
 <li><code><a title="spaceteams.SC_Compute_Server.Entity.AddStateParamsIfMissing" href="#spaceteams.SC_Compute_Server.Entity.AddStateParamsIfMissing">AddStateParamsIfMissing</a></code></li>
 <li><code><a title="spaceteams.SC_Compute_Server.Entity.AddDynamicsParamsIfMissing" href="#spaceteams.SC_Compute_Server.Entity.AddDynamicsParamsIfMissing">AddDynamicsParamsIfMissing</a></code></li>
 <li><code><a title="spaceteams.SC_Compute_Server.Entity.GetPropagationType" href="#spaceteams.SC_Compute_Server.Entity.GetPropagationType">GetPropagationType</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="spaceteams.SC_Compute_Server.CaptureImageProperties" href="#spaceteams.SC_Compute_Server.CaptureImageProperties">CaptureImageProperties</a></code></h4>
+<ul class="">
+<li><code><a title="spaceteams.SC_Compute_Server.CaptureImageProperties.CaptureID" href="#spaceteams.SC_Compute_Server.CaptureImageProperties.CaptureID">CaptureID</a></code></li>
+<li><code><a title="spaceteams.SC_Compute_Server.CaptureImageProperties.FOV" href="#spaceteams.SC_Compute_Server.CaptureImageProperties.FOV">FOV</a></code></li>
+<li><code><a title="spaceteams.SC_Compute_Server.CaptureImageProperties.EV" href="#spaceteams.SC_Compute_Server.CaptureImageProperties.EV">EV</a></code></li>
+<li><code><a title="spaceteams.SC_Compute_Server.CaptureImageProperties.ResolutionX" href="#spaceteams.SC_Compute_Server.CaptureImageProperties.ResolutionX">ResolutionX</a></code></li>
+<li><code><a title="spaceteams.SC_Compute_Server.CaptureImageProperties.ResolutionY" href="#spaceteams.SC_Compute_Server.CaptureImageProperties.ResolutionY">ResolutionY</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="spaceteams.SC_Compute_Server.CapturedImage" href="#spaceteams.SC_Compute_Server.CapturedImage">CapturedImage</a></code></h4>
+<ul class="">
+<li><code><a title="spaceteams.SC_Compute_Server.CapturedImage.properties" href="#spaceteams.SC_Compute_Server.CapturedImage.properties">properties</a></code></li>
+<li><code><a title="spaceteams.SC_Compute_Server.CapturedImage.timestamp" href="#spaceteams.SC_Compute_Server.CapturedImage.timestamp">timestamp</a></code></li>
+<li><code><a title="spaceteams.SC_Compute_Server.CapturedImage.PixelsR" href="#spaceteams.SC_Compute_Server.CapturedImage.PixelsR">PixelsR</a></code></li>
+<li><code><a title="spaceteams.SC_Compute_Server.CapturedImage.PixelsG" href="#spaceteams.SC_Compute_Server.CapturedImage.PixelsG">PixelsG</a></code></li>
+<li><code><a title="spaceteams.SC_Compute_Server.CapturedImage.PixelsB" href="#spaceteams.SC_Compute_Server.CapturedImage.PixelsB">PixelsB</a></code></li>
 </ul>
 </li>
 </ul>
