@@ -1,0 +1,17 @@
+<div id="search-container"></div>
+    <input type="text" id="search-bar" placeholder="Search...">
+</div>
+
+<script>
+    document.getElementById('search-bar').addEventListener('input', function() {
+        var query = this.value.toLowerCase();
+        var elements = document.querySelectorAll('.content'); // Adjust selector as needed
+        elements.forEach(function(element) {
+            if (element.textContent.toLowerCase().includes(query)) {
+                element.style.display = '';
+            } else {
+                element.style.display = 'none';
+            }
+        });
+    });
+</script>
