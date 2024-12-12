@@ -32,8 +32,6 @@
     JavaScript is not supported/enabled in your browser. The search feature won't work.
 </noscript>
 <main>
-    <input type="text" id="search-input" placeholder="Search...">
-    <button onclick="search(document.getElementById('search-input').value)">Search</button>
     <h3 id="search-status"></h3>
     <ul id="search-results"></ul>
 </main>
