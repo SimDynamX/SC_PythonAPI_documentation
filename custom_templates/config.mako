@@ -7,10 +7,10 @@
     # individual values.
 
     html_lang = 'en'
-    show_inherited_members = True
+    show_inherited_members = False
     extract_module_toc_into_sidebar = True
     list_class_variables_in_index = True
-    sort_identifiers = False
+    sort_identifiers = True
     show_type_annotations = True
 
     # Show collapsed source code block next to each item.
