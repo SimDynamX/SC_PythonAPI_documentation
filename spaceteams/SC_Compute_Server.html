@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 15.0.1"/>
+    <meta name="generator" content="pdoc 15.0.3"/>
     <title>spaceteams.SC_Compute_Server API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
     <style>/*! syntax-highlighting.css */pre{line-height:125%;}span.linenos{color:inherit; background-color:transparent; padding-left:5px; padding-right:20px;}.pdoc-code .hll{background-color:#ffffcc}.pdoc-code{background:#f8f8f8;}.pdoc-code .c{color:#3D7B7B; font-style:italic}.pdoc-code .err{border:1px solid #FF0000}.pdoc-code .k{color:#008000; font-weight:bold}.pdoc-code .o{color:#666666}.pdoc-code .ch{color:#3D7B7B; font-style:italic}.pdoc-code .cm{color:#3D7B7B; font-style:italic}.pdoc-code .cp{color:#9C6500}.pdoc-code .cpf{color:#3D7B7B; font-style:italic}.pdoc-code .c1{color:#3D7B7B; font-style:italic}.pdoc-code .cs{color:#3D7B7B; font-style:italic}.pdoc-code .gd{color:#A00000}.pdoc-code .ge{font-style:italic}.pdoc-code .gr{color:#E40000}.pdoc-code .gh{color:#000080; font-weight:bold}.pdoc-code .gi{color:#008400}.pdoc-code .go{color:#717171}.pdoc-code .gp{color:#000080; font-weight:bold}.pdoc-code .gs{font-weight:bold}.pdoc-code .gu{color:#800080; font-weight:bold}.pdoc-code .gt{color:#0044DD}.pdoc-code .kc{color:#008000; font-weight:bold}.pdoc-code .kd{color:#008000; font-weight:bold}.pdoc-code .kn{color:#008000; font-weight:bold}.pdoc-code .kp{color:#008000}.pdoc-code .kr{color:#008000; font-weight:bold}.pdoc-code .kt{color:#B00040}.pdoc-code .m{color:#666666}.pdoc-code .s{color:#BA2121}.pdoc-code .na{color:#687822}.pdoc-code .nb{color:#008000}.pdoc-code .nc{color:#0000FF; font-weight:bold}.pdoc-code .no{color:#880000}.pdoc-code .nd{color:#AA22FF}.pdoc-code .ni{color:#717171; font-weight:bold}.pdoc-code .ne{color:#CB3F38; font-weight:bold}.pdoc-code .nf{color:#0000FF}.pdoc-code .nl{color:#767600}.pdoc-code .nn{color:#0000FF; font-weight:bold}.pdoc-code .nt{color:#008000; font-weight:bold}.pdoc-code .nv{color:#19177C}.pdoc-code .ow{color:#AA22FF; font-weight:bold}.pdoc-code .w{color:#bbbbbb}.pdoc-code .mb{color:#666666}.pdoc-code .mf{color:#666666}.pdoc-code .mh{color:#666666}.pdoc-code .mi{color:#666666}.pdoc-code .mo{color:#666666}.pdoc-code .sa{color:#BA2121}.pdoc-code .sb{color:#BA2121}.pdoc-code .sc{color:#BA2121}.pdoc-code .dl{color:#BA2121}.pdoc-code .sd{color:#BA2121; font-style:italic}.pdoc-code .s2{color:#BA2121}.pdoc-code .se{color:#AA5D1F; font-weight:bold}.pdoc-code .sh{color:#BA2121}.pdoc-code .si{color:#A45A77; font-weight:bold}.pdoc-code .sx{color:#008000}.pdoc-code .sr{color:#A45A77}.pdoc-code .s1{color:#BA2121}.pdoc-code .ss{color:#19177C}.pdoc-code .bp{color:#008000}.pdoc-code .fm{color:#0000FF}.pdoc-code .vc{color:#19177C}.pdoc-code .vg{color:#19177C}.pdoc-code .vi{color:#19177C}.pdoc-code .vm{color:#19177C}.pdoc-code .il{color:#666666}</style>
     <style>/*! theme.css */:root{--pdoc-background:#fff;}.pdoc{--text:#212529;--muted:#6c757d;--link:#3660a5;--link-hover:#1659c5;--code:#f8f8f8;--active:#fff598;--accent:#eee;--accent2:#c1c1c1;--nav-hover:rgba(255, 255, 255, 0.5);--name:#0066BB;--def:#008800;--annotation:#007020;}</style>
     <style>/*! layout.css */html, body{width:100%;height:100%;}html, main{scroll-behavior:smooth;}body{background-color:var(--pdoc-background);}@media (max-width:769px){#navtoggle{cursor:pointer;position:absolute;width:50px;height:40px;top:1rem;right:1rem;border-color:var(--text);color:var(--text);display:flex;opacity:0.8;z-index:999;}#navtoggle:hover{opacity:1;}#togglestate + div{display:none;}#togglestate:checked + div{display:inherit;}main, header{padding:2rem 3vw;}header + main{margin-top:-3rem;}.git-button{display:none !important;}nav input[type="search"]{max-width:77%;}nav input[type="search"]:first-child{margin-top:-6px;}nav input[type="search"]:valid ~ *{display:none !important;}}@media (min-width:770px){:root{--sidebar-width:clamp(12.5rem, 28vw, 22rem);}nav{position:fixed;overflow:auto;height:100vh;width:var(--sidebar-width);}main, header{padding:3rem 2rem 3rem calc(var(--sidebar-width) + 3rem);width:calc(54rem + var(--sidebar-width));max-width:100%;}header + main{margin-top:-4rem;}#navtoggle{display:none;}}#togglestate{position:absolute;height:0;opacity:0;}nav.pdoc{--pad:clamp(0.5rem, 2vw, 1.75rem);--indent:1.5rem;background-color:var(--accent);border-right:1px solid var(--accent2);box-shadow:0 0 20px rgba(50, 50, 50, .2) inset;padding:0 0 0 var(--pad);overflow-wrap:anywhere;scrollbar-width:thin; scrollbar-color:var(--accent2) transparent; z-index:1}nav.pdoc::-webkit-scrollbar{width:.4rem; }nav.pdoc::-webkit-scrollbar-thumb{background-color:var(--accent2); }nav.pdoc > div{padding:var(--pad) 0;}nav.pdoc .module-list-button{display:inline-flex;align-items:center;color:var(--text);border-color:var(--muted);margin-bottom:1rem;}nav.pdoc .module-list-button:hover{border-color:var(--text);}nav.pdoc input[type=search]{display:block;outline-offset:0;width:calc(100% - var(--pad));}nav.pdoc .logo{max-width:calc(100% - var(--pad));max-height:35vh;display:block;margin:0 auto 1rem;transform:translate(calc(-.5 * var(--pad)), 0);}nav.pdoc ul{list-style:none;padding-left:0;}nav.pdoc > div > ul{margin-left:calc(0px - var(--pad));}nav.pdoc li a{padding:.2rem 0 .2rem calc(var(--pad) + var(--indent));}nav.pdoc > div > ul > li > a{padding-left:var(--pad);}nav.pdoc li{transition:all 100ms;}nav.pdoc li:hover{background-color:var(--nav-hover);}nav.pdoc a, nav.pdoc a:hover{color:var(--text);}nav.pdoc a{display:block;}nav.pdoc > h2:first-of-type{margin-top:1.5rem;}nav.pdoc .class:before{content:"class ";color:var(--muted);}nav.pdoc .function:after{content:"()";color:var(--muted);}nav.pdoc footer:before{content:"";display:block;width:calc(100% - var(--pad));border-top:solid var(--accent2) 1px;margin-top:1.5rem;padding-top:.5rem;}nav.pdoc footer{font-size:small;}</style>
-    <style>/*! content.css */.pdoc{color:var(--text);box-sizing:border-box;line-height:1.5;background:none;}.pdoc .pdoc-button{cursor:pointer;display:inline-block;border:solid black 1px;border-radius:2px;font-size:.75rem;padding:calc(0.5em - 1px) 1em;transition:100ms all;}.pdoc .alert{padding:1rem 1rem 1rem calc(1.5rem + 24px);border:1px solid transparent;border-radius:.25rem;background-repeat:no-repeat;background-position:.75rem center;margin-bottom:1rem;}.pdoc .alert > em{display:none;}.pdoc .alert > *:last-child{margin-bottom:0;}.pdoc .alert.note {color:#084298;background-color:#cfe2ff;border-color:#b6d4fe;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23084298%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M8%2016A8%208%200%201%200%208%200a8%208%200%200%200%200%2016zm.93-9.412-1%204.705c-.07.34.029.533.304.533.194%200%20.487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703%200-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381%202.29-.287zM8%205.5a1%201%200%201%201%200-2%201%201%200%200%201%200%202z%22/%3E%3C/svg%3E");}.pdoc .alert.warning{color:#664d03;background-color:#fff3cd;border-color:#ffecb5;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23664d03%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M8.982%201.566a1.13%201.13%200%200%200-1.96%200L.165%2013.233c-.457.778.091%201.767.98%201.767h13.713c.889%200%201.438-.99.98-1.767L8.982%201.566zM8%205c.535%200%20.954.462.9.995l-.35%203.507a.552.552%200%200%201-1.1%200L7.1%205.995A.905.905%200%200%201%208%205zm.002%206a1%201%200%201%201%200%202%201%201%200%200%201%200-2z%22/%3E%3C/svg%3E");}.pdoc .alert.danger{color:#842029;background-color:#f8d7da;border-color:#f5c2c7;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23842029%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M5.52.359A.5.5%200%200%201%206%200h4a.5.5%200%200%201%20.474.658L8.694%206H12.5a.5.5%200%200%201%20.395.807l-7%209a.5.5%200%200%201-.873-.454L6.823%209.5H3.5a.5.5%200%200%201-.48-.641l2.5-8.5z%22/%3E%3C/svg%3E");}.pdoc .visually-hidden{position:absolute !important;width:1px !important;height:1px !important;padding:0 !important;margin:-1px !important;overflow:hidden !important;clip:rect(0, 0, 0, 0) !important;white-space:nowrap !important;border:0 !important;}.pdoc h1, .pdoc h2, .pdoc h3{font-weight:300;margin:.3em 0;padding:.2em 0;}.pdoc > section:not(.module-info) h1{font-size:1.5rem;font-weight:500;}.pdoc > section:not(.module-info) h2{font-size:1.4rem;font-weight:500;}.pdoc > section:not(.module-info) h3{font-size:1.3rem;font-weight:500;}.pdoc > section:not(.module-info) h4{font-size:1.2rem;}.pdoc > section:not(.module-info) h5{font-size:1.1rem;}.pdoc a{text-decoration:none;color:var(--link);}.pdoc a:hover{color:var(--link-hover);}.pdoc blockquote{margin-left:2rem;}.pdoc pre{border-top:1px solid var(--accent2);border-bottom:1px solid var(--accent2);margin-top:0;margin-bottom:1em;padding:.5rem 0 .5rem .5rem;overflow-x:auto;background-color:var(--code);}.pdoc code{color:var(--text);padding:.2em .4em;margin:0;font-size:85%;background-color:var(--accent);border-radius:6px;}.pdoc a > code{color:inherit;}.pdoc pre > code{display:inline-block;font-size:inherit;background:none;border:none;padding:0;}.pdoc > section:not(.module-info){margin-bottom:1.5rem;}.pdoc .modulename{margin-top:0;font-weight:bold;}.pdoc .modulename a{color:var(--link);transition:100ms all;}.pdoc .git-button{float:right;border:solid var(--link) 1px;}.pdoc .git-button:hover{background-color:var(--link);color:var(--pdoc-background);}.view-source-toggle-state,.view-source-toggle-state ~ .pdoc-code{display:none;}.view-source-toggle-state:checked ~ .pdoc-code{display:block;}.view-source-button{display:inline-block;float:right;font-size:.75rem;line-height:1.5rem;color:var(--muted);padding:0 .4rem 0 1.3rem;cursor:pointer;text-indent:-2px;}.view-source-button > span{visibility:hidden;}.module-info .view-source-button{float:none;display:flex;justify-content:flex-end;margin:-1.2rem .4rem -.2rem 0;}.view-source-button::before{position:absolute;content:"View Source";display:list-item;list-style-type:disclosure-closed;}.view-source-toggle-state:checked ~ .attr .view-source-button::before,.view-source-toggle-state:checked ~ .view-source-button::before{list-style-type:disclosure-open;}.pdoc .docstring{margin-bottom:1.5rem;}.pdoc section:not(.module-info) .docstring{margin-left:clamp(0rem, 5vw - 2rem, 1rem);}.pdoc .docstring .pdoc-code{margin-left:1em;margin-right:1em;}.pdoc h1:target,.pdoc h2:target,.pdoc h3:target,.pdoc h4:target,.pdoc h5:target,.pdoc h6:target,.pdoc .pdoc-code > pre > span:target{background-color:var(--active);box-shadow:-1rem 0 0 0 var(--active);}.pdoc .pdoc-code > pre > span:target{display:block;}.pdoc div:target > .attr,.pdoc section:target > .attr,.pdoc dd:target > a{background-color:var(--active);}.pdoc *{scroll-margin:2rem;}.pdoc .pdoc-code .linenos{user-select:none;}.pdoc .attr:hover{filter:contrast(0.95);}.pdoc section, .pdoc .classattr{position:relative;}.pdoc .headerlink{--width:clamp(1rem, 3vw, 2rem);position:absolute;top:0;left:calc(0rem - var(--width));transition:all 100ms ease-in-out;opacity:0;}.pdoc .headerlink::before{content:"#";display:block;text-align:center;width:var(--width);height:2.3rem;line-height:2.3rem;font-size:1.5rem;}.pdoc .attr:hover ~ .headerlink,.pdoc *:target > .headerlink,.pdoc .headerlink:hover{opacity:1;}.pdoc .attr{display:block;margin:.5rem 0 .5rem;padding:.4rem .4rem .4rem 1rem;background-color:var(--accent);overflow-x:auto;}.pdoc .classattr{margin-left:2rem;}.pdoc .decorator-deprecated{color:#842029;}.pdoc .decorator-deprecated ~ span{filter:grayscale(1) opacity(0.8);}.pdoc .name{color:var(--name);font-weight:bold;}.pdoc .def{color:var(--def);font-weight:bold;}.pdoc .signature{background-color:transparent;}.pdoc .param, .pdoc .return-annotation{white-space:pre;}.pdoc .signature.multiline .param{display:block;}.pdoc .signature.condensed .param{display:inline-block;}.pdoc .annotation{color:var(--annotation);}.pdoc .view-value-toggle-state,.pdoc .view-value-toggle-state ~ .default_value{display:none;}.pdoc .view-value-toggle-state:checked ~ .default_value{display:inherit;}.pdoc .view-value-button{font-size:.5rem;vertical-align:middle;border-style:dashed;margin-top:-0.1rem;}.pdoc .view-value-button:hover{background:white;}.pdoc .view-value-button::before{content:"show";text-align:center;width:2.2em;display:inline-block;}.pdoc .view-value-toggle-state:checked ~ .view-value-button::before{content:"hide";}.pdoc .inherited{margin-left:2rem;}.pdoc .inherited dt{font-weight:700;}.pdoc .inherited dt, .pdoc .inherited dd{display:inline;margin-left:0;margin-bottom:.5rem;}.pdoc .inherited dd:not(:last-child):after{content:", ";}.pdoc .inherited .class:before{content:"class ";}.pdoc .inherited .function a:after{content:"()";}.pdoc .search-result .docstring{overflow:auto;max-height:25vh;}.pdoc .search-result.focused > .attr{background-color:var(--active);}.pdoc .attribution{margin-top:2rem;display:block;opacity:0.5;transition:all 200ms;filter:grayscale(100%);}.pdoc .attribution:hover{opacity:1;filter:grayscale(0%);}.pdoc .attribution img{margin-left:5px;height:35px;vertical-align:middle;width:70px;transition:all 200ms;}.pdoc table{display:block;width:max-content;max-width:100%;overflow:auto;margin-bottom:1rem;}.pdoc table th{font-weight:600;}.pdoc table th, .pdoc table td{padding:6px 13px;border:1px solid var(--accent2);}</style>
+    <style>/*! content.css */.pdoc{color:var(--text);box-sizing:border-box;line-height:1.5;background:none;}.pdoc .pdoc-button{cursor:pointer;display:inline-block;border:solid black 1px;border-radius:2px;font-size:.75rem;padding:calc(0.5em - 1px) 1em;transition:100ms all;}.pdoc .alert{padding:1rem 1rem 1rem calc(1.5rem + 24px);border:1px solid transparent;border-radius:.25rem;background-repeat:no-repeat;background-position:.75rem center;margin-bottom:1rem;}.pdoc .alert > em{display:none;}.pdoc .alert > *:last-child{margin-bottom:0;}.pdoc .alert.note{color:#084298;background-color:#cfe2ff;border-color:#b6d4fe;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23084298%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M8%2016A8%208%200%201%200%208%200a8%208%200%200%200%200%2016zm.93-9.412-1%204.705c-.07.34.029.533.304.533.194%200%20.487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703%200-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381%202.29-.287zM8%205.5a1%201%200%201%201%200-2%201%201%200%200%201%200%202z%22/%3E%3C/svg%3E");}.pdoc .alert.tip{color:#0a3622;background-color:#d1e7dd;border-color:#a3cfbb;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%230a3622%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2%206a6%206%200%201%201%2010.174%204.31c-.203.196-.359.4-.453.619l-.762%201.769A.5.5%200%200%201%2010.5%2013a.5.5%200%200%201%200%201%20.5.5%200%200%201%200%201l-.224.447a1%201%200%200%201-.894.553H6.618a1%201%200%200%201-.894-.553L5.5%2015a.5.5%200%200%201%200-1%20.5.5%200%200%201%200-1%20.5.5%200%200%201-.46-.302l-.761-1.77a2%202%200%200%200-.453-.618A5.98%205.98%200%200%201%202%206m6-5a5%205%200%200%200-3.479%208.592c.263.254.514.564.676.941L5.83%2012h4.342l.632-1.467c.162-.377.413-.687.676-.941A5%205%200%200%200%208%201%22/%3E%3C/svg%3E");}.pdoc .alert.important{color:#055160;background-color:#cff4fc;border-color:#9eeaf9;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23055160%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2%200a2%202%200%200%200-2%202v12a2%202%200%200%200%202%202h12a2%202%200%200%200%202-2V2a2%202%200%200%200-2-2zm6%204c.535%200%20.954.462.9.995l-.35%203.507a.552.552%200%200%201-1.1%200L7.1%204.995A.905.905%200%200%201%208%204m.002%206a1%201%200%201%201%200%202%201%201%200%200%201%200-2%22/%3E%3C/svg%3E");}.pdoc .alert.warning{color:#664d03;background-color:#fff3cd;border-color:#ffecb5;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23664d03%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M8.982%201.566a1.13%201.13%200%200%200-1.96%200L.165%2013.233c-.457.778.091%201.767.98%201.767h13.713c.889%200%201.438-.99.98-1.767L8.982%201.566zM8%205c.535%200%20.954.462.9.995l-.35%203.507a.552.552%200%200%201-1.1%200L7.1%205.995A.905.905%200%200%201%208%205zm.002%206a1%201%200%201%201%200%202%201%201%200%200%201%200-2z%22/%3E%3C/svg%3E");}.pdoc .alert.caution{color:#842029;background-color:#f8d7da;border-color:#f5c2c7;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23842029%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M11.46.146A.5.5%200%200%200%2011.107%200H4.893a.5.5%200%200%200-.353.146L.146%204.54A.5.5%200%200%200%200%204.893v6.214a.5.5%200%200%200%20.146.353l4.394%204.394a.5.5%200%200%200%20.353.146h6.214a.5.5%200%200%200%20.353-.146l4.394-4.394a.5.5%200%200%200%20.146-.353V4.893a.5.5%200%200%200-.146-.353zM8%204c.535%200%20.954.462.9.995l-.35%203.507a.552.552%200%200%201-1.1%200L7.1%204.995A.905.905%200%200%201%208%204m.002%206a1%201%200%201%201%200%202%201%201%200%200%201%200-2%22/%3E%3C/svg%3E");}.pdoc .alert.danger{color:#842029;background-color:#f8d7da;border-color:#f5c2c7;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23842029%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M5.52.359A.5.5%200%200%201%206%200h4a.5.5%200%200%201%20.474.658L8.694%206H12.5a.5.5%200%200%201%20.395.807l-7%209a.5.5%200%200%201-.873-.454L6.823%209.5H3.5a.5.5%200%200%201-.48-.641l2.5-8.5z%22/%3E%3C/svg%3E");}.pdoc .visually-hidden{position:absolute !important;width:1px !important;height:1px !important;padding:0 !important;margin:-1px !important;overflow:hidden !important;clip:rect(0, 0, 0, 0) !important;white-space:nowrap !important;border:0 !important;}.pdoc h1, .pdoc h2, .pdoc h3{font-weight:300;margin:.3em 0;padding:.2em 0;}.pdoc > section:not(.module-info) h1{font-size:1.5rem;font-weight:500;}.pdoc > section:not(.module-info) h2{font-size:1.4rem;font-weight:500;}.pdoc > section:not(.module-info) h3{font-size:1.3rem;font-weight:500;}.pdoc > section:not(.module-info) h4{font-size:1.2rem;}.pdoc > section:not(.module-info) h5{font-size:1.1rem;}.pdoc a{text-decoration:none;color:var(--link);}.pdoc a:hover{color:var(--link-hover);}.pdoc blockquote{margin-left:2rem;}.pdoc pre{border-top:1px solid var(--accent2);border-bottom:1px solid var(--accent2);margin-top:0;margin-bottom:1em;padding:.5rem 0 .5rem .5rem;overflow-x:auto;background-color:var(--code);}.pdoc code{color:var(--text);padding:.2em .4em;margin:0;font-size:85%;background-color:var(--accent);border-radius:6px;}.pdoc a > code{color:inherit;}.pdoc pre > code{display:inline-block;font-size:inherit;background:none;border:none;padding:0;}.pdoc > section:not(.module-info){margin-bottom:1.5rem;}.pdoc .modulename{margin-top:0;font-weight:bold;}.pdoc .modulename a{color:var(--link);transition:100ms all;}.pdoc .git-button{float:right;border:solid var(--link) 1px;}.pdoc .git-button:hover{background-color:var(--link);color:var(--pdoc-background);}.view-source-toggle-state,.view-source-toggle-state ~ .pdoc-code{display:none;}.view-source-toggle-state:checked ~ .pdoc-code{display:block;}.view-source-button{display:inline-block;float:right;font-size:.75rem;line-height:1.5rem;color:var(--muted);padding:0 .4rem 0 1.3rem;cursor:pointer;text-indent:-2px;}.view-source-button > span{visibility:hidden;}.module-info .view-source-button{float:none;display:flex;justify-content:flex-end;margin:-1.2rem .4rem -.2rem 0;}.view-source-button::before{position:absolute;content:"View Source";display:list-item;list-style-type:disclosure-closed;}.view-source-toggle-state:checked ~ .attr .view-source-button::before,.view-source-toggle-state:checked ~ .view-source-button::before{list-style-type:disclosure-open;}.pdoc .docstring{margin-bottom:1.5rem;}.pdoc section:not(.module-info) .docstring{margin-left:clamp(0rem, 5vw - 2rem, 1rem);}.pdoc .docstring .pdoc-code{margin-left:1em;margin-right:1em;}.pdoc h1:target,.pdoc h2:target,.pdoc h3:target,.pdoc h4:target,.pdoc h5:target,.pdoc h6:target,.pdoc .pdoc-code > pre > span:target{background-color:var(--active);box-shadow:-1rem 0 0 0 var(--active);}.pdoc .pdoc-code > pre > span:target{display:block;}.pdoc div:target > .attr,.pdoc section:target > .attr,.pdoc dd:target > a{background-color:var(--active);}.pdoc *{scroll-margin:2rem;}.pdoc .pdoc-code .linenos{user-select:none;}.pdoc .attr:hover{filter:contrast(0.95);}.pdoc section, .pdoc .classattr{position:relative;}.pdoc .headerlink{--width:clamp(1rem, 3vw, 2rem);position:absolute;top:0;left:calc(0rem - var(--width));transition:all 100ms ease-in-out;opacity:0;}.pdoc .headerlink::before{content:"#";display:block;text-align:center;width:var(--width);height:2.3rem;line-height:2.3rem;font-size:1.5rem;}.pdoc .attr:hover ~ .headerlink,.pdoc *:target > .headerlink,.pdoc .headerlink:hover{opacity:1;}.pdoc .attr{display:block;margin:.5rem 0 .5rem;padding:.4rem .4rem .4rem 1rem;background-color:var(--accent);overflow-x:auto;}.pdoc .classattr{margin-left:2rem;}.pdoc .decorator-deprecated{color:#842029;}.pdoc .decorator-deprecated ~ span{filter:grayscale(1) opacity(0.8);}.pdoc .name{color:var(--name);font-weight:bold;}.pdoc .def{color:var(--def);font-weight:bold;}.pdoc .signature{background-color:transparent;}.pdoc .param, .pdoc .return-annotation{white-space:pre;}.pdoc .signature.multiline .param{display:block;}.pdoc .signature.condensed .param{display:inline-block;}.pdoc .annotation{color:var(--annotation);}.pdoc .view-value-toggle-state,.pdoc .view-value-toggle-state ~ .default_value{display:none;}.pdoc .view-value-toggle-state:checked ~ .default_value{display:inherit;}.pdoc .view-value-button{font-size:.5rem;vertical-align:middle;border-style:dashed;margin-top:-0.1rem;}.pdoc .view-value-button:hover{background:white;}.pdoc .view-value-button::before{content:"show";text-align:center;width:2.2em;display:inline-block;}.pdoc .view-value-toggle-state:checked ~ .view-value-button::before{content:"hide";}.pdoc .inherited{margin-left:2rem;}.pdoc .inherited dt{font-weight:700;}.pdoc .inherited dt, .pdoc .inherited dd{display:inline;margin-left:0;margin-bottom:.5rem;}.pdoc .inherited dd:not(:last-child):after{content:", ";}.pdoc .inherited .class:before{content:"class ";}.pdoc .inherited .function a:after{content:"()";}.pdoc .search-result .docstring{overflow:auto;max-height:25vh;}.pdoc .search-result.focused > .attr{background-color:var(--active);}.pdoc .attribution{margin-top:2rem;display:block;opacity:0.5;transition:all 200ms;filter:grayscale(100%);}.pdoc .attribution:hover{opacity:1;filter:grayscale(0%);}.pdoc .attribution img{margin-left:5px;height:35px;vertical-align:middle;width:70px;transition:all 200ms;}.pdoc table{display:block;width:max-content;max-width:100%;overflow:auto;margin-bottom:1rem;}.pdoc table th{font-weight:600;}.pdoc table th, .pdoc table td{padding:6px 13px;border:1px solid var(--accent2);}</style>
     <style>/*! custom.css */</style></head>
 <body>
     <nav class="pdoc">
@@ -37,27 +37,6 @@
             </li>
             <li>
                     <a class="function" href="#stop_sim">stop_sim</a>
-            </li>
-            <li>
-                    <a class="function" href="#constant">constant</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_SimClock_Freeze">SimGlobals_SimClock_Freeze</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_SimClock_UnFreeze">SimGlobals_SimClock_UnFreeze</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_SimClock_SetTimescale">SimGlobals_SimClock_SetTimescale</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_SimClock_GetTimescale">SimGlobals_SimClock_GetTimescale</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_SimClock_GetTimeNow">SimGlobals_SimClock_GetTimeNow</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_SimClock_ResetTo">SimGlobals_SimClock_ResetTo</a>
             </li>
             <li>
                     <a class="class" href="#SimState">SimState</a>
@@ -269,6 +248,12 @@
                         <li>
                                 <a class="variable" href="#Severity.Error">Error</a>
                         </li>
+                        <li>
+                                <a class="variable" href="#Severity.Fatal">Fatal</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Severity.Chat">Chat</a>
+                        </li>
                 </ul>
 
             </li>
@@ -349,258 +334,6 @@
                         </li>
                 </ul>
 
-            </li>
-            <li>
-                    <a class="class" href="#PlanetUtils">PlanetUtils</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#PlanetUtils.__init__">PlanetUtils</a>
-                        </li>
-                        <li>
-                                <a class="class" href="#PlanetUtils.NorthWestUp">PlanetUtils.NorthWestUp</a>
-                                        <ul class="memberlist">
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.NorthWestUp.__init__">NorthWestUp</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.NorthWestUp.north">north</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.NorthWestUp.west">west</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.NorthWestUp.up">up</a>
-                                    </li>
-                            </ul>
-
-                        </li>
-                        <li>
-                                <a class="class" href="#PlanetUtils.ForwardLeftUp">PlanetUtils.ForwardLeftUp</a>
-                                        <ul class="memberlist">
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.ForwardLeftUp.__init__">ForwardLeftUp</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.ForwardLeftUp.forward">forward</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.ForwardLeftUp.left">left</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.ForwardLeftUp.up">up</a>
-                                    </li>
-                            </ul>
-
-                        </li>
-                        <li>
-                                <a class="class" href="#PlanetUtils.LatLonAlt">PlanetUtils.LatLonAlt</a>
-                                        <ul class="memberlist">
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.LatLonAlt.__init__">LatLonAlt</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.LatLonAlt.lat">lat</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.LatLonAlt.lon">lon</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.LatLonAlt.alt">alt</a>
-                                    </li>
-                            </ul>
-
-                        </li>
-                        <li>
-                                <a class="class" href="#PlanetUtils.Coord">PlanetUtils.Coord</a>
-                                        <ul class="memberlist">
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.Coord.__init__">Coord</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.Coord.getLoc">getLoc</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.Coord.getRot">getRot</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.Coord.getLatLonAlt">getLatLonAlt</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.Coord.getNWU">getNWU</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.Coord.getFLU">getFLU</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.Coord.getAzimuth">getAzimuth</a>
-                                    </li>
-                                    <li>
-                                            <a class="function" href="#PlanetUtils.Coord.getRadius">getRadius</a>
-                                    </li>
-                            </ul>
-
-                        </li>
-                        <li>
-                                <a class="function" href="#PlanetUtils.LLA_to_PCPF">LLA_to_PCPF</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#PlanetUtils.PCPF_to_LLA">PCPF_to_LLA</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#PlanetUtils.NorthWestUpFromLocation">NorthWestUpFromLocation</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#PlanetUtils.AzimuthFromLocRot">AzimuthFromLocRot</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#PlanetUtils.ForwardLeftUpFromAzimuth">ForwardLeftUpFromAzimuth</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#PlanetUtils.RotFromForwardLeftUp">RotFromForwardLeftUp</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#PlanetUtils.RotFromAzimuth">RotFromAzimuth</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#SurfaceMove">SurfaceMove</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#SurfaceMove.__init__">SurfaceMove</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SurfaceMove.GetMovementState">GetMovementState</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SurfaceMove.TurnToAzimuth">TurnToAzimuth</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SurfaceMove.TurnAndMoveToCoord">TurnAndMoveToCoord</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SurfaceMove.TurnAndReverseToCoord">TurnAndReverseToCoord</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SurfaceMove.GetCurrentCoord">GetCurrentCoord</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SurfaceMove.GetAzimuth">GetAzimuth</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SurfaceMove.GetMoveToCoord">GetMoveToCoord</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SurfaceMove.IsMoving">IsMoving</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SurfaceMove.OnMoveComplete">OnMoveComplete</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#CartesianState">CartesianState</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#CartesianState.__init__">CartesianState</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#CartesianState.R">R</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#CartesianState.V">V</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#CartesianState.mu">mu</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#KeplerianState">KeplerianState</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#KeplerianState.__init__">KeplerianState</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#KeplerianState.a">a</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#KeplerianState.e">e</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#KeplerianState.raan">raan</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#KeplerianState.i">i</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#KeplerianState.omega">omega</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#KeplerianState.ta">ta</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#KeplerianState.mu">mu</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#LambertBattinResults">LambertBattinResults</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#LambertBattinResults.__init__">LambertBattinResults</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#LambertBattinResults.v0">v0</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#LambertBattinResults.v">v</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#State">State</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#State.__init__">State</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#State.fromCartesian">fromCartesian</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#State.fromKeplerian">fromKeplerian</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#State.asCartesian">asCartesian</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#State.asKeplerian">asKeplerian</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#State.timeSincePeriapsis">timeSincePeriapsis</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="function" href="#GetState">GetState</a>
-            </li>
-            <li>
-                    <a class="function" href="#SetState">SetState</a>
-            </li>
-            <li>
-                    <a class="function" href="#calcTime">calcTime</a>
-            </li>
-            <li>
-                    <a class="function" href="#LagrangePropagation">LagrangePropagation</a>
-            </li>
-            <li>
-                    <a class="function" href="#LambertBattin">LambertBattin</a>
             </li>
             <li>
                     <a class="class" href="#timestamp">timestamp</a>
@@ -709,12 +442,6 @@
                         </li>
                         <li>
                                 <a class="function" href="#EntityConfig.getName">getName</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#EntityConfig.LoadFromFile">LoadFromFile</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#EntityConfig.SaveToFile">SaveToFile</a>
                         </li>
                 </ul>
 
@@ -845,185 +572,62 @@
                         <li>
                                 <a class="function" href="#SimConfig.RemoveTaskflow">RemoveTaskflow</a>
                         </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#AssetType">AssetType</a>
+                            <ul class="memberlist">
                         <li>
-                                <a class="function" href="#SimConfig.LoadFromFile">LoadFromFile</a>
+                                <a class="function" href="#AssetType.__init__">AssetType</a>
                         </li>
                         <li>
-                                <a class="function" href="#SimConfig.SaveToFile">SaveToFile</a>
+                                <a class="variable" href="#AssetType.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#AssetType.value">value</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#AssetType.UNDEFINED">UNDEFINED</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#AssetType.Generic">Generic</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#AssetType.ParamMap">ParamMap</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#AssetType.SimConfig">SimConfig</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#AssetType.EntityConfig">EntityConfig</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#AssetType.SystemSource">SystemSource</a>
                         </li>
                 </ul>
 
             </li>
             <li>
-                    <a class="function" href="#SimConfig_LoadFromFile">SimConfig_LoadFromFile</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimConfig_SaveToFile">SimConfig_SaveToFile</a>
-            </li>
-            <li>
-                    <a class="class" href="#Frame">Frame</a>
+                    <a class="class" href="#AssetFileCategory">AssetFileCategory</a>
                             <ul class="memberlist">
                         <li>
-                                <a class="function" href="#Frame.__init__">Frame</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#BaseFrame_Impl">BaseFrame_Impl</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#BaseFrame_Impl.__init__">BaseFrame_Impl</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#rv_struct">rv_struct</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#rv_struct.__init__">rv_struct</a>
+                                <a class="function" href="#AssetFileCategory.__init__">AssetFileCategory</a>
                         </li>
                         <li>
-                                <a class="variable" href="#rv_struct.loc">loc</a>
+                                <a class="variable" href="#AssetFileCategory.name">name</a>
                         </li>
                         <li>
-                                <a class="variable" href="#rv_struct.vel">vel</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#rva_struct">rva_struct</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#rva_struct.__init__">rva_struct</a>
+                                <a class="variable" href="#AssetFileCategory.value">value</a>
                         </li>
                         <li>
-                                <a class="variable" href="#rva_struct.loc">loc</a>
+                                <a class="variable" href="#AssetFileCategory.UNDEFINED">UNDEFINED</a>
                         </li>
                         <li>
-                                <a class="variable" href="#rva_struct.vel">vel</a>
+                                <a class="variable" href="#AssetFileCategory.Local">Local</a>
                         </li>
                         <li>
-                                <a class="variable" href="#rva_struct.acc">acc</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#FramedVector">FramedVector</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#FramedVector.__init__">FramedVector</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedVector.ExprIn">ExprIn</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#FramedLoc">FramedLoc</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#FramedLoc.__init__">FramedLoc</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedLoc.WRT">WRT</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedLoc.WRT_ExprIn">WRT_ExprIn</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#FramedRot">FramedRot</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#FramedRot.__init__">FramedRot</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedRot.Quat_WRT">Quat_WRT</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedRot.DCM_WRT">DCM_WRT</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#FramedLocVel">FramedLocVel</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#FramedLocVel.__init__">FramedLocVel</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedLocVel.loc_WRT">loc_WRT</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedLocVel.vel_WRT">vel_WRT</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedLocVel.WRT">WRT</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedLocVel.WRT_ExprIn">WRT_ExprIn</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#FramedLocVelAcc">FramedLocVelAcc</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#FramedLocVelAcc.__init__">FramedLocVelAcc</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedLocVelAcc.loc_WRT">loc_WRT</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedLocVelAcc.vel_WRT">vel_WRT</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedLocVelAcc.acc_WRT">acc_WRT</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedLocVelAcc.WRT">WRT</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedLocVelAcc.WRT_ExprIn">WRT_ExprIn</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#FramedAngVel">FramedAngVel</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#FramedAngVel.__init__">FramedAngVel</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedAngVel.WRT">WRT</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedAngVel.WRT_ExprIn">WRT_ExprIn</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#FramedAngAcc">FramedAngAcc</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#FramedAngAcc.__init__">FramedAngAcc</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedAngAcc.WRT">WRT</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#FramedAngAcc.WRT_ExprIn">WRT_ExprIn</a>
+                                <a class="variable" href="#AssetFileCategory.Core">Core</a>
                         </li>
                 </ul>
 
@@ -1170,30 +774,6 @@
                     <a class="function" href="#get_nametag">get_nametag</a>
             </li>
             <li>
-                    <a class="function" href="#CanTransmit">CanTransmit</a>
-            </li>
-            <li>
-                    <a class="function" href="#GetSimState">GetSimState</a>
-            </li>
-            <li>
-                    <a class="function" href="#RequestSimStateChange">RequestSimStateChange</a>
-            </li>
-            <li>
-                    <a class="function" href="#MandateSimStateChange">MandateSimStateChange</a>
-            </li>
-            <li>
-                    <a class="function" href="#MandateSimStop">MandateSimStop</a>
-            </li>
-            <li>
-                    <a class="function" href="#GetStopReason">GetStopReason</a>
-            </li>
-            <li>
-                    <a class="function" href="#GetWallTime_SimStarted">GetWallTime_SimStarted</a>
-            </li>
-            <li>
-                    <a class="function" href="#GetSimEntity">GetSimEntity</a>
-            </li>
-            <li>
                     <a class="function" href="#OnScreenLogMessage">OnScreenLogMessage</a>
             </li>
             <li>
@@ -1275,57 +855,6 @@
 
             </li>
             <li>
-                    <a class="function" href="#CaptureImage">CaptureImage</a>
-            </li>
-            <li>
-                    <a class="class" href="#CapturedImage">CapturedImage</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#CapturedImage.__init__">CapturedImage</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#CapturedImage.properties">properties</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#CapturedImage.PixelsR">PixelsR</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#CapturedImage.PixelsG">PixelsG</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#CapturedImage.PixelsB">PixelsB</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#CapturedImage.get_timestamp">get_timestamp</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="function" href="#OnImageReceived">OnImageReceived</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_DeleteEntity">SimGlobals_DeleteEntity</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_AddEntity">SimGlobals_AddEntity</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_AddEntityFromTemplate">SimGlobals_AddEntityFromTemplate</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_GetGlobalFrame">SimGlobals_GetGlobalFrame</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_GetBaseFrame">SimGlobals_GetBaseFrame</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_DispatchEvent">SimGlobals_DispatchEvent</a>
-            </li>
-            <li>
-                    <a class="function" href="#SimGlobals_AddEventListener">SimGlobals_AddEventListener</a>
-            </li>
-            <li>
                     <a class="function" href="#logger_info">logger_info</a>
             </li>
             <li>
@@ -1368,7 +897,7 @@ spaceteams<wbr>.SC_Compute_Server    </h1>
     </div>
     <a class="headerlink" href="#standalone_sim"></a>
     
-            <div class="docstring"><p>standalone_sim(path: str) -> None</p>
+            <div class="docstring"><p>standalone_sim(path: os.PathLike) -> None</p>
 
 <p>Run a simulation that is self-contained within this Python process.
 path - Filepath of sim config.</p>
@@ -1424,151 +953,6 @@ sys_argv - insert python sys.argv here.</p>
             <div class="docstring"><p>stop_sim() -> None</p>
 
 <p>Stop the sim, which ends it for all users/programs.</p>
-</div>
-
-
-                </section>
-                <section id="constant">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">constant</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#constant"></a>
-    
-            <div class="docstring"><p>constant(name: str) -> float</p>
-
-<p>Returns the value of constants based off of the string name of the constant. Uses SI base units, with the exception of kilograms.</p>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_SimClock_Freeze">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_SimClock_Freeze</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_SimClock_Freeze"></a>
-    
-            <div class="docstring"><p>SimGlobals_SimClock_Freeze() -> None</p>
-
-<p>Freezes the simulation clock. This function sets the sim timescale to 0, which halts the 
-        courting of wall time towards sim time, effectively pausing the simulation</p>
-
-<pre><code>    Parameters:
-    __wallTimeToApply The wall time this clock modification should be submitted for, in "sc_tai::time" object. 
-    The default value is the current wall time (sc_tai::now()) re-transimit A boolean flag indicating whether 
-    or not to retransmit the new time setting. The default value is true.
-</code></pre>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_SimClock_UnFreeze">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_SimClock_UnFreeze</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_SimClock_UnFreeze"></a>
-    
-            <div class="docstring"><p>SimGlobals_SimClock_UnFreeze() -> None</p>
-
-<p>Unfreezes the simulation clock, using the last non-zero timescale.</p>
-
-<pre><code>    Parameters:
-    _wallTimeToApply The wall time this clock modification should be submitted for, 
-    in `sc_tai_time` object. The default value is the current wall time (`sc_tai::now()`). 
-    retransmit A boolean flag indicating whether or not to retransmit the new time setting. 
-    The default value is true.
-</code></pre>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_SimClock_SetTimescale">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_SimClock_SetTimescale</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_SimClock_SetTimescale"></a>
-    
-            <div class="docstring"><p>SimGlobals_SimClock_SetTimescale(timescale: float) -> None</p>
-
-<p>Set simulation timescale. This is the ratio of time passage per wall time passage</p>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_SimClock_GetTimescale">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_SimClock_GetTimescale</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_SimClock_GetTimescale"></a>
-    
-            <div class="docstring"><p>SimGlobals_SimClock_GetTimescale() -> float</p>
-
-<p>Retrieves the current time scaling factor of the simulation dysfunction, 
-                returns the current time scaling factor which determines how simulation time relates to real 
-                (wall clock) time. A value of 1.0 would mean they are the same, A value greater than 1 would 
-                mean the simulation time is faster than real time. A value of zero would mean time freezes 
-                (but the simulation Functionality still runs). Negative values are allowed as well. </p>
-
-<pre><code>            Return: The current time scaling factor as a 'double'
-</code></pre>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_SimClock_GetTimeNow">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_SimClock_GetTimeNow</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_SimClock_GetTimeNow"></a>
-    
-            <div class="docstring"><p>SimGlobals_SimClock_GetTimeNow() -> sc_timestamp_wrapper</p>
-
-<p>Retrieves the current simulation time dysfunction, returns the current time of the 
-                simulation clock as an object of type 'sc_tai_time'</p>
-
-<pre><code>            Returns: The current time in 'sc_tai_time' format
-</code></pre>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_SimClock_ResetTo">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_SimClock_ResetTo</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_SimClock_ResetTo"></a>
-    
-            <div class="docstring"><p>SimGlobals_SimClock_ResetTo(setClockTo: sc_timestamp_wrapper) -> None</p>
-
-<p>Resets clock to a specific time, and freeze simclock. This function resets the 
-                simulation call to the given ‘setClockTo’ time.</p>
 </div>
 
 
@@ -2430,6 +1814,10 @@ sys_argv - insert python sys.argv here.</p>
 <p>Warning</p>
 
 <p>Error</p>
+
+<p>Fatal</p>
+
+<p>Chat</p>
 </div>
 
 
@@ -2505,6 +1893,30 @@ sys_argv - insert python sys.argv here.</p>
         
     </div>
     <a class="headerlink" href="#Severity.Error"></a>
+    
+    
+
+                            </div>
+                            <div id="Severity.Fatal" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Fatal</span>        =
+<span class="default_value">&lt;<a href="#Severity.Fatal">Severity.Fatal</a>: 3&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Severity.Fatal"></a>
+    
+    
+
+                            </div>
+                            <div id="Severity.Chat" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Chat</span>        =
+<span class="default_value">&lt;<a href="#Severity.Chat">Severity.Chat</a>: 4&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Severity.Chat"></a>
     
     
 
@@ -2828,1096 +2240,6 @@ sys_argv - insert python sys.argv here.</p>
     
 
                             </div>
-                </section>
-                <section id="PlanetUtils">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">PlanetUtils</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils"></a>
-    
-    
-
-                            <div id="PlanetUtils.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">PlanetUtils</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.__init__"></a>
-    
-    
-
-                            </div>
-                            <div id="PlanetUtils.LLA_to_PCPF" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">LLA_to_PCPF</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.LLA_to_PCPF"></a>
-    
-            <div class="docstring"><p>LLA_to_PCPF(latlonalt: <a href="#PlanetUtils.LatLonAlt">spaceteams.SC_Compute_Server.PlanetUtils.LatLonAlt</a>, radius: float) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.PCPF_to_LLA" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">PCPF_to_LLA</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.PCPF_to_LLA"></a>
-    
-            <div class="docstring"><p>PCPF_to_LLA(loc: numpy.ndarray[numpy.float64[3, 1]], radius: float) -> <a href="#PlanetUtils.LatLonAlt">spaceteams.SC_Compute_Server.PlanetUtils.LatLonAlt</a></p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.NorthWestUpFromLocation" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">NorthWestUpFromLocation</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.NorthWestUpFromLocation"></a>
-    
-            <div class="docstring"><p>NorthWestUpFromLocation(loc: numpy.ndarray[numpy.float64[3, 1]], radius: float) -> <a href="#PlanetUtils.NorthWestUp">spaceteams.SC_Compute_Server.PlanetUtils.NorthWestUp</a></p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.AzimuthFromLocRot" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">AzimuthFromLocRot</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.AzimuthFromLocRot"></a>
-    
-            <div class="docstring"><p>AzimuthFromLocRot(loc: numpy.ndarray[numpy.float64[3, 1]], rot: numpy.ndarray[numpy.float64[3, 3]], radius: float) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.ForwardLeftUpFromAzimuth" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">ForwardLeftUpFromAzimuth</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.ForwardLeftUpFromAzimuth"></a>
-    
-            <div class="docstring"><p>ForwardLeftUpFromAzimuth(loc: numpy.ndarray[numpy.float64[3, 1]], azimuth: float, radius: float) -> <a href="#PlanetUtils.ForwardLeftUp">spaceteams.SC_Compute_Server.PlanetUtils.ForwardLeftUp</a></p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.RotFromForwardLeftUp" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">RotFromForwardLeftUp</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.RotFromForwardLeftUp"></a>
-    
-            <div class="docstring"><p>RotFromForwardLeftUp(flu: <a href="#PlanetUtils.ForwardLeftUp">spaceteams.SC_Compute_Server.PlanetUtils.ForwardLeftUp</a>) -> numpy.ndarray[numpy.float64[3, 3]]</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.RotFromAzimuth" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">RotFromAzimuth</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.RotFromAzimuth"></a>
-    
-            <div class="docstring"><p>RotFromAzimuth(loc: numpy.ndarray[numpy.float64[3, 1]], azimuth: float, radius: float) -> numpy.ndarray[numpy.float64[3, 3]]</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="PlanetUtils.NorthWestUp">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">PlanetUtils.NorthWestUp</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.NorthWestUp"></a>
-    
-    
-
-                            <div id="PlanetUtils.NorthWestUp.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">PlanetUtils.NorthWestUp</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.NorthWestUp.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#PlanetUtils.NorthWestUp">spaceteams.SC_Compute_Server.PlanetUtils.NorthWestUp</a>, north: numpy.ndarray[numpy.float64[3, 1]], west: numpy.ndarray[numpy.float64[3, 1]], up: numpy.ndarray[numpy.float64[3, 1]]) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.NorthWestUp.north" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">north</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.NorthWestUp.north"></a>
-    
-            <div class="docstring"><p>north(self: <a href="#PlanetUtils.NorthWestUp">spaceteams.SC_Compute_Server.PlanetUtils.NorthWestUp</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.NorthWestUp.west" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">west</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.NorthWestUp.west"></a>
-    
-            <div class="docstring"><p>west(self: <a href="#PlanetUtils.NorthWestUp">spaceteams.SC_Compute_Server.PlanetUtils.NorthWestUp</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.NorthWestUp.up" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">up</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.NorthWestUp.up"></a>
-    
-            <div class="docstring"><p>up(self: <a href="#PlanetUtils.NorthWestUp">spaceteams.SC_Compute_Server.PlanetUtils.NorthWestUp</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="PlanetUtils.ForwardLeftUp">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">PlanetUtils.ForwardLeftUp</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.ForwardLeftUp"></a>
-    
-    
-
-                            <div id="PlanetUtils.ForwardLeftUp.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">PlanetUtils.ForwardLeftUp</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.ForwardLeftUp.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#PlanetUtils.ForwardLeftUp">spaceteams.SC_Compute_Server.PlanetUtils.ForwardLeftUp</a>, forward: numpy.ndarray[numpy.float64[3, 1]], left: numpy.ndarray[numpy.float64[3, 1]], up: numpy.ndarray[numpy.float64[3, 1]]) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.ForwardLeftUp.forward" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">forward</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.ForwardLeftUp.forward"></a>
-    
-            <div class="docstring"><p>forward(self: <a href="#PlanetUtils.ForwardLeftUp">spaceteams.SC_Compute_Server.PlanetUtils.ForwardLeftUp</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.ForwardLeftUp.left" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">left</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.ForwardLeftUp.left"></a>
-    
-            <div class="docstring"><p>left(self: <a href="#PlanetUtils.ForwardLeftUp">spaceteams.SC_Compute_Server.PlanetUtils.ForwardLeftUp</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.ForwardLeftUp.up" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">up</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.ForwardLeftUp.up"></a>
-    
-            <div class="docstring"><p>up(self: <a href="#PlanetUtils.ForwardLeftUp">spaceteams.SC_Compute_Server.PlanetUtils.ForwardLeftUp</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="PlanetUtils.LatLonAlt">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">PlanetUtils.LatLonAlt</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.LatLonAlt"></a>
-    
-    
-
-                            <div id="PlanetUtils.LatLonAlt.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">PlanetUtils.LatLonAlt</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.LatLonAlt.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#PlanetUtils.LatLonAlt">spaceteams.SC_Compute_Server.PlanetUtils.LatLonAlt</a>, lat: float, lon: float, alt: float) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.LatLonAlt.lat" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">lat</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.LatLonAlt.lat"></a>
-    
-            <div class="docstring"><p>lat(self: <a href="#PlanetUtils.LatLonAlt">spaceteams.SC_Compute_Server.PlanetUtils.LatLonAlt</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.LatLonAlt.lon" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">lon</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.LatLonAlt.lon"></a>
-    
-            <div class="docstring"><p>lon(self: <a href="#PlanetUtils.LatLonAlt">spaceteams.SC_Compute_Server.PlanetUtils.LatLonAlt</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.LatLonAlt.alt" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">alt</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.LatLonAlt.alt"></a>
-    
-            <div class="docstring"><p>alt(self: <a href="#PlanetUtils.LatLonAlt">spaceteams.SC_Compute_Server.PlanetUtils.LatLonAlt</a>) -> float</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="PlanetUtils.Coord">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">PlanetUtils.Coord</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.Coord"></a>
-    
-    
-
-                            <div id="PlanetUtils.Coord.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">PlanetUtils.Coord</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.Coord.__init__"></a>
-    
-            <div class="docstring"><p>__init__(<em>args, *</em>kwargs)
-Overloaded function.</p>
-
-<ol>
-<li><p>__init__(self: <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a>, loc: numpy.ndarray[numpy.float64[3, 1]], rot: numpy.ndarray[numpy.float64[3, 3]], radius: float) -> None</p></li>
-
-
-<li><p>__init__(self: <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a>, lla: <a href="#PlanetUtils.LatLonAlt">spaceteams.SC_Compute_Server.PlanetUtils.LatLonAlt</a>, azimuth: float, radius: float) -> None</p></li>
-</ol>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.Coord.getLoc" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getLoc</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.Coord.getLoc"></a>
-    
-            <div class="docstring"><p>getLoc(self: <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.Coord.getRot" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getRot</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.Coord.getRot"></a>
-    
-            <div class="docstring"><p>getRot(self: <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a>) -> numpy.ndarray[numpy.float64[3, 3]]</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.Coord.getLatLonAlt" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getLatLonAlt</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.Coord.getLatLonAlt"></a>
-    
-            <div class="docstring"><p>getLatLonAlt(self: <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a>) -> <a href="#PlanetUtils.LatLonAlt">spaceteams.SC_Compute_Server.PlanetUtils.LatLonAlt</a></p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.Coord.getNWU" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getNWU</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.Coord.getNWU"></a>
-    
-            <div class="docstring"><p>getNWU(self: <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a>) -> <a href="#PlanetUtils.NorthWestUp">spaceteams.SC_Compute_Server.PlanetUtils.NorthWestUp</a></p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.Coord.getFLU" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getFLU</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.Coord.getFLU"></a>
-    
-            <div class="docstring"><p>getFLU(self: <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a>) -> <a href="#PlanetUtils.ForwardLeftUp">spaceteams.SC_Compute_Server.PlanetUtils.ForwardLeftUp</a></p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.Coord.getAzimuth" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getAzimuth</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.Coord.getAzimuth"></a>
-    
-            <div class="docstring"><p>getAzimuth(self: <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="PlanetUtils.Coord.getRadius" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getRadius</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#PlanetUtils.Coord.getRadius"></a>
-    
-            <div class="docstring"><p>getRadius(self: <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a>) -> float</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="SurfaceMove">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">SurfaceMove</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#SurfaceMove"></a>
-    
-    
-
-                            <div id="SurfaceMove.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">SurfaceMove</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
-
-        
-    </div>
-    <a class="headerlink" href="#SurfaceMove.__init__"></a>
-    
-    
-
-                            </div>
-                            <div id="SurfaceMove.GetMovementState" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetMovementState</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SurfaceMove.GetMovementState"></a>
-    
-            <div class="docstring"><p>GetMovementState(en: Entity) -> str</p>
-</div>
-
-
-                            </div>
-                            <div id="SurfaceMove.TurnToAzimuth" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">TurnToAzimuth</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SurfaceMove.TurnToAzimuth"></a>
-    
-            <div class="docstring"><p>TurnToAzimuth(en: Entity, azimuth: float, pcpf: st_math::ReferenceFrames::Frame, radius: float) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="SurfaceMove.TurnAndMoveToCoord" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">TurnAndMoveToCoord</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SurfaceMove.TurnAndMoveToCoord"></a>
-    
-            <div class="docstring"><p>TurnAndMoveToCoord(en: Entity, coord: <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a>, pcpf: st_math::ReferenceFrames::Frame, radius: float) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="SurfaceMove.TurnAndReverseToCoord" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">TurnAndReverseToCoord</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SurfaceMove.TurnAndReverseToCoord"></a>
-    
-            <div class="docstring"><p>TurnAndReverseToCoord(en: Entity, coord: <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a>, pcpf: st_math::ReferenceFrames::Frame, radius: float) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="SurfaceMove.GetCurrentCoord" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetCurrentCoord</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SurfaceMove.GetCurrentCoord"></a>
-    
-            <div class="docstring"><p>GetCurrentCoord(en: Entity, pcpf: st_math::ReferenceFrames::Frame, radius: float) -> <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a></p>
-</div>
-
-
-                            </div>
-                            <div id="SurfaceMove.GetAzimuth" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetAzimuth</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SurfaceMove.GetAzimuth"></a>
-    
-            <div class="docstring"><p>GetAzimuth(en: Entity, pcpf: st_math::ReferenceFrames::Frame, radius: float) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="SurfaceMove.GetMoveToCoord" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetMoveToCoord</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SurfaceMove.GetMoveToCoord"></a>
-    
-            <div class="docstring"><p>GetMoveToCoord(en: Entity, pcpf: st_math::ReferenceFrames::Frame, radius: float) -> <a href="#PlanetUtils.Coord">spaceteams.SC_Compute_Server.PlanetUtils.Coord</a></p>
-</div>
-
-
-                            </div>
-                            <div id="SurfaceMove.IsMoving" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">IsMoving</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SurfaceMove.IsMoving"></a>
-    
-            <div class="docstring"><p>IsMoving(en: Entity) -> bool</p>
-</div>
-
-
-                            </div>
-                            <div id="SurfaceMove.OnMoveComplete" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">OnMoveComplete</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SurfaceMove.OnMoveComplete"></a>
-    
-            <div class="docstring"><p>OnMoveComplete(en: Entity, reaction: Callable[[GenParamMap], None]) -> None</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="CartesianState">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">CartesianState</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#CartesianState"></a>
-    
-    
-
-                            <div id="CartesianState.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">CartesianState</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CartesianState.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#CartesianState">spaceteams.SC_Compute_Server.CartesianState</a>, R_km: numpy.ndarray[numpy.float64[3, 1]], V_km_s: numpy.ndarray[numpy.float64[3, 1]], mu_km3_s2: float) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="CartesianState.R" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">R</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#CartesianState.R"></a>
-    
-            <div class="docstring"><p>R(self: <a href="#CartesianState">spaceteams.SC_Compute_Server.CartesianState</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
-
-                            </div>
-                            <div id="CartesianState.V" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">V</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#CartesianState.V"></a>
-    
-            <div class="docstring"><p>V(self: <a href="#CartesianState">spaceteams.SC_Compute_Server.CartesianState</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
-
-                            </div>
-                            <div id="CartesianState.mu" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">mu</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#CartesianState.mu"></a>
-    
-            <div class="docstring"><p>mu(self: <a href="#CartesianState">spaceteams.SC_Compute_Server.CartesianState</a>) -> au::Quantity<au::UnitProduct<au::Pow<au::Kilo<au::Meters>,3>,au::Pow<au::Seconds,-2> &gt;,double></p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="KeplerianState">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">KeplerianState</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#KeplerianState"></a>
-    
-    
-
-                            <div id="KeplerianState.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">KeplerianState</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#KeplerianState.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#KeplerianState">spaceteams.SC_Compute_Server.KeplerianState</a>, a_km: float, e: float, raan_rad: float, i_rad: float, omega_rad: float, ta_rad: float, mu_km3_s2: float) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="KeplerianState.a" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">a</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#KeplerianState.a"></a>
-    
-            <div class="docstring"><p>a(self: <a href="#KeplerianState">spaceteams.SC_Compute_Server.KeplerianState</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="KeplerianState.e" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">e</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#KeplerianState.e"></a>
-    
-            <div class="docstring"><p>e(self: <a href="#KeplerianState">spaceteams.SC_Compute_Server.KeplerianState</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="KeplerianState.raan" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">raan</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#KeplerianState.raan"></a>
-    
-            <div class="docstring"><p>raan(self: <a href="#KeplerianState">spaceteams.SC_Compute_Server.KeplerianState</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="KeplerianState.i" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">i</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#KeplerianState.i"></a>
-    
-            <div class="docstring"><p>i(self: <a href="#KeplerianState">spaceteams.SC_Compute_Server.KeplerianState</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="KeplerianState.omega" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">omega</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#KeplerianState.omega"></a>
-    
-            <div class="docstring"><p>omega(self: <a href="#KeplerianState">spaceteams.SC_Compute_Server.KeplerianState</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="KeplerianState.ta" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">ta</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#KeplerianState.ta"></a>
-    
-            <div class="docstring"><p>ta(self: <a href="#KeplerianState">spaceteams.SC_Compute_Server.KeplerianState</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="KeplerianState.mu" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">mu</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#KeplerianState.mu"></a>
-    
-            <div class="docstring"><p>mu(self: <a href="#KeplerianState">spaceteams.SC_Compute_Server.KeplerianState</a>) -> au::Quantity<au::UnitProduct<au::Pow<au::Kilo<au::Meters>,3>,au::Pow<au::Seconds,-2> &gt;,double></p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="LambertBattinResults">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">LambertBattinResults</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#LambertBattinResults"></a>
-    
-    
-
-                            <div id="LambertBattinResults.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">LambertBattinResults</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#LambertBattinResults.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#LambertBattinResults">spaceteams.SC_Compute_Server.LambertBattinResults</a>, v0_km_s: numpy.ndarray[numpy.float64[3, 1]], v_km_s: numpy.ndarray[numpy.float64[3, 1]]) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="LambertBattinResults.v0" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">v0</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#LambertBattinResults.v0"></a>
-    
-            <div class="docstring"><p>v0(self: <a href="#LambertBattinResults">spaceteams.SC_Compute_Server.LambertBattinResults</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
-
-                            </div>
-                            <div id="LambertBattinResults.v" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">v</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#LambertBattinResults.v"></a>
-    
-            <div class="docstring"><p>v(self: <a href="#LambertBattinResults">spaceteams.SC_Compute_Server.LambertBattinResults</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="State">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">State</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#State"></a>
-    
-    
-
-                            <div id="State.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">State</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#State.__init__"></a>
-    
-            <div class="docstring"><p>__init__(<em>args, *</em>kwargs)
-Overloaded function.</p>
-
-<ol>
-<li><p>__init__(self: <a href="#State">spaceteams.SC_Compute_Server.State</a>) -> None</p></li>
-<li><p>__init__(self: <a href="#State">spaceteams.SC_Compute_Server.State</a>, arg0: <a href="#CartesianState">spaceteams.SC_Compute_Server.CartesianState</a>) -> None</p></li>
-</ol>
-</div>
-
-
-                            </div>
-                            <div id="State.fromCartesian" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">fromCartesian</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#State.fromCartesian"></a>
-    
-            <div class="docstring"><p>fromCartesian(R_km: numpy.ndarray[numpy.float64[3, 1]], V_km_s: numpy.ndarray[numpy.float64[3, 1]], mu_km3_s2: float) -> <a href="#State">spaceteams.SC_Compute_Server.State</a></p>
-</div>
-
-
-                            </div>
-                            <div id="State.fromKeplerian" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">fromKeplerian</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#State.fromKeplerian"></a>
-    
-            <div class="docstring"><p>fromKeplerian(a_km: float, e: float, raan_rad: float, i_rad: float, omega_rad: float, ta_rad: float, mu_km3_s2: float) -> <a href="#State">spaceteams.SC_Compute_Server.State</a></p>
-</div>
-
-
-                            </div>
-                            <div id="State.asCartesian" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">asCartesian</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#State.asCartesian"></a>
-    
-            <div class="docstring"><p>asCartesian(self: <a href="#State">spaceteams.SC_Compute_Server.State</a>) -> <a href="#CartesianState">spaceteams.SC_Compute_Server.CartesianState</a></p>
-</div>
-
-
-                            </div>
-                            <div id="State.asKeplerian" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">asKeplerian</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#State.asKeplerian"></a>
-    
-            <div class="docstring"><p>asKeplerian(self: <a href="#State">spaceteams.SC_Compute_Server.State</a>) -> <a href="#KeplerianState">spaceteams.SC_Compute_Server.KeplerianState</a></p>
-</div>
-
-
-                            </div>
-                            <div id="State.timeSincePeriapsis" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">timeSincePeriapsis</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#State.timeSincePeriapsis"></a>
-    
-            <div class="docstring"><p>timeSincePeriapsis(self: <a href="#State">spaceteams.SC_Compute_Server.State</a>) -> float</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="GetState">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetState</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#GetState"></a>
-    
-            <div class="docstring"><p>GetState(en: Entity, frame: st_math::ReferenceFrames::Frame, mu: float) -> <a href="#State">spaceteams.SC_Compute_Server.State</a></p>
-</div>
-
-
-                </section>
-                <section id="SetState">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SetState</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SetState"></a>
-    
-            <div class="docstring"><p>SetState(state: <a href="#State">spaceteams.SC_Compute_Server.State</a>, en: Entity, frame: st_math::ReferenceFrames::Frame) -> None</p>
-</div>
-
-
-                </section>
-                <section id="calcTime">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">calcTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#calcTime"></a>
-    
-            <div class="docstring"><p>calcTime(arg0: float, arg1: float, arg2: float, arg3: float, arg4: numpy.ndarray[numpy.float64[3, 1]]) -> au::Quantity<au::Seconds,double></p>
-</div>
-
-
-                </section>
-                <section id="LagrangePropagation">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">LagrangePropagation</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#LagrangePropagation"></a>
-    
-            <div class="docstring"><p>LagrangePropagation(state: <a href="#State">spaceteams.SC_Compute_Server.State</a>, delta_t: float, tolerance: float, max_iterations: int) -> <a href="#State">spaceteams.SC_Compute_Server.State</a></p>
-</div>
-
-
-                </section>
-                <section id="LambertBattin">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">LambertBattin</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#LambertBattin"></a>
-    
-            <div class="docstring"><p>LambertBattin(r0: numpy.ndarray[numpy.float64[3, 1]], r: numpy.ndarray[numpy.float64[3, 1]], deltaTime: float, tm: float, mu: float, n: int, tol: float, max_iter: int) -> <a href="#LambertBattinResults">spaceteams.SC_Compute_Server.LambertBattinResults</a></p>
-</div>
-
-
                 </section>
                 <section id="timestamp">
                     <div class="attr class">
@@ -4481,40 +2803,6 @@ Overloaded function.</p>
             <div class="docstring"><p>getName(self: <a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a>) -> str</p>
 
 <p>Get the name of this EntityConfig</p>
-</div>
-
-
-                            </div>
-                            <div id="EntityConfig.LoadFromFile" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">LoadFromFile</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#EntityConfig.LoadFromFile"></a>
-    
-            <div class="docstring"><p>LoadFromFile(filepath: str) -> <a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a></p>
-
-<p>Read a EntityConfig from a properly formatted JSON file. Has good logging code for feedback about invalid syntax.</p>
-</div>
-
-
-                            </div>
-                            <div id="EntityConfig.SaveToFile" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SaveToFile</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#EntityConfig.SaveToFile"></a>
-    
-            <div class="docstring"><p>SaveToFile(self: <a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a>, filepath: str) -> None</p>
-
-<p>Write this EntityConfig to a JSON file.</p>
 </div>
 
 
@@ -5181,761 +3469,240 @@ Overloaded function.</p>
 
 
                             </div>
-                            <div id="SimConfig.LoadFromFile" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">LoadFromFile</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.LoadFromFile"></a>
-    
-            <div class="docstring"><p>LoadFromFile(filepath: str) -> <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a></p>
-
-<p>Read a SimConfig from a properly formatted JSON file. Has good logging code for feedback about invalid syntax.</p>
-</div>
-
-
-                            </div>
-                            <div id="SimConfig.SaveToFile" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SaveToFile</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.SaveToFile"></a>
-    
-            <div class="docstring"><p>SaveToFile(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, filepath: str) -> None</p>
-
-<p>Write this SimConfig to a JSON file.</p>
-</div>
-
-
-                            </div>
                 </section>
-                <section id="SimConfig_LoadFromFile">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimConfig_LoadFromFile</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig_LoadFromFile"></a>
-    
-            <div class="docstring"><p>SimConfig_LoadFromFile(filepath: str) -> <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a></p>
-
-<p>Deprecated; use <a href="#SimConfig.LoadFromFile">SimConfig.LoadFromFile()</a> instead.
-                Read a SimConfig from a properly formatted JSON file. Has good logging code for feedback about invalid syntax.</p>
-</div>
-
-
-                </section>
-                <section id="SimConfig_SaveToFile">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimConfig_SaveToFile</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig_SaveToFile"></a>
-    
-            <div class="docstring"><p>SimConfig_SaveToFile(simconf: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, filepath: str) -> None</p>
-
-<p>Deprecated; use <a href="#SimConfig.SaveToFile">SimConfig.SaveToFile()</a> instead.
-                Write a SimConfig to a JSON file.</p>
-</div>
-
-
-                </section>
-                <section id="Frame">
+                <section id="AssetType">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Frame</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+    <span class="name">AssetType</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
 
         
     </div>
-    <a class="headerlink" href="#Frame"></a>
+    <a class="headerlink" href="#AssetType"></a>
     
-    
+            <div class="docstring"><p>Members:</p>
 
-                            <div id="Frame.__init__" class="classattr">
+<p>UNDEFINED : </p>
+
+<p>Generic : </p>
+
+<p>ParamMap : </p>
+
+<p>SimConfig : </p>
+
+<p>EntityConfig : </p>
+
+<p>SystemSource :</p>
+</div>
+
+
+                            <div id="AssetType.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">Frame</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">AssetType</span><span class="signature pdoc-code condensed">()</span>
 
         
     </div>
-    <a class="headerlink" href="#Frame.__init__"></a>
+    <a class="headerlink" href="#AssetType.__init__"></a>
     
-    
-
-                            </div>
-                </section>
-                <section id="BaseFrame_Impl">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">BaseFrame_Impl</span><wbr>(<span class="base"><a href="#Frame">Frame</a></span>):
-
-        
-    </div>
-    <a class="headerlink" href="#BaseFrame_Impl"></a>
-    
-    
-
-                            <div id="BaseFrame_Impl.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">BaseFrame_Impl</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
-
-        
-    </div>
-    <a class="headerlink" href="#BaseFrame_Impl.__init__"></a>
-    
-    
-
-                            </div>
-                </section>
-                <section id="rv_struct">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">rv_struct</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#rv_struct"></a>
-    
-    
-
-                            <div id="rv_struct.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">rv_struct</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#rv_struct.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#rv_struct">spaceteams.SC_Compute_Server.rv_struct</a>, arg0: numpy.ndarray[numpy.float64[3, 1]], arg1: numpy.ndarray[numpy.float64[3, 1]]) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#AssetType">spaceteams.SC_Compute_Server.AssetType</a>, value: int) -> None</p>
 </div>
 
 
                             </div>
-                            <div id="rv_struct.loc" class="classattr">
+                            <div id="AssetType.name" class="classattr">
                                 <div class="attr variable">
-            <span class="name">loc</span>
+            <span class="name">name</span>
 
         
     </div>
-    <a class="headerlink" href="#rv_struct.loc"></a>
+    <a class="headerlink" href="#AssetType.name"></a>
     
-            <div class="docstring"><p>(self: <a href="#rv_struct">spaceteams.SC_Compute_Server.rv_struct</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
+            <div class="docstring"><p>name(self: object) -> str</p>
 </div>
 
 
                             </div>
-                            <div id="rv_struct.vel" class="classattr">
+                            <div id="AssetType.value" class="classattr">
                                 <div class="attr variable">
-            <span class="name">vel</span>
+            <span class="name">value</span>
 
         
     </div>
-    <a class="headerlink" href="#rv_struct.vel"></a>
+    <a class="headerlink" href="#AssetType.value"></a>
     
-            <div class="docstring"><p>(self: <a href="#rv_struct">spaceteams.SC_Compute_Server.rv_struct</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
+            <div class="docstring"><p>(arg0: <a href="#AssetType">spaceteams.SC_Compute_Server.AssetType</a>) -> int</p>
 </div>
 
 
                             </div>
-                </section>
-                <section id="rva_struct">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">rva_struct</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#rva_struct"></a>
-    
-    
-
-                            <div id="rva_struct.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">rva_struct</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#rva_struct.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#rva_struct">spaceteams.SC_Compute_Server.rva_struct</a>, arg0: numpy.ndarray[numpy.float64[3, 1]], arg1: numpy.ndarray[numpy.float64[3, 1]], arg2: numpy.ndarray[numpy.float64[3, 1]]) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="rva_struct.loc" class="classattr">
+                            <div id="AssetType.UNDEFINED" class="classattr">
                                 <div class="attr variable">
-            <span class="name">loc</span>
+            <span class="name">UNDEFINED</span>        =
+<span class="default_value">&lt;<a href="#AssetType.UNDEFINED">AssetType.UNDEFINED</a>: 0&gt;</span>
 
         
     </div>
-    <a class="headerlink" href="#rva_struct.loc"></a>
+    <a class="headerlink" href="#AssetType.UNDEFINED"></a>
     
-            <div class="docstring"><p>(self: <a href="#rva_struct">spaceteams.SC_Compute_Server.rva_struct</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
+    
 
                             </div>
-                            <div id="rva_struct.vel" class="classattr">
+                            <div id="AssetType.Generic" class="classattr">
                                 <div class="attr variable">
-            <span class="name">vel</span>
+            <span class="name">Generic</span>        =
+<span class="default_value">&lt;<a href="#AssetType.Generic">AssetType.Generic</a>: 1&gt;</span>
 
         
     </div>
-    <a class="headerlink" href="#rva_struct.vel"></a>
+    <a class="headerlink" href="#AssetType.Generic"></a>
     
-            <div class="docstring"><p>(self: <a href="#rva_struct">spaceteams.SC_Compute_Server.rva_struct</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
-
+    
 
                             </div>
-                            <div id="rva_struct.acc" class="classattr">
+                            <div id="AssetType.ParamMap" class="classattr">
                                 <div class="attr variable">
-            <span class="name">acc</span>
+            <span class="name">ParamMap</span>        =
+<span class="default_value">&lt;<a href="#AssetType.ParamMap">AssetType.ParamMap</a>: 2&gt;</span>
 
         
     </div>
-    <a class="headerlink" href="#rva_struct.acc"></a>
+    <a class="headerlink" href="#AssetType.ParamMap"></a>
     
-            <div class="docstring"><p>(self: <a href="#rva_struct">spaceteams.SC_Compute_Server.rva_struct</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-</div>
+    
 
+                            </div>
+                            <div id="AssetType.SimConfig" class="classattr">
+                                <div class="attr variable">
+            <span class="name">SimConfig</span>        =
+<span class="default_value">&lt;<a href="#AssetType.SimConfig">AssetType.SimConfig</a>: 3&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AssetType.SimConfig"></a>
+    
+    
+
+                            </div>
+                            <div id="AssetType.EntityConfig" class="classattr">
+                                <div class="attr variable">
+            <span class="name">EntityConfig</span>        =
+<span class="default_value">&lt;<a href="#AssetType.EntityConfig">AssetType.EntityConfig</a>: 4&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AssetType.EntityConfig"></a>
+    
+    
+
+                            </div>
+                            <div id="AssetType.SystemSource" class="classattr">
+                                <div class="attr variable">
+            <span class="name">SystemSource</span>        =
+<span class="default_value">&lt;<a href="#AssetType.SystemSource">AssetType.SystemSource</a>: 5&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AssetType.SystemSource"></a>
+    
+    
 
                             </div>
                 </section>
-                <section id="FramedVector">
+                <section id="AssetFileCategory">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">FramedVector</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+    <span class="name">AssetFileCategory</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
 
         
     </div>
-    <a class="headerlink" href="#FramedVector"></a>
+    <a class="headerlink" href="#AssetFileCategory"></a>
     
-    
+            <div class="docstring"><p>Members:</p>
 
-                            <div id="FramedVector.__init__" class="classattr">
+<p>UNDEFINED : </p>
+
+<p>Local : </p>
+
+<p>Core :</p>
+</div>
+
+
+                            <div id="AssetFileCategory.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">FramedVector</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">AssetFileCategory</span><span class="signature pdoc-code condensed">()</span>
 
         
     </div>
-    <a class="headerlink" href="#FramedVector.__init__"></a>
+    <a class="headerlink" href="#AssetFileCategory.__init__"></a>
     
-    
-
-                            </div>
-                            <div id="FramedVector.ExprIn" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">ExprIn</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedVector.ExprIn"></a>
-    
-            <div class="docstring"><p>ExprIn(self: <a href="#FramedVector">spaceteams.SC_Compute_Server.FramedVector</a>, expr_frame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-
-<p>Express the vector in a specified frame (coordinate basis).</p>
+            <div class="docstring"><p>__init__(self: <a href="#AssetFileCategory">spaceteams.SC_Compute_Server.AssetFileCategory</a>, value: int) -> None</p>
 </div>
 
 
                             </div>
-                </section>
-                <section id="FramedLoc">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">FramedLoc</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+                            <div id="AssetFileCategory.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span>
 
         
     </div>
-    <a class="headerlink" href="#FramedLoc"></a>
+    <a class="headerlink" href="#AssetFileCategory.name"></a>
     
-    
-
-                            <div id="FramedLoc.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">FramedLoc</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLoc.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#FramedLoc">spaceteams.SC_Compute_Server.FramedLoc</a>, loc: numpy.ndarray[numpy.float64[3, 1]], frame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>name(self: object) -> str</p>
 </div>
 
 
                             </div>
-                            <div id="FramedLoc.WRT" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">WRT</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div id="AssetFileCategory.value" class="classattr">
+                                <div class="attr variable">
+            <span class="name">value</span>
 
         
     </div>
-    <a class="headerlink" href="#FramedLoc.WRT"></a>
+    <a class="headerlink" href="#AssetFileCategory.value"></a>
     
-            <div class="docstring"><p>WRT(self: <a href="#FramedLoc">spaceteams.SC_Compute_Server.FramedLoc</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> <a href="#FramedVector">spaceteams.SC_Compute_Server.FramedVector</a></p>
-
-<p>Resolve the location with respect to a specified frame, performing transport theorem.
-                        Returns a FramedVector so you can do ExprIn to specify coordinate basis the location
-                        vector should be expressed in.</p>
+            <div class="docstring"><p>(arg0: <a href="#AssetFileCategory">spaceteams.SC_Compute_Server.AssetFileCategory</a>) -> int</p>
 </div>
 
 
                             </div>
-                            <div id="FramedLoc.WRT_ExprIn" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">WRT_ExprIn</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div id="AssetFileCategory.UNDEFINED" class="classattr">
+                                <div class="attr variable">
+            <span class="name">UNDEFINED</span>        =
+<span class="default_value">&lt;<a href="#AssetFileCategory.UNDEFINED">AssetFileCategory.UNDEFINED</a>: 0&gt;</span>
 
         
     </div>
-    <a class="headerlink" href="#FramedLoc.WRT_ExprIn"></a>
+    <a class="headerlink" href="#AssetFileCategory.UNDEFINED"></a>
     
-            <div class="docstring"><p>WRT_ExprIn(self: <a href="#FramedLoc">spaceteams.SC_Compute_Server.FramedLoc</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-
-<p>Resolve the location with respect to a specified frame, performing transport theorem.
-                        Also uses the same frame (coordinate basis) to express the vector.</p>
-</div>
-
+    
 
                             </div>
-                </section>
-                <section id="FramedRot">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">FramedRot</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+                            <div id="AssetFileCategory.Local" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Local</span>        =
+<span class="default_value">&lt;<a href="#AssetFileCategory.Local">AssetFileCategory.Local</a>: 1&gt;</span>
 
         
     </div>
-    <a class="headerlink" href="#FramedRot"></a>
+    <a class="headerlink" href="#AssetFileCategory.Local"></a>
     
     
-
-                            <div id="FramedRot.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">FramedRot</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedRot.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#FramedRot">spaceteams.SC_Compute_Server.FramedRot</a>, rot: numpy.ndarray[numpy.float64[3, 3]], frame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
-</div>
-
 
                             </div>
-                            <div id="FramedRot.Quat_WRT" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Quat_WRT</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div id="AssetFileCategory.Core" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Core</span>        =
+<span class="default_value">&lt;<a href="#AssetFileCategory.Core">AssetFileCategory.Core</a>: 2&gt;</span>
 
         
     </div>
-    <a class="headerlink" href="#FramedRot.Quat_WRT"></a>
-    
-            <div class="docstring"><p>Quat_WRT(self: <a href="#FramedRot">spaceteams.SC_Compute_Server.FramedRot</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> numpy.ndarray[numpy.float64[4, 1]]</p>
-
-<p>Express the quaternion corresponding to the time-extrapolated passive rotation transformation matrix
-                        from specified frame to the orientation defined by this FramedRot
-                        (xyzw quaternion, right handed coordinates).</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedRot.DCM_WRT" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">DCM_WRT</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedRot.DCM_WRT"></a>
-    
-            <div class="docstring"><p>DCM_WRT(self: <a href="#FramedRot">spaceteams.SC_Compute_Server.FramedRot</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> numpy.ndarray[numpy.float64[3, 3]]</p>
-
-<p>Express the time-extrapolated passive rotation transformation matrix from specified frame to the orientation defined by this FramedRot
-                        (DCM, right handed coordinates).</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="FramedLocVel">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">FramedLocVel</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVel"></a>
+    <a class="headerlink" href="#AssetFileCategory.Core"></a>
     
     
-
-                            <div id="FramedLocVel.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">FramedLocVel</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVel.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#FramedLocVel">spaceteams.SC_Compute_Server.FramedLocVel</a>, locVel: <a href="#rv_struct">spaceteams.SC_Compute_Server.rv_struct</a>, frame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedLocVel.loc_WRT" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">loc_WRT</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVel.loc_WRT"></a>
-    
-            <div class="docstring"><p>loc_WRT(self: <a href="#FramedLocVel">spaceteams.SC_Compute_Server.FramedLocVel</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> <a href="#FramedVector">spaceteams.SC_Compute_Server.FramedVector</a></p>
-
-<p>Resolve the location with respect to a specified frame, performing transport theorem.
-                        Returns a FramedVector so you can do ExprIn to specify coordinate basis the location should be expressed in.</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedLocVel.vel_WRT" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">vel_WRT</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVel.vel_WRT"></a>
-    
-            <div class="docstring"><p>vel_WRT(self: <a href="#FramedLocVel">spaceteams.SC_Compute_Server.FramedLocVel</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> <a href="#FramedVector">spaceteams.SC_Compute_Server.FramedVector</a></p>
-
-<p>Resolve the velocity with respect to a specified frame, performing transport theorem.
-                        Returns a FramedVector so you can do ExprIn to specify coordinate basis the velocity should be expressed in.</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedLocVel.WRT" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">WRT</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVel.WRT"></a>
-    
-            <div class="docstring"><p>WRT(self: <a href="#FramedLocVel">spaceteams.SC_Compute_Server.FramedLocVel</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> <a href="#FramedVector">spaceteams.SC_Compute_Server.FramedVector</a></p>
-
-<p>Resolve the velocity with respect to a specified frame, performing transport theorem.
-                        Returns a FramedVector so you can do ExprIn to specify coordinate basis the acceleration should be expressed in.</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedLocVel.WRT_ExprIn" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">WRT_ExprIn</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVel.WRT_ExprIn"></a>
-    
-            <div class="docstring"><p>WRT_ExprIn(self: <a href="#FramedLocVel">spaceteams.SC_Compute_Server.FramedLocVel</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-
-<p>Resolve the velocity with respect to a specified frame, performing transport theorem.
-                        Also uses the same frame (coordinate basis) to express the vector.</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="FramedLocVelAcc">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">FramedLocVelAcc</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVelAcc"></a>
-    
-    
-
-                            <div id="FramedLocVelAcc.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">FramedLocVelAcc</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVelAcc.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#FramedLocVelAcc">spaceteams.SC_Compute_Server.FramedLocVelAcc</a>, locVelAcc: <a href="#rva_struct">spaceteams.SC_Compute_Server.rva_struct</a>, frame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedLocVelAcc.loc_WRT" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">loc_WRT</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVelAcc.loc_WRT"></a>
-    
-            <div class="docstring"><p>loc_WRT(self: <a href="#FramedLocVelAcc">spaceteams.SC_Compute_Server.FramedLocVelAcc</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> <a href="#FramedVector">spaceteams.SC_Compute_Server.FramedVector</a></p>
-
-<p>Resolve the location with respect to a specified frame, performing transport theorem.
-                        Returns a FramedVector so you can do ExprIn to specify coordinate basis the location should be expressed in.</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedLocVelAcc.vel_WRT" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">vel_WRT</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVelAcc.vel_WRT"></a>
-    
-            <div class="docstring"><p>vel_WRT(self: <a href="#FramedLocVelAcc">spaceteams.SC_Compute_Server.FramedLocVelAcc</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> <a href="#FramedVector">spaceteams.SC_Compute_Server.FramedVector</a></p>
-
-<p>Resolve the velocity with respect to a specified frame, performing transport theorem.
-                        Returns a FramedVector so you can do ExprIn to specify coordinate basis the velocity should be expressed in.</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedLocVelAcc.acc_WRT" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">acc_WRT</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVelAcc.acc_WRT"></a>
-    
-            <div class="docstring"><p>acc_WRT(self: <a href="#FramedLocVelAcc">spaceteams.SC_Compute_Server.FramedLocVelAcc</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> <a href="#FramedVector">spaceteams.SC_Compute_Server.FramedVector</a></p>
-
-<p>Resolve the acceleration with respect to a specified frame, performing transport theorem.
-                        Returns a FramedVector so you can do ExprIn to specify coordinate basis the acceleration should be expressed in.</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedLocVelAcc.WRT" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">WRT</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVelAcc.WRT"></a>
-    
-            <div class="docstring"><p>WRT(self: <a href="#FramedLocVelAcc">spaceteams.SC_Compute_Server.FramedLocVelAcc</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> <a href="#FramedVector">spaceteams.SC_Compute_Server.FramedVector</a></p>
-
-<p>Resolve the acceleration with respect to a specified frame, performing transport theorem.
-                        Returns a FramedVector so you can do ExprIn to specify coordinate basis the acceleration should be expressed in.</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedLocVelAcc.WRT_ExprIn" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">WRT_ExprIn</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedLocVelAcc.WRT_ExprIn"></a>
-    
-            <div class="docstring"><p>WRT_ExprIn(self: <a href="#FramedLocVelAcc">spaceteams.SC_Compute_Server.FramedLocVelAcc</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-
-<p>Resolve the acceleration with respect to a specified frame, performing transport theorem.
-                        Also uses the same frame (coordinate basis) to express the vector.</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="FramedAngVel">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">FramedAngVel</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#FramedAngVel"></a>
-    
-    
-
-                            <div id="FramedAngVel.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">FramedAngVel</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedAngVel.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#FramedAngVel">spaceteams.SC_Compute_Server.FramedAngVel</a>, angvel: numpy.ndarray[numpy.float64[3, 1]], frame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedAngVel.WRT" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">WRT</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedAngVel.WRT"></a>
-    
-            <div class="docstring"><p>WRT(self: <a href="#FramedAngVel">spaceteams.SC_Compute_Server.FramedAngVel</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> <a href="#FramedVector">spaceteams.SC_Compute_Server.FramedVector</a></p>
-
-<p>Redefine the angular velocity state with respect to a specified frame. 
-                        Redefining the angular velocity as such applies more 
-                        than just rotation of the vector quantity to the new coordinate basis.</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedAngVel.WRT_ExprIn" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">WRT_ExprIn</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedAngVel.WRT_ExprIn"></a>
-    
-            <div class="docstring"><p>WRT_ExprIn(self: <a href="#FramedAngVel">spaceteams.SC_Compute_Server.FramedAngVel</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-
-<p>Redefine the angular velocity state with respect to a specified frame. 
-                        Redefining the angular velocity as such applies more 
-                        than just rotation of the vector quantity to the new coordinate basis.
-                        Also expresses the vector in the same frame (coordinate basis).</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="FramedAngAcc">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">FramedAngAcc</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#FramedAngAcc"></a>
-    
-    
-
-                            <div id="FramedAngAcc.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">FramedAngAcc</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedAngAcc.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#FramedAngAcc">spaceteams.SC_Compute_Server.FramedAngAcc</a>, angacc: numpy.ndarray[numpy.float64[3, 1]], frame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedAngAcc.WRT" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">WRT</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedAngAcc.WRT"></a>
-    
-            <div class="docstring"><p>WRT(self: <a href="#FramedAngAcc">spaceteams.SC_Compute_Server.FramedAngAcc</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> <a href="#FramedVector">spaceteams.SC_Compute_Server.FramedVector</a></p>
-
-<p>Redefine the angular acceleration state with respect to a specified frame. 
-                        Redefining the angular acceleration as such applies more 
-                        than just rotation of the vector quantity to the new coordinate basis.</p>
-</div>
-
-
-                            </div>
-                            <div id="FramedAngAcc.WRT_ExprIn" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">WRT_ExprIn</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#FramedAngAcc.WRT_ExprIn"></a>
-    
-            <div class="docstring"><p>WRT_ExprIn(self: <a href="#FramedAngAcc">spaceteams.SC_Compute_Server.FramedAngAcc</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-
-<p>Redefine the angular acceleration state with respect to a specified frame. 
-                        Redefining the angular acceleration as such applies more 
-                        than just rotation of the vector quantity to the new coordinate basis.
-                        Also expresses the vector in the same frame (coordinate basis).</p>
-</div>
-
 
                             </div>
                 </section>
@@ -5992,7 +3759,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getId"></a>
     
-            <div class="docstring"><p>getId(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> ST_UUID::UUID_t</p>
+            <div class="docstring"><p>getId(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams::uuid::UUID_t</p>
 
 <p>Returns the id of the Entity</p>
 </div>
@@ -6026,7 +3793,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getLocation"></a>
     
-            <div class="docstring"><p>getLocation(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#FramedLoc">spaceteams.SC_Compute_Server.FramedLoc</a></p>
+            <div class="docstring"><p>getLocation(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedLoc</p>
 
 <p>Get time-extrapolated location of this entity (meters, right handed coordinates)</p>
 </div>
@@ -6043,7 +3810,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getRotation"></a>
     
-            <div class="docstring"><p>getRotation(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#FramedRot">spaceteams.SC_Compute_Server.FramedRot</a></p>
+            <div class="docstring"><p>getRotation(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedRot</p>
 
 <p>Get the orientation of this entity's body frame (right handed coordinates).</p>
 </div>
@@ -6060,7 +3827,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getRV"></a>
     
-            <div class="docstring"><p>getRV(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#FramedLocVel">spaceteams.SC_Compute_Server.FramedLocVel</a></p>
+            <div class="docstring"><p>getRV(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedLocVel</p>
 
 <p>Get time-extrapolated location and velocity of this entity (meters, meters/second, right handed coordinates).</p>
 </div>
@@ -6077,7 +3844,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getRVA"></a>
     
-            <div class="docstring"><p>getRVA(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#FramedLocVelAcc">spaceteams.SC_Compute_Server.FramedLocVelAcc</a></p>
+            <div class="docstring"><p>getRVA(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedLocVelAcc</p>
 
 <p>Get time-extrapolated location, velocity, and acceleration of this entity (meters, meters/second, meters/second^2, right handed coordinates).</p>
 </div>
@@ -6094,7 +3861,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getVelocity"></a>
     
-            <div class="docstring"><p>getVelocity(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#FramedLocVel">spaceteams.SC_Compute_Server.FramedLocVel</a></p>
+            <div class="docstring"><p>getVelocity(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedLocVel</p>
 
 <p>Get the orientation of this entity’s body frame in Quat (right handed coordinates, wxyz)</p>
 </div>
@@ -6111,7 +3878,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getAcceleration"></a>
     
-            <div class="docstring"><p>getAcceleration(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#FramedLocVelAcc">spaceteams.SC_Compute_Server.FramedLocVelAcc</a></p>
+            <div class="docstring"><p>getAcceleration(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedLocVelAcc</p>
 
 <p>Get time-extrapolated acceleration of this entity (meters/sec ^ 2, right handed coordinates)</p>
 </div>
@@ -6128,7 +3895,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getAngAcceleration"></a>
     
-            <div class="docstring"><p>getAngAcceleration(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#FramedAngAcc">spaceteams.SC_Compute_Server.FramedAngAcc</a></p>
+            <div class="docstring"><p>getAngAcceleration(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedAngAcc</p>
 
 <p>Get time-extrapolated angular acceleration of this entity (rad/sec^2, right handed coordinates)</p>
 </div>
@@ -6145,7 +3912,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getAngVelocity"></a>
     
-            <div class="docstring"><p>getAngVelocity(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#FramedAngVel">spaceteams.SC_Compute_Server.FramedAngVel</a></p>
+            <div class="docstring"><p>getAngVelocity(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedAngVel</p>
 
 <p>Get time-extrapolated angular velocity of this entity (rad/sec, right handed coordinates) 
                         The vector direction is the axis of rotation, and the magnitude of the vector is the speed of the
@@ -6181,7 +3948,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getInertia"></a>
     
-            <div class="docstring"><p>getInertia(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> numpy.ndarray[numpy.float64[3, 3]]</p>
+            <div class="docstring"><p>getInertia(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, inFrame: spaceteams.SC_Compute_Server.frames.Frame) -> numpy.ndarray[numpy.float64[3, 3]]</p>
 
 <p>Get the inertia tensor of this entity (kg*m^2)</p>
 </div>
@@ -6198,7 +3965,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getForce"></a>
     
-            <div class="docstring"><p>getForce(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
+            <div class="docstring"><p>getForce(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: spaceteams.SC_Compute_Server.frames.Frame) -> numpy.ndarray[numpy.float64[3, 1]]</p>
 
 <p>Get the force applied to this entity (N)</p>
 </div>
@@ -6215,7 +3982,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getTorque"></a>
     
-            <div class="docstring"><p>getTorque(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
+            <div class="docstring"><p>getTorque(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: spaceteams.SC_Compute_Server.frames.Frame) -> numpy.ndarray[numpy.float64[3, 1]]</p>
 
 <p>Get the torque applied to this entity (N*m)</p>
 </div>
@@ -6236,13 +4003,13 @@ Overloaded function.</p>
 Overloaded function.</p>
 
 <ol>
-<li>getImpulses(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> list[numpy.ndarray[numpy.float64[3, 1]]]</li>
+<li>getImpulses(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: spaceteams.SC_Compute_Server.frames.Frame) -> list[numpy.ndarray[numpy.float64[3, 1]]]</li>
 </ol>
 
 <p>Get the impulses applied to this entity (N*s)</p>
 
 <ol start="2">
-<li>getImpulses(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, inFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> list[numpy.ndarray[numpy.float64[3, 1]]]</li>
+<li>getImpulses(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, inFrame: spaceteams.SC_Compute_Server.frames.Frame) -> list[numpy.ndarray[numpy.float64[3, 1]]]</li>
 </ol>
 
 <p>Get Entity Impulses (Newton-seconds, right handed coordinates). 
@@ -6262,7 +4029,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setLocation"></a>
     
-            <div class="docstring"><p>setLocation(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, loc: <a href="#FramedLoc">spaceteams.SC_Compute_Server.FramedLoc</a>) -> None</p>
+            <div class="docstring"><p>setLocation(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, loc: spaceteams.SC_Compute_Server.frames.FramedLoc) -> None</p>
 
 <p>Set entity location (meters, right handed coordinates)</p>
 </div>
@@ -6279,7 +4046,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setLocationD"></a>
     
-            <div class="docstring"><p>setLocationD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, loc: numpy.ndarray[numpy.float64[3, 1]], fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>setLocationD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, loc: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Set entity location (meters, right handed coordinates)</p>
 </div>
@@ -6296,7 +4063,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setVelocity"></a>
     
-            <div class="docstring"><p>setVelocity(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, vel: <a href="#FramedLocVel">spaceteams.SC_Compute_Server.FramedLocVel</a>) -> None</p>
+            <div class="docstring"><p>setVelocity(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, vel: spaceteams.SC_Compute_Server.frames.FramedLocVel) -> None</p>
 
 <p>Set the velocity of this entity (meters/sec, right handed coordinates)</p>
 </div>
@@ -6313,7 +4080,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setVelocityD"></a>
     
-            <div class="docstring"><p>setVelocityD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, vel: numpy.ndarray[numpy.float64[3, 1]], fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>setVelocityD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, vel: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Set the velocity of this entity (meters/sec, right handed coordinates)</p>
 </div>
@@ -6330,7 +4097,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setAcceleration"></a>
     
-            <div class="docstring"><p>setAcceleration(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, acc: <a href="#FramedLocVelAcc">spaceteams.SC_Compute_Server.FramedLocVelAcc</a>) -> None</p>
+            <div class="docstring"><p>setAcceleration(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, acc: spaceteams.SC_Compute_Server.frames.FramedLocVelAcc) -> None</p>
 
 <p>Get time-extrapolated acceleration of this entity (meters/sec ^ 2, right handed coordinates)</p>
 </div>
@@ -6347,7 +4114,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setAccelerationD"></a>
     
-            <div class="docstring"><p>setAccelerationD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, acc: numpy.ndarray[numpy.float64[3, 1]], fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>setAccelerationD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, acc: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Get time-extrapolated acceleration of this entity (meters/sec ^ 2, right handed coordinates)</p>
 </div>
@@ -6364,7 +4131,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setRotation"></a>
     
-            <div class="docstring"><p>setRotation(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, rot: <a href="#FramedRot">spaceteams.SC_Compute_Server.FramedRot</a>) -> None</p>
+            <div class="docstring"><p>setRotation(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, rot: spaceteams.SC_Compute_Server.frames.FramedRot) -> None</p>
 
 <p>Set entity rotation (FramedRot).</p>
 </div>
@@ -6385,14 +4152,14 @@ Overloaded function.</p>
 Overloaded function.</p>
 
 <ol>
-<li>setRotation_Quat(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, rot_quat_xyzw: numpy.ndarray[numpy.float64[4, 1]], fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</li>
+<li>setRotation_Quat(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, rot_quat_xyzw: numpy.ndarray[numpy.float64[4, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</li>
 </ol>
 
 <p>Set entity rotation (passive quaternion, right hand coordinate). 
                         Takes numpy array of (x,y,z,w).</p>
 
 <ol start="2">
-<li>setRotation_Quat(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, rot_quat_xyzw: tuple, fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</li>
+<li>setRotation_Quat(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, rot_quat_xyzw: tuple, fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</li>
 </ol>
 
 <p>Set entity rotation (passive quaternion, right hand coordinate).
@@ -6411,7 +4178,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setRotation_DCM"></a>
     
-            <div class="docstring"><p>setRotation_DCM(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, rot: numpy.ndarray[numpy.float64[3, 3]], fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>setRotation_DCM(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, rot: numpy.ndarray[numpy.float64[3, 3]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Set entity rotation (passiveDCM, right hand coordinate)</p>
 </div>
@@ -6428,7 +4195,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setAngVelocity"></a>
     
-            <div class="docstring"><p>setAngVelocity(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, angvel: <a href="#FramedAngVel">spaceteams.SC_Compute_Server.FramedAngVel</a>) -> None</p>
+            <div class="docstring"><p>setAngVelocity(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, angvel: spaceteams.SC_Compute_Server.frames.FramedAngVel) -> None</p>
 
 <p>Set time-extrapolated angular velocity of this entity (rad/sec, right handed coordinates) 
                         The vector direction is the axis of rotation, and the magnitude of the vector is the speed of the right-handed 
@@ -6447,7 +4214,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setAngVelocityD"></a>
     
-            <div class="docstring"><p>setAngVelocityD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, angvel: numpy.ndarray[numpy.float64[3, 1]], fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>setAngVelocityD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, angvel: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Set time-extrapolated angular velocity of this entity (rad/sec, right handed coordinates) 
                         The vector direction is the axis of rotation, and the magnitude of the vector is the speed of the right-handed 
@@ -6466,7 +4233,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setForce"></a>
     
-            <div class="docstring"><p>setForce(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, force: numpy.ndarray[numpy.float64[3, 1]], fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>setForce(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, force: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Set Entity Force (Newtons, right handed coordinates).
                         Interim solution for modular propagators before we have PhysicalEffects.</p>
@@ -6484,7 +4251,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setTorque"></a>
     
-            <div class="docstring"><p>setTorque(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, torque: numpy.ndarray[numpy.float64[3, 1]], fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>setTorque(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, torque: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Set Entity Torque (Newton-meters, right handed coordinates).
                         Interim solution for modular propagators before we have PhysicalEffects.</p>
@@ -6502,7 +4269,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.addImpulse"></a>
     
-            <div class="docstring"><p>addImpulse(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, key: str, impulse: numpy.ndarray[numpy.float64[3, 1]], fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>addImpulse(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, key: str, impulse: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Add named Entity Impulse (Newton-seconds, right handed coordinates). 
                         Interim solution for modular propagators before we have PhysicalEffects.</p>
@@ -6520,7 +4287,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.addLocationOffset"></a>
     
-            <div class="docstring"><p>addLocationOffset(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, offset: numpy.ndarray[numpy.float64[3, 1]], fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>addLocationOffset(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, offset: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Add Entity Location Offset (meters, right handed coordinates).
                         Interim solution for modular propagators before we have PhysicalEffects.</p>
@@ -6538,7 +4305,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.addVelocityOffset"></a>
     
-            <div class="docstring"><p>addVelocityOffset(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, offset: numpy.ndarray[numpy.float64[3, 1]], fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>addVelocityOffset(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, offset: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Add Entity Velocity Offset (meters/sec, right handed coordinates).
                         Interim solution for modular propagators before we have PhysicalEffects.</p>
@@ -6556,7 +4323,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.addAngVelocityOffset"></a>
     
-            <div class="docstring"><p>addAngVelocityOffset(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, offset: numpy.ndarray[numpy.float64[3, 1]], fromFrame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>addAngVelocityOffset(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, offset: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Add Entity Angular Velocity Offset (rad/sec, right handed coordinates).
                         Interim solution for modular propagators before we have PhysicalEffects.</p>
@@ -6574,7 +4341,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getResidentFrame"></a>
     
-            <div class="docstring"><p>getResidentFrame(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a></p>
+            <div class="docstring"><p>getResidentFrame(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.Frame</p>
 
 <p>Get the frame in which this entity’s state parameter are defined.</p>
 </div>
@@ -6591,7 +4358,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.GetBodyFixedFrame"></a>
     
-            <div class="docstring"><p>GetBodyFixedFrame(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a></p>
+            <div class="docstring"><p>GetBodyFixedFrame(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.Frame</p>
 
 <p>Get the body-fixed frame of this entity.</p>
 </div>
@@ -6608,7 +4375,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.GetBodyCenteredFrame"></a>
     
-            <div class="docstring"><p>GetBodyCenteredFrame(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a></p>
+            <div class="docstring"><p>GetBodyCenteredFrame(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.Frame</p>
 
 <p>Get the frame centered on this entity, with axes aligned to the resident (parent) frame of the entity.</p>
 </div>
@@ -6625,7 +4392,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getResidentFrameBody"></a>
     
-            <div class="docstring"><p>getResidentFrameBody(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> Entity_Base</p>
+            <div class="docstring"><p>getResidentFrameBody(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams::Entity_Base</p>
 
 <p>Get the entity whose body-fixed frame is used as the frame in which this Entity's state parameters are defined.</p>
 </div>
@@ -6642,7 +4409,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setResidentFrame"></a>
     
-            <div class="docstring"><p>setResidentFrame(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, frame: <a href="#Frame">spaceteams.SC_Compute_Server.Frame</a>) -> None</p>
+            <div class="docstring"><p>setResidentFrame(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, frame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Set the frame in which this Entity's state parameters are defined, and transform state. parameters to line up with the existing state.</p>
 </div>
@@ -6768,132 +4535,6 @@ Overloaded function.</p>
     <a class="headerlink" href="#get_nametag"></a>
     
             <div class="docstring"><p>get_nametag() -> str</p>
-</div>
-
-
-                </section>
-                <section id="CanTransmit">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">CanTransmit</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#CanTransmit"></a>
-    
-            <div class="docstring"><p>CanTransmit() -> bool</p>
-
-<p>Widely-accessible static functions that access the singleton state of the simulation</p>
-</div>
-
-
-                </section>
-                <section id="GetSimState">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetSimState</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#GetSimState"></a>
-    
-            <div class="docstring"><p>GetSimState() -> <a href="#SimState">spaceteams.SC_Compute_Server.SimState</a></p>
-
-<p>get the simulation state</p>
-</div>
-
-
-                </section>
-                <section id="RequestSimStateChange">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">RequestSimStateChange</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#RequestSimStateChange"></a>
-    
-            <div class="docstring"><p>RequestSimStateChange(newState: <a href="#SimState">spaceteams.SC_Compute_Server.SimState</a>, retransmit: bool = Whether this request should be retransmitted) -> bool</p>
-
-<p>Widely-accessible static functions that access the singleton state of the simulation</p>
-</div>
-
-
-                </section>
-                <section id="MandateSimStateChange">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">MandateSimStateChange</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#MandateSimStateChange"></a>
-    
-            <div class="docstring"><p>MandateSimStateChange(newState: <a href="#SimState">spaceteams.SC_Compute_Server.SimState</a>, retransmit: bool = Whether this change should be retransmitted) -> None</p>
-</div>
-
-
-                </section>
-                <section id="MandateSimStop">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">MandateSimStop</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#MandateSimStop"></a>
-    
-            <div class="docstring"><p>MandateSimStop(reason: str, retransmit: bool = Whether this change should be retransmitted) -> None</p>
-</div>
-
-
-                </section>
-                <section id="GetStopReason">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetStopReason</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#GetStopReason"></a>
-    
-            <div class="docstring"><p>GetStopReason() -> str</p>
-</div>
-
-
-                </section>
-                <section id="GetWallTime_SimStarted">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetWallTime_SimStarted</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#GetWallTime_SimStarted"></a>
-    
-            <div class="docstring"><p>GetWallTime_SimStarted() -> datetime.timedelta</p>
-</div>
-
-
-                </section>
-                <section id="GetSimEntity">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetSimEntity</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#GetSimEntity"></a>
-    
-            <div class="docstring"><p>GetSimEntity() -> <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a></p>
 </div>
 
 
@@ -7220,251 +4861,6 @@ Overloaded function.</p>
 
 
                             </div>
-                </section>
-                <section id="CaptureImage">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">CaptureImage</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImage"></a>
-    
-            <div class="docstring"><p>CaptureImage(camera_en: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, properties: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> int</p>
-
-<p>Capture an image from the given camera entity with the given properties.
-                Use OnImageReceived() with the returned capture_id to react to the image.</p>
-</div>
-
-
-                </section>
-                <section id="CapturedImage">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">CapturedImage</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#CapturedImage"></a>
-    
-    
-
-                            <div id="CapturedImage.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">CapturedImage</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CapturedImage.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#CapturedImage">spaceteams.SC_Compute_Server.CapturedImage</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="CapturedImage.properties" class="classattr">
-                                <div class="attr variable">
-            <span class="name">properties</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CapturedImage.properties"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CapturedImage">spaceteams.SC_Compute_Server.CapturedImage</a>) -> <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a></p>
-</div>
-
-
-                            </div>
-                            <div id="CapturedImage.PixelsR" class="classattr">
-                                <div class="attr variable">
-            <span class="name">PixelsR</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CapturedImage.PixelsR"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CapturedImage">spaceteams.SC_Compute_Server.CapturedImage</a>) -> list[int]</p>
-</div>
-
-
-                            </div>
-                            <div id="CapturedImage.PixelsG" class="classattr">
-                                <div class="attr variable">
-            <span class="name">PixelsG</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CapturedImage.PixelsG"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CapturedImage">spaceteams.SC_Compute_Server.CapturedImage</a>) -> list[int]</p>
-</div>
-
-
-                            </div>
-                            <div id="CapturedImage.PixelsB" class="classattr">
-                                <div class="attr variable">
-            <span class="name">PixelsB</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CapturedImage.PixelsB"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CapturedImage">spaceteams.SC_Compute_Server.CapturedImage</a>) -> list[int]</p>
-</div>
-
-
-                            </div>
-                            <div id="CapturedImage.get_timestamp" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">get_timestamp</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#CapturedImage.get_timestamp"></a>
-    
-            <div class="docstring"><p>get_timestamp(self: <a href="#CapturedImage">spaceteams.SC_Compute_Server.CapturedImage</a>) -> <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a></p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="OnImageReceived">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">OnImageReceived</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#OnImageReceived"></a>
-    
-            <div class="docstring"><p>OnImageReceived(capture_id: int, reaction: Callable[[<a href="#CapturedImage">spaceteams.SC_Compute_Server.CapturedImage</a>], None]) -> None</p>
-
-<p>React to an image received with the given capture_id. Reaction must be a function that takes a CapturedImage.</p>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_DeleteEntity">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_DeleteEntity</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_DeleteEntity"></a>
-    
-            <div class="docstring"><p>SimGlobals_DeleteEntity(en: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, retransmit: bool = Whether this change should be retransmitted) -> None</p>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_AddEntity">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_AddEntity</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_AddEntity"></a>
-    
-            <div class="docstring"><p>SimGlobals_AddEntity(e_config: <a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a>) -> <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a></p>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_AddEntityFromTemplate">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_AddEntityFromTemplate</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_AddEntityFromTemplate"></a>
-    
-            <div class="docstring"><p>SimGlobals_AddEntityFromTemplate(template_name: str, entity_name: str, system_nametags: list[str], add_param_operations: Callable[[<a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>], None]) -> SC_EntityRef</p>
-
-<p>Adds a new entity using the entity config file at template_path as a starting point.
-           All parameters added to the GenParamMap in the add_param_operations lambda will be used to either overwrite the
-           original parameter value (from the entity template) or add a new parameter. Core/ template_path is relative to the
-           Platform root directory (one above the Compute_Server or SharedData directories).
-           NOTE: Only use AddParam or AddNestedParam functions in the lambda; the template's parameters are not already
-           in the given GenParamMap.</p>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_GetGlobalFrame">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_GetGlobalFrame</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_GetGlobalFrame"></a>
-    
-            <div class="docstring"><p>SimGlobals_GetGlobalFrame() -> <a href="#BaseFrame_Impl">spaceteams.SC_Compute_Server.BaseFrame_Impl</a></p>
-
-<p>Deprecated; use GetBaseFrame instead.</p>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_GetBaseFrame">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_GetBaseFrame</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_GetBaseFrame"></a>
-    
-            <div class="docstring"><p>SimGlobals_GetBaseFrame() -> <a href="#BaseFrame_Impl">spaceteams.SC_Compute_Server.BaseFrame_Impl</a></p>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_DispatchEvent">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_DispatchEvent</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_DispatchEvent"></a>
-    
-            <div class="docstring"><p>SimGlobals_DispatchEvent(eventName: str, payload: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>) -> None</p>
-</div>
-
-
-                </section>
-                <section id="SimGlobals_AddEventListener">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SimGlobals_AddEventListener</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimGlobals_AddEventListener"></a>
-    
-            <div class="docstring"><p>SimGlobals_AddEventListener(eventName: str, delegateFn: Callable[[<a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>], None]) -> None</p>
-
-<p>Widely-accessible static functions that access the singleton state of the simulation</p>
-</div>
-
-
                 </section>
                 <section id="logger_info">
                     <div class="attr function">
