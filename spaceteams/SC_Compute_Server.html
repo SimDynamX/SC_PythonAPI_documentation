@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 15.0.3"/>
+    <meta name="generator" content="pdoc 15.0.4"/>
     <title>spaceteams.SC_Compute_Server API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -633,6 +633,111 @@
 
             </li>
             <li>
+                    <a class="class" href="#PhysEffectType">PhysEffectType</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#PhysEffectType.__init__">PhysEffectType</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.value">value</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.UNDEFINED">UNDEFINED</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.Force">Force</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.Torque">Torque</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.Impulse">Impulse</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.AngImpulse">AngImpulse</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.Acceleration">Acceleration</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.AngAcceleration">AngAcceleration</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.DeltaLocation">DeltaLocation</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.DeltaVelocity">DeltaVelocity</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.DeltaRotation">DeltaRotation</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.DeltaAngVelocity">DeltaAngVelocity</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.LocationOverride">LocationOverride</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.VelocityOverride">VelocityOverride</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.AccelerationOverride">AccelerationOverride</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.RotationOverride">RotationOverride</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.AngVelocityOverride">AngVelocityOverride</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.AngAccelerationOverride">AngAccelerationOverride</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#PhysEffect">PhysEffect</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#PhysEffect.__init__">PhysEffect</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.effectType">effectType</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.frame">frame</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.direction">direction</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.magnitude">magnitude</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.applicationLoc">applicationLoc</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.useStartTime">useStartTime</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.startTime">startTime</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.useEndTime">useEndTime</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.endTime">endTime</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#PhysEffect.setVector">setVector</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#Entity">Entity</a>
                             <ul class="memberlist">
                         <li>
@@ -760,6 +865,15 @@
                         </li>
                         <li>
                                 <a class="function" href="#Entity.GetPropagationType">GetPropagationType</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getPhysEffects">getPhysEffects</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.setPhysEffect">setPhysEffect</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.removePhysEffect">removePhysEffect</a>
                         </li>
                 </ul>
 
@@ -3706,6 +3820,464 @@ Overloaded function.</p>
 
                             </div>
                 </section>
+                <section id="PhysEffectType">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">PhysEffectType</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType"></a>
+    
+            <div class="docstring"><p>Members:</p>
+
+<p>UNDEFINED : </p>
+
+<p>Force : </p>
+
+<p>Torque : </p>
+
+<p>Impulse : </p>
+
+<p>AngImpulse : </p>
+
+<p>Acceleration : </p>
+
+<p>AngAcceleration : </p>
+
+<p>DeltaLocation : </p>
+
+<p>DeltaVelocity : </p>
+
+<p>DeltaRotation : </p>
+
+<p>DeltaAngVelocity : </p>
+
+<p>LocationOverride : </p>
+
+<p>VelocityOverride : </p>
+
+<p>AccelerationOverride : </p>
+
+<p>RotationOverride : </p>
+
+<p>AngVelocityOverride : </p>
+
+<p>AngAccelerationOverride :</p>
+</div>
+
+
+                            <div id="PhysEffectType.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">PhysEffectType</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#PhysEffectType">spaceteams.SC_Compute_Server.PhysEffectType</a>, value: int) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffectType.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.name"></a>
+    
+            <div class="docstring"><p>name(self: object) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffectType.value" class="classattr">
+                                <div class="attr variable">
+            <span class="name">value</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.value"></a>
+    
+            <div class="docstring"><p>(arg0: <a href="#PhysEffectType">spaceteams.SC_Compute_Server.PhysEffectType</a>) -> int</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffectType.UNDEFINED" class="classattr">
+                                <div class="attr variable">
+            <span class="name">UNDEFINED</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.UNDEFINED">PhysEffectType.UNDEFINED</a>: 0&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.UNDEFINED"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.Force" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Force</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.Force">PhysEffectType.Force</a>: 1&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.Force"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.Torque" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Torque</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.Torque">PhysEffectType.Torque</a>: 2&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.Torque"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.Impulse" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Impulse</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.Impulse">PhysEffectType.Impulse</a>: 3&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.Impulse"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.AngImpulse" class="classattr">
+                                <div class="attr variable">
+            <span class="name">AngImpulse</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.AngImpulse">PhysEffectType.AngImpulse</a>: 4&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.AngImpulse"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.Acceleration" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Acceleration</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.Acceleration">PhysEffectType.Acceleration</a>: 5&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.Acceleration"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.AngAcceleration" class="classattr">
+                                <div class="attr variable">
+            <span class="name">AngAcceleration</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.AngAcceleration">PhysEffectType.AngAcceleration</a>: 6&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.AngAcceleration"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.DeltaLocation" class="classattr">
+                                <div class="attr variable">
+            <span class="name">DeltaLocation</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.DeltaLocation">PhysEffectType.DeltaLocation</a>: 7&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.DeltaLocation"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.DeltaVelocity" class="classattr">
+                                <div class="attr variable">
+            <span class="name">DeltaVelocity</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.DeltaVelocity">PhysEffectType.DeltaVelocity</a>: 8&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.DeltaVelocity"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.DeltaRotation" class="classattr">
+                                <div class="attr variable">
+            <span class="name">DeltaRotation</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.DeltaRotation">PhysEffectType.DeltaRotation</a>: 9&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.DeltaRotation"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.DeltaAngVelocity" class="classattr">
+                                <div class="attr variable">
+            <span class="name">DeltaAngVelocity</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.DeltaAngVelocity">PhysEffectType.DeltaAngVelocity</a>: 10&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.DeltaAngVelocity"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.LocationOverride" class="classattr">
+                                <div class="attr variable">
+            <span class="name">LocationOverride</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.LocationOverride">PhysEffectType.LocationOverride</a>: 11&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.LocationOverride"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.VelocityOverride" class="classattr">
+                                <div class="attr variable">
+            <span class="name">VelocityOverride</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.VelocityOverride">PhysEffectType.VelocityOverride</a>: 12&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.VelocityOverride"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.AccelerationOverride" class="classattr">
+                                <div class="attr variable">
+            <span class="name">AccelerationOverride</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.AccelerationOverride">PhysEffectType.AccelerationOverride</a>: 13&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.AccelerationOverride"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.RotationOverride" class="classattr">
+                                <div class="attr variable">
+            <span class="name">RotationOverride</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.RotationOverride">PhysEffectType.RotationOverride</a>: 14&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.RotationOverride"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.AngVelocityOverride" class="classattr">
+                                <div class="attr variable">
+            <span class="name">AngVelocityOverride</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.AngVelocityOverride">PhysEffectType.AngVelocityOverride</a>: 15&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.AngVelocityOverride"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.AngAccelerationOverride" class="classattr">
+                                <div class="attr variable">
+            <span class="name">AngAccelerationOverride</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.AngAccelerationOverride">PhysEffectType.AngAccelerationOverride</a>: 16&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.AngAccelerationOverride"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="PhysEffect">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">PhysEffect</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect"></a>
+    
+    
+
+                            <div id="PhysEffect.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">PhysEffect</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.__init__"></a>
+    
+            <div class="docstring"><p>__init__(<em>args, *</em>kwargs)
+Overloaded function.</p>
+
+<ol>
+<li><p>__init__(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> None</p></li>
+<li><p>__init__(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, arg0: <a href="#PhysEffectType">spaceteams.SC_Compute_Server.PhysEffectType</a>, arg1: spaceteams.SC_Compute_Server.frames.Frame) -> None</p></li>
+</ol>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.effectType" class="classattr">
+                                <div class="attr variable">
+            <span class="name">effectType</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.effectType"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> <a href="#PhysEffectType">spaceteams.SC_Compute_Server.PhysEffectType</a></p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.frame" class="classattr">
+                                <div class="attr variable">
+            <span class="name">frame</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.frame"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> spaceteams.SC_Compute_Server.frames.Frame</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.direction" class="classattr">
+                                <div class="attr variable">
+            <span class="name">direction</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.direction"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.magnitude" class="classattr">
+                                <div class="attr variable">
+            <span class="name">magnitude</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.magnitude"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> float</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.applicationLoc" class="classattr">
+                                <div class="attr variable">
+            <span class="name">applicationLoc</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.applicationLoc"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.useStartTime" class="classattr">
+                                <div class="attr variable">
+            <span class="name">useStartTime</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.useStartTime"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> bool</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.startTime" class="classattr">
+                                <div class="attr variable">
+            <span class="name">startTime</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.startTime"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> datetime.timedelta</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.useEndTime" class="classattr">
+                                <div class="attr variable">
+            <span class="name">useEndTime</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.useEndTime"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> bool</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.endTime" class="classattr">
+                                <div class="attr variable">
+            <span class="name">endTime</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.endTime"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> datetime.timedelta</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.setVector" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">setVector</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.setVector"></a>
+    
+            <div class="docstring"><p>setVector(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, arg0: numpy.ndarray[numpy.float64[3, 1]]) -> None</p>
+</div>
+
+
+                            </div>
+                </section>
                 <section id="Entity">
                     <div class="attr class">
             
@@ -4461,6 +5033,51 @@ Overloaded function.</p>
     <a class="headerlink" href="#Entity.GetPropagationType"></a>
     
             <div class="docstring"><p>GetPropagationType(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#PropagationType">spaceteams.SC_Compute_Server.PropagationType</a></p>
+</div>
+
+
+                            </div>
+                            <div id="Entity.getPhysEffects" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">getPhysEffects</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Entity.getPhysEffects"></a>
+    
+            <div class="docstring"><p>getPhysEffects(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> dict</p>
+</div>
+
+
+                            </div>
+                            <div id="Entity.setPhysEffect" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">setPhysEffect</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Entity.setPhysEffect"></a>
+    
+            <div class="docstring"><p>setPhysEffect(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: str, arg1: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="Entity.removePhysEffect" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">removePhysEffect</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Entity.removePhysEffect"></a>
+    
+            <div class="docstring"><p>removePhysEffect(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: str) -> None</p>
 </div>
 
 
