@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="pdoc 15.0.3"/>
+    <meta name="generator" content="pdoc 15.0.4"/>
     <title>spaceteams.SC_Compute_Server API documentation</title>
 
     <style>/*! * Bootstrap Reboot v5.0.0 (https://getbootstrap.com/) * Copyright 2011-2021 The Bootstrap Authors * Copyright 2011-2021 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md) */*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1{font-size:2.5rem}}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4{font-size:1.5rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}abbr[data-bs-original-title],abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:.875em}mark{padding:.2em;background-color:#fcf8e3}sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0d6efd;text-decoration:underline}a:hover{color:#0a58ca}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em;direction:ltr;unicode-bidi:bidi-override}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:.875em;color:#d63384;word-wrap:break-word}a>code{color:inherit}kbd{padding:.2rem .4rem;font-size:.875em;color:#fff;background-color:#212529;border-radius:.2rem}kbd kbd{padding:0;font-size:1em;font-weight:700}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:.5rem;padding-bottom:.5rem;color:#6c757d;text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:.5rem;font-size:calc(1.275rem + .3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none!important}</style>
@@ -228,6 +228,39 @@
 
             </li>
             <li>
+                    <a class="class" href="#PropagatorChoice">PropagatorChoice</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#PropagatorChoice.__init__">PropagatorChoice</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PropagatorChoice.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PropagatorChoice.value">value</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PropagatorChoice.No_Body">No_Body</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PropagatorChoice.ST_Rigid_Body">ST_Rigid_Body</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PropagatorChoice.SPICE">SPICE</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PropagatorChoice.Unreal_Chaos">Unreal_Chaos</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PropagatorChoice.Unreal_Pawn">Unreal_Pawn</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PropagatorChoice.Custom">Custom</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#Severity">Severity</a>
                             <ul class="memberlist">
                         <li>
@@ -288,6 +321,24 @@
 
             </li>
             <li>
+                    <a class="class" href="#TaskflowType">TaskflowType</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#TaskflowType.__init__">TaskflowType</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TaskflowType.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TaskflowType.value">value</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TaskflowType.DependencyGraph">DependencyGraph</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#UpdateTimeDomain">UpdateTimeDomain</a>
                             <ul class="memberlist">
                         <li>
@@ -307,6 +358,30 @@
                         </li>
                         <li>
                                 <a class="variable" href="#UpdateTimeDomain.NoSleep">NoSleep</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#FieldEffectType">FieldEffectType</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#FieldEffectType.__init__">FieldEffectType</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectType.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectType.value">value</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectType.Scalar">Scalar</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectType.Vector">Vector</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectType.Ephemeris">Ephemeris</a>
                         </li>
                 </ul>
 
@@ -426,6 +501,9 @@
                                 <a class="function" href="#ParamMap.ForEachParam">ForEachParam</a>
                         </li>
                         <li>
+                                <a class="function" href="#ParamMap.ForEachParamMap">ForEachParamMap</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#ParamMap.DeleteParam">DeleteParam</a>
                         </li>
                         <li>
@@ -441,6 +519,9 @@
                                 <a class="function" href="#EntityConfig.__init__">EntityConfig</a>
                         </li>
                         <li>
+                                <a class="variable" href="#EntityConfig.system_nametags">system_nametags</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#EntityConfig.getName">getName</a>
                         </li>
                 </ul>
@@ -451,6 +532,9 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="function" href="#SystemConfig.__init__">SystemConfig</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SystemConfig.nametag">nametag</a>
                         </li>
                         <li>
                                 <a class="variable" href="#SystemConfig.active">active</a>
@@ -470,17 +554,32 @@
                         <li>
                                 <a class="variable" href="#SystemConfig.freqType">freqType</a>
                         </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#FieldEffectConfig">FieldEffectConfig</a>
+                            <ul class="memberlist">
                         <li>
-                                <a class="function" href="#SystemConfig.getNameTag">getNameTag</a>
+                                <a class="function" href="#FieldEffectConfig.__init__">FieldEffectConfig</a>
                         </li>
                         <li>
-                                <a class="function" href="#SystemConfig.getFrequency">getFrequency</a>
+                                <a class="variable" href="#FieldEffectConfig.active">active</a>
                         </li>
                         <li>
-                                <a class="function" href="#SystemConfig.setFrequency">setFrequency</a>
+                                <a class="variable" href="#FieldEffectConfig.singleton">singleton</a>
                         </li>
                         <li>
-                                <a class="function" href="#SystemConfig.getSource">getSource</a>
+                                <a class="variable" href="#FieldEffectConfig.source">source</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectConfig.nametag">nametag</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectConfig.fieldName">fieldName</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectConfig.type">type</a>
                         </li>
                 </ul>
 
@@ -492,7 +591,13 @@
                                 <a class="function" href="#TaskflowConfig.__init__">TaskflowConfig</a>
                         </li>
                         <li>
+                                <a class="variable" href="#TaskflowConfig.nametag">nametag</a>
+                        </li>
+                        <li>
                                 <a class="variable" href="#TaskflowConfig.active">active</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TaskflowConfig.type">type</a>
                         </li>
                         <li>
                                 <a class="variable" href="#TaskflowConfig.frequency">frequency</a>
@@ -502,18 +607,6 @@
                         </li>
                         <li>
                                 <a class="variable" href="#TaskflowConfig.systems">systems</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#TaskflowConfig.getNameTag">getNameTag</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#TaskflowConfig.getFrequency">getFrequency</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#TaskflowConfig.setFrequency">setFrequency</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#TaskflowConfig.getSystems">getSystems</a>
                         </li>
                 </ul>
 
@@ -534,6 +627,42 @@
                                 <a class="function" href="#SimConfig.GetSimEntity">GetSimEntity</a>
                         </li>
                         <li>
+                                <a class="function" href="#SimConfig.SetSimEntity">SetSimEntity</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.GetEntities">GetEntities</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.AddSystem">AddSystem</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.RemoveSystem">RemoveSystem</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.AddFieldEffect">AddFieldEffect</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.RemoveFieldEffect">RemoveFieldEffect</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.AddTaskflow">AddTaskflow</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.RemoveTaskflow">RemoveTaskflow</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.GetSystems">GetSystems</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.GetTaskflows">GetTaskflows</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.GetFieldEffects">GetFieldEffects</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.UsesCurrentTime">UsesCurrentTime</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#SimConfig.GetSimStartTime">GetSimStartTime</a>
                         </li>
                         <li>
@@ -550,27 +679,6 @@
                         </li>
                         <li>
                                 <a class="function" href="#SimConfig.RemoveSimEndTime">RemoveSimEndTime</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.GetEntities">GetEntities</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.GetEntityTemplates">GetEntityTemplates</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.AddSystem">AddSystem</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.RemoveSystem">RemoveSystem</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.GetSystems">GetSystems</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.AddTaskflow">AddTaskflow</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.RemoveTaskflow">RemoveTaskflow</a>
                         </li>
                 </ul>
 
@@ -628,6 +736,111 @@
                         </li>
                         <li>
                                 <a class="variable" href="#AssetFileCategory.Core">Core</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#PhysEffectType">PhysEffectType</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#PhysEffectType.__init__">PhysEffectType</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.value">value</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.UNDEFINED">UNDEFINED</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.Force">Force</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.Torque">Torque</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.Impulse">Impulse</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.AngImpulse">AngImpulse</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.Acceleration">Acceleration</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.AngAcceleration">AngAcceleration</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.DeltaLocation">DeltaLocation</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.DeltaVelocity">DeltaVelocity</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.DeltaRotation">DeltaRotation</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.DeltaAngVelocity">DeltaAngVelocity</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.LocationOverride">LocationOverride</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.VelocityOverride">VelocityOverride</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.AccelerationOverride">AccelerationOverride</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.RotationOverride">RotationOverride</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.AngVelocityOverride">AngVelocityOverride</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffectType.AngAccelerationOverride">AngAccelerationOverride</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#PhysEffect">PhysEffect</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#PhysEffect.__init__">PhysEffect</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.effectType">effectType</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.frame">frame</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.direction">direction</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.magnitude">magnitude</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.applicationLoc">applicationLoc</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.useStartTime">useStartTime</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.startTime">startTime</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.useEndTime">useEndTime</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PhysEffect.endTime">endTime</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#PhysEffect.setVector">setVector</a>
                         </li>
                 </ul>
 
@@ -760,6 +973,21 @@
                         </li>
                         <li>
                                 <a class="function" href="#Entity.GetPropagationType">GetPropagationType</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.GetPropagator">GetPropagator</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.SetPropagator">SetPropagator</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getPhysEffects">getPhysEffects</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.setPhysEffect">setPhysEffect</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.removePhysEffect">removePhysEffect</a>
                         </li>
                 </ul>
 
@@ -1149,7 +1377,7 @@ sys_argv - insert python sys.argv here.</p>
 
 <p>entityRefUnresolved</p>
 
-<p>float : NOTE: python float is actually VarType double</p>
+<p>float : NOTE: python "float" is actually VarType double</p>
 
 <p>double : python type is "float"</p>
 
@@ -1797,6 +2025,145 @@ sys_argv - insert python sys.argv here.</p>
 
                             </div>
                 </section>
+                <section id="PropagatorChoice">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">PropagatorChoice</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#PropagatorChoice"></a>
+    
+            <div class="docstring"><p>Members:</p>
+
+<p>No_Body</p>
+
+<p>ST_Rigid_Body</p>
+
+<p>SPICE</p>
+
+<p>Unreal_Chaos</p>
+
+<p>Unreal_Pawn</p>
+
+<p>Custom</p>
+</div>
+
+
+                            <div id="PropagatorChoice.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">PropagatorChoice</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PropagatorChoice.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#PropagatorChoice">spaceteams.SC_Compute_Server.PropagatorChoice</a>, value: int) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="PropagatorChoice.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PropagatorChoice.name"></a>
+    
+            <div class="docstring"><p>name(self: object) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="PropagatorChoice.value" class="classattr">
+                                <div class="attr variable">
+            <span class="name">value</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PropagatorChoice.value"></a>
+    
+            <div class="docstring"><p>(arg0: <a href="#PropagatorChoice">spaceteams.SC_Compute_Server.PropagatorChoice</a>) -> int</p>
+</div>
+
+
+                            </div>
+                            <div id="PropagatorChoice.No_Body" class="classattr">
+                                <div class="attr variable">
+            <span class="name">No_Body</span>        =
+<span class="default_value">&lt;<a href="#PropagatorChoice.No_Body">PropagatorChoice.No_Body</a>: 0&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PropagatorChoice.No_Body"></a>
+    
+    
+
+                            </div>
+                            <div id="PropagatorChoice.ST_Rigid_Body" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ST_Rigid_Body</span>        =
+<span class="default_value">&lt;<a href="#PropagatorChoice.ST_Rigid_Body">PropagatorChoice.ST_Rigid_Body</a>: 1&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PropagatorChoice.ST_Rigid_Body"></a>
+    
+    
+
+                            </div>
+                            <div id="PropagatorChoice.SPICE" class="classattr">
+                                <div class="attr variable">
+            <span class="name">SPICE</span>        =
+<span class="default_value">&lt;<a href="#PropagatorChoice.SPICE">PropagatorChoice.SPICE</a>: 2&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PropagatorChoice.SPICE"></a>
+    
+    
+
+                            </div>
+                            <div id="PropagatorChoice.Unreal_Chaos" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Unreal_Chaos</span>        =
+<span class="default_value">&lt;<a href="#PropagatorChoice.Unreal_Chaos">PropagatorChoice.Unreal_Chaos</a>: 3&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PropagatorChoice.Unreal_Chaos"></a>
+    
+    
+
+                            </div>
+                            <div id="PropagatorChoice.Unreal_Pawn" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Unreal_Pawn</span>        =
+<span class="default_value">&lt;<a href="#PropagatorChoice.Unreal_Pawn">PropagatorChoice.Unreal_Pawn</a>: 4&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PropagatorChoice.Unreal_Pawn"></a>
+    
+    
+
+                            </div>
+                            <div id="PropagatorChoice.Custom" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Custom</span>        =
+<span class="default_value">&lt;<a href="#PropagatorChoice.Custom">PropagatorChoice.Custom</a>: 5&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PropagatorChoice.Custom"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="Severity">
                     <div class="attr class">
             
@@ -1934,15 +2301,15 @@ sys_argv - insert python sys.argv here.</p>
     
             <div class="docstring"><p>Members:</p>
 
-<p>Normal</p>
+<p>Normal : Typical C++ System that inits and updates on its own.</p>
 
-<p>Taskflow</p>
+<p>Taskflow : Taskflow which contains a set of TaskflowTask Systems.</p>
 
-<p>TaskflowTask</p>
+<p>TaskflowTask : Systems that are initted and updated by a Taskflow.</p>
 
-<p>Internal</p>
+<p>Internal : System with extra capabilities, reserved for internal use.</p>
 
-<p>Python</p>
+<p>Python : System that represents a Python program that joins the sim.</p>
 </div>
 
 
@@ -2047,6 +2414,75 @@ sys_argv - insert python sys.argv here.</p>
 
                             </div>
                 </section>
+                <section id="TaskflowType">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">TaskflowType</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#TaskflowType"></a>
+    
+            <div class="docstring"><p>Members:</p>
+
+<p>DependencyGraph</p>
+</div>
+
+
+                            <div id="TaskflowType.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">TaskflowType</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TaskflowType.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#TaskflowType">spaceteams.SC_Compute_Server.TaskflowType</a>, value: int) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="TaskflowType.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TaskflowType.name"></a>
+    
+            <div class="docstring"><p>name(self: object) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="TaskflowType.value" class="classattr">
+                                <div class="attr variable">
+            <span class="name">value</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TaskflowType.value"></a>
+    
+            <div class="docstring"><p>(arg0: <a href="#TaskflowType">spaceteams.SC_Compute_Server.TaskflowType</a>) -> int</p>
+</div>
+
+
+                            </div>
+                            <div id="TaskflowType.DependencyGraph" class="classattr">
+                                <div class="attr variable">
+            <span class="name">DependencyGraph</span>        =
+<span class="default_value">&lt;<a href="#TaskflowType.DependencyGraph">TaskflowType.DependencyGraph</a>: 0&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TaskflowType.DependencyGraph"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="UpdateTimeDomain">
                     <div class="attr class">
             
@@ -2144,6 +2580,103 @@ sys_argv - insert python sys.argv here.</p>
 
                             </div>
                 </section>
+                <section id="FieldEffectType">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">FieldEffectType</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectType"></a>
+    
+            <div class="docstring"><p>Members:</p>
+
+<p>Scalar : FieldEffect returns Scalar 64-bit float value.</p>
+
+<p>Vector : FieldEffect returns 3D vector 64-bit float value.</p>
+
+<p>Ephemeris : FieldEffect representing an Ephemeris System, which handles NAIF SPICE ephemeris queries.</p>
+</div>
+
+
+                            <div id="FieldEffectType.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">FieldEffectType</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectType.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#FieldEffectType">spaceteams.SC_Compute_Server.FieldEffectType</a>, value: int) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectType.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectType.name"></a>
+    
+            <div class="docstring"><p>name(self: object) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectType.value" class="classattr">
+                                <div class="attr variable">
+            <span class="name">value</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectType.value"></a>
+    
+            <div class="docstring"><p>(arg0: <a href="#FieldEffectType">spaceteams.SC_Compute_Server.FieldEffectType</a>) -> int</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectType.Scalar" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Scalar</span>        =
+<span class="default_value">&lt;<a href="#FieldEffectType.Scalar">FieldEffectType.Scalar</a>: 0&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectType.Scalar"></a>
+    
+    
+
+                            </div>
+                            <div id="FieldEffectType.Vector" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Vector</span>        =
+<span class="default_value">&lt;<a href="#FieldEffectType.Vector">FieldEffectType.Vector</a>: 1&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectType.Vector"></a>
+    
+    
+
+                            </div>
+                            <div id="FieldEffectType.Ephemeris" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Ephemeris</span>        =
+<span class="default_value">&lt;<a href="#FieldEffectType.Ephemeris">FieldEffectType.Ephemeris</a>: 3&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectType.Ephemeris"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="Notation">
                     <div class="attr class">
             
@@ -2156,11 +2689,16 @@ sys_argv - insert python sys.argv here.</p>
     
             <div class="docstring"><p>Members:</p>
 
-<p>Default</p>
+<p>Default : The value is represented with many meaningful digits as needed up to the given precision.
+              Switches to scientific notation if the decimal place is not within the meaningful digits.
+              Corresponds with std::defaultfloat <a href="https://cplusplus.com/reference/ios/defaultfloat/">https://cplusplus.com/reference/ios/defaultfloat/</a>.</p>
 
-<p>DigitsAfterDecimal</p>
+<p>DigitsAfterDecimal : The value is represented with exactly as many digits in the decimal part as the given precision specifies.
+              Corresponds with std::fixed <a href="https://cplusplus.com/reference/ios/fixed/">https://cplusplus.com/reference/ios/fixed/</a>.</p>
 
-<p>Scientific</p>
+<p>Scientific : The value is represented with one digit before the decimal point, followed by the decimal point 
+              and as many decimal digits as the given precision.
+              Corresponds with std::scientific <a href="https://cplusplus.com/reference/ios/scientific/">https://cplusplus.com/reference/ios/scientific/</a>.</p>
 </div>
 
 
@@ -2723,8 +3261,27 @@ Overloaded function.</p>
     
             <div class="docstring"><p>ForEachParam(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, operations: Callable[[str, <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>], None]) -> None</p>
 
-<p>For each of the parameters in this PramMap, supply the key and type and do <operations> Doesn’t allow access to pointer because it’s non-const
-                        The operation passed in their are std::function, which is usually made as a lambda function</p>
+<p>For each of the parameters in this ParamMap, supply the key and type and do "operations".
+                        Doesn’t allow access to pointer because it's non-const.
+                        The operations passed in here are a std::function, which is usually made as a lambda function.</p>
+</div>
+
+
+                            </div>
+                            <div id="ParamMap.ForEachParamMap" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">ForEachParamMap</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ParamMap.ForEachParamMap"></a>
+    
+            <div class="docstring"><p>ForEachParamMap(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, operations: Callable[[str, <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>], None]) -> None</p>
+
+<p>For each of the parameters in this ParamMap, supply the key, ParamMap pointer, and type and do "operations".
+                        The operations passed in here are a std::function, which is usually made as a lambda function.</p>
 </div>
 
 
@@ -2790,6 +3347,19 @@ Overloaded function.</p>
 
 
                             </div>
+                            <div id="EntityConfig.system_nametags" class="classattr">
+                                <div class="attr variable">
+            <span class="name">system_nametags</span>
+
+        
+    </div>
+    <a class="headerlink" href="#EntityConfig.system_nametags"></a>
+    
+            <div class="docstring"><p>(self: <a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a>) -> list[str]</p>
+</div>
+
+
+                            </div>
                             <div id="EntityConfig.getName" class="classattr">
                                 <div class="attr function">
             
@@ -2829,6 +3399,7 @@ Overloaded function.</p>
                 <dd id="EntityConfig.AddOrSetParam" class="function"><a href="#ParamMap.AddOrSetParam">AddOrSetParam</a></dd>
                 <dd id="EntityConfig.AddCopiesOfAllParamsFrom" class="function"><a href="#ParamMap.AddCopiesOfAllParamsFrom">AddCopiesOfAllParamsFrom</a></dd>
                 <dd id="EntityConfig.ForEachParam" class="function"><a href="#ParamMap.ForEachParam">ForEachParam</a></dd>
+                <dd id="EntityConfig.ForEachParamMap" class="function"><a href="#ParamMap.ForEachParamMap">ForEachParamMap</a></dd>
                 <dd id="EntityConfig.DeleteParam" class="function"><a href="#ParamMap.DeleteParam">DeleteParam</a></dd>
                 <dd id="EntityConfig.GetParamAsString" class="function"><a href="#ParamMap.GetParamAsString">GetParamAsString</a></dd>
 
@@ -2858,6 +3429,19 @@ Overloaded function.</p>
     <a class="headerlink" href="#SystemConfig.__init__"></a>
     
             <div class="docstring"><p>__init__(self: <a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a>) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="SystemConfig.nametag" class="classattr">
+                                <div class="attr variable">
+            <span class="name">nametag</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SystemConfig.nametag"></a>
+    
+            <div class="docstring"><p>(self: <a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a>) -> str</p>
 </div>
 
 
@@ -2940,74 +3524,6 @@ Overloaded function.</p>
 
 
                             </div>
-                            <div id="SystemConfig.getNameTag" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getNameTag</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SystemConfig.getNameTag"></a>
-    
-            <div class="docstring"><p>getNameTag(self: <a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a>) -> str</p>
-
-<p>Get the name tag of this SystemConfig</p>
-</div>
-
-
-                            </div>
-                            <div id="SystemConfig.getFrequency" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getFrequency</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SystemConfig.getFrequency"></a>
-    
-            <div class="docstring"><p>getFrequency(self: <a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a>) -> float</p>
-
-<p>Get the frequency of this SystemConfig</p>
-</div>
-
-
-                            </div>
-                            <div id="SystemConfig.setFrequency" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">setFrequency</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SystemConfig.setFrequency"></a>
-    
-            <div class="docstring"><p>setFrequency(self: <a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a>, frequency: float) -> None</p>
-
-<p>Set the frequency of this SystemConfig</p>
-</div>
-
-
-                            </div>
-                            <div id="SystemConfig.getSource" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getSource</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SystemConfig.getSource"></a>
-    
-            <div class="docstring"><p>getSource(self: <a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a>) -> str</p>
-
-<p>Get the source of this SystemConfig</p>
-</div>
-
-
-                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
@@ -3030,8 +3546,143 @@ Overloaded function.</p>
                 <dd id="SystemConfig.AddOrSetParam" class="function"><a href="#ParamMap.AddOrSetParam">AddOrSetParam</a></dd>
                 <dd id="SystemConfig.AddCopiesOfAllParamsFrom" class="function"><a href="#ParamMap.AddCopiesOfAllParamsFrom">AddCopiesOfAllParamsFrom</a></dd>
                 <dd id="SystemConfig.ForEachParam" class="function"><a href="#ParamMap.ForEachParam">ForEachParam</a></dd>
+                <dd id="SystemConfig.ForEachParamMap" class="function"><a href="#ParamMap.ForEachParamMap">ForEachParamMap</a></dd>
                 <dd id="SystemConfig.DeleteParam" class="function"><a href="#ParamMap.DeleteParam">DeleteParam</a></dd>
                 <dd id="SystemConfig.GetParamAsString" class="function"><a href="#ParamMap.GetParamAsString">GetParamAsString</a></dd>
+
+            </div>
+                                </dl>
+                            </div>
+                </section>
+                <section id="FieldEffectConfig">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">FieldEffectConfig</span><wbr>(<span class="base"><a href="#ParamMap">ParamMap</a></span>):
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig"></a>
+    
+    
+
+                            <div id="FieldEffectConfig.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">FieldEffectConfig</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectConfig.active" class="classattr">
+                                <div class="attr variable">
+            <span class="name">active</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.active"></a>
+    
+            <div class="docstring"><p>(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> bool</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectConfig.singleton" class="classattr">
+                                <div class="attr variable">
+            <span class="name">singleton</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.singleton"></a>
+    
+            <div class="docstring"><p>(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> bool</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectConfig.source" class="classattr">
+                                <div class="attr variable">
+            <span class="name">source</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.source"></a>
+    
+            <div class="docstring"><p>(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectConfig.nametag" class="classattr">
+                                <div class="attr variable">
+            <span class="name">nametag</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.nametag"></a>
+    
+            <div class="docstring"><p>(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectConfig.fieldName" class="classattr">
+                                <div class="attr variable">
+            <span class="name">fieldName</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.fieldName"></a>
+    
+            <div class="docstring"><p>(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectConfig.type" class="classattr">
+                                <div class="attr variable">
+            <span class="name">type</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.type"></a>
+    
+            <div class="docstring"><p>(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> <a href="#FieldEffectType">spaceteams.SC_Compute_Server.FieldEffectType</a></p>
+</div>
+
+
+                            </div>
+                            <div class="inherited">
+                                <h5>Inherited Members</h5>
+                                <dl>
+                                    <div><dt><a href="#ParamMap">ParamMap</a></dt>
+                                <dd id="FieldEffectConfig.unique_id" class="function"><a href="#ParamMap.unique_id">unique_id</a></dd>
+                <dd id="FieldEffectConfig.HasParam" class="function"><a href="#ParamMap.HasParam">HasParam</a></dd>
+                <dd id="FieldEffectConfig.ToString" class="function"><a href="#ParamMap.ToString">ToString</a></dd>
+                <dd id="FieldEffectConfig.ToStringMultiline" class="function"><a href="#ParamMap.ToStringMultiline">ToStringMultiline</a></dd>
+                <dd id="FieldEffectConfig.HasParamArray" class="function"><a href="#ParamMap.HasParamArray">HasParamArray</a></dd>
+                <dd id="FieldEffectConfig.GetParamType" class="function"><a href="#ParamMap.GetParamType">GetParamType</a></dd>
+                <dd id="FieldEffectConfig.GetParamArrayType" class="function"><a href="#ParamMap.GetParamArrayType">GetParamArrayType</a></dd>
+                <dd id="FieldEffectConfig.GetParamTime" class="function"><a href="#ParamMap.GetParamTime">GetParamTime</a></dd>
+                <dd id="FieldEffectConfig.GetParamMap" class="function"><a href="#ParamMap.GetParamMap">GetParamMap</a></dd>
+                <dd id="FieldEffectConfig.GetParam" class="function"><a href="#ParamMap.GetParam">GetParam</a></dd>
+                <dd id="FieldEffectConfig.SetParam" class="function"><a href="#ParamMap.SetParam">SetParam</a></dd>
+                <dd id="FieldEffectConfig.AddParam" class="function"><a href="#ParamMap.AddParam">AddParam</a></dd>
+                <dd id="FieldEffectConfig.SetParamArray" class="function"><a href="#ParamMap.SetParamArray">SetParamArray</a></dd>
+                <dd id="FieldEffectConfig.AddParamArray" class="function"><a href="#ParamMap.AddParamArray">AddParamArray</a></dd>
+                <dd id="FieldEffectConfig.GetParamArray" class="function"><a href="#ParamMap.GetParamArray">GetParamArray</a></dd>
+                <dd id="FieldEffectConfig.AddOrSetParam" class="function"><a href="#ParamMap.AddOrSetParam">AddOrSetParam</a></dd>
+                <dd id="FieldEffectConfig.AddCopiesOfAllParamsFrom" class="function"><a href="#ParamMap.AddCopiesOfAllParamsFrom">AddCopiesOfAllParamsFrom</a></dd>
+                <dd id="FieldEffectConfig.ForEachParam" class="function"><a href="#ParamMap.ForEachParam">ForEachParam</a></dd>
+                <dd id="FieldEffectConfig.ForEachParamMap" class="function"><a href="#ParamMap.ForEachParamMap">ForEachParamMap</a></dd>
+                <dd id="FieldEffectConfig.DeleteParam" class="function"><a href="#ParamMap.DeleteParam">DeleteParam</a></dd>
+                <dd id="FieldEffectConfig.GetParamAsString" class="function"><a href="#ParamMap.GetParamAsString">GetParamAsString</a></dd>
 
             </div>
                                 </dl>
@@ -3063,6 +3714,19 @@ Overloaded function.</p>
 
 
                             </div>
+                            <div id="TaskflowConfig.nametag" class="classattr">
+                                <div class="attr variable">
+            <span class="name">nametag</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TaskflowConfig.nametag"></a>
+    
+            <div class="docstring"><p>(self: <a href="#TaskflowConfig">spaceteams.SC_Compute_Server.TaskflowConfig</a>) -> str</p>
+</div>
+
+
+                            </div>
                             <div id="TaskflowConfig.active" class="classattr">
                                 <div class="attr variable">
             <span class="name">active</span>
@@ -3072,6 +3736,19 @@ Overloaded function.</p>
     <a class="headerlink" href="#TaskflowConfig.active"></a>
     
             <div class="docstring"><p>(self: <a href="#TaskflowConfig">spaceteams.SC_Compute_Server.TaskflowConfig</a>) -> bool</p>
+</div>
+
+
+                            </div>
+                            <div id="TaskflowConfig.type" class="classattr">
+                                <div class="attr variable">
+            <span class="name">type</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TaskflowConfig.type"></a>
+    
+            <div class="docstring"><p>(self: <a href="#TaskflowConfig">spaceteams.SC_Compute_Server.TaskflowConfig</a>) -> <a href="#TaskflowType">spaceteams.SC_Compute_Server.TaskflowType</a></p>
 </div>
 
 
@@ -3111,74 +3788,6 @@ Overloaded function.</p>
     <a class="headerlink" href="#TaskflowConfig.systems"></a>
     
             <div class="docstring"><p>(self: <a href="#TaskflowConfig">spaceteams.SC_Compute_Server.TaskflowConfig</a>) -> list[str]</p>
-</div>
-
-
-                            </div>
-                            <div id="TaskflowConfig.getNameTag" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getNameTag</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#TaskflowConfig.getNameTag"></a>
-    
-            <div class="docstring"><p>getNameTag(self: <a href="#TaskflowConfig">spaceteams.SC_Compute_Server.TaskflowConfig</a>) -> str</p>
-
-<p>Get the name tag of this TaskflowConfig</p>
-</div>
-
-
-                            </div>
-                            <div id="TaskflowConfig.getFrequency" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getFrequency</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#TaskflowConfig.getFrequency"></a>
-    
-            <div class="docstring"><p>getFrequency(self: <a href="#TaskflowConfig">spaceteams.SC_Compute_Server.TaskflowConfig</a>) -> float</p>
-
-<p>Get the frequency of this TaskflowConfig</p>
-</div>
-
-
-                            </div>
-                            <div id="TaskflowConfig.setFrequency" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">setFrequency</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#TaskflowConfig.setFrequency"></a>
-    
-            <div class="docstring"><p>setFrequency(self: <a href="#TaskflowConfig">spaceteams.SC_Compute_Server.TaskflowConfig</a>, frequency: float) -> None</p>
-
-<p>Set the frequency of this TaskflowConfig</p>
-</div>
-
-
-                            </div>
-                            <div id="TaskflowConfig.getSystems" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getSystems</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#TaskflowConfig.getSystems"></a>
-    
-            <div class="docstring"><p>getSystems(self: <a href="#TaskflowConfig">spaceteams.SC_Compute_Server.TaskflowConfig</a>) -> list[str]</p>
-
-<p>Get the system  of this TaskflowConfig</p>
 </div>
 
 
@@ -3256,104 +3865,24 @@ Overloaded function.</p>
     
             <div class="docstring"><p>GetSimEntity(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> <a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a></p>
 
-<p>Identify the name of the EntityConfig</p>
+<p>Get the EntityConfig for the (singleton) SimEntity.</p>
 </div>
 
 
                             </div>
-                            <div id="SimConfig.GetSimStartTime" class="classattr">
+                            <div id="SimConfig.SetSimEntity" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">GetSimStartTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">SetSimEntity</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SimConfig.GetSimStartTime"></a>
+    <a class="headerlink" href="#SimConfig.SetSimEntity"></a>
     
-            <div class="docstring"><p>GetSimStartTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a></p>
+            <div class="docstring"><p>SetSimEntity(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, new_sim_entity: <a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a>) -> None</p>
 
-<p>Get the time of the sim clock will read at the beginning of the sim. 
-                        This value will not be applicable if UsCurrentTime = true</p>
-</div>
-
-
-                            </div>
-                            <div id="SimConfig.SetSimStartTime" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SetSimStartTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.SetSimStartTime"></a>
-    
-            <div class="docstring"><p>SetSimStartTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, simtime: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="SimConfig.HasSimEndTime" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">HasSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.HasSimEndTime"></a>
-    
-            <div class="docstring"><p>HasSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> bool</p>
-
-<p>Return the boolean of if this sim has an end time</p>
-</div>
-
-
-                            </div>
-                            <div id="SimConfig.GetSimEndTime" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.GetSimEndTime"></a>
-    
-            <div class="docstring"><p>GetSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a></p>
-</div>
-
-
-                            </div>
-                            <div id="SimConfig.SetSimEndTime" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SetSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.SetSimEndTime"></a>
-    
-            <div class="docstring"><p>SetSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, simtime: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="SimConfig.RemoveSimEndTime" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">RemoveSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.RemoveSimEndTime"></a>
-    
-            <div class="docstring"><p>RemoveSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> None</p>
-
-<p>Removes the timestamped-based sim end condition</p>
+<p>Set the EntityConfig for the (singleton) SimEntity.</p>
 </div>
 
 
@@ -3369,21 +3898,8 @@ Overloaded function.</p>
     <a class="headerlink" href="#SimConfig.GetEntities"></a>
     
             <div class="docstring"><p>GetEntities(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> list[<a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a>]</p>
-</div>
 
-
-                            </div>
-                            <div id="SimConfig.GetEntityTemplates" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetEntityTemplates</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.GetEntityTemplates"></a>
-    
-            <div class="docstring"><p>GetEntityTemplates(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> list[<a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a>]</p>
+<p>Get the EntityConfigs for all entities on this sim config, besides the SimEntity</p>
 </div>
 
 
@@ -3416,21 +3932,42 @@ Overloaded function.</p>
     <a class="headerlink" href="#SimConfig.RemoveSystem"></a>
     
             <div class="docstring"><p>RemoveSystem(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, config: <a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a>) -> None</p>
+
+<p>Removes this referenced SystemConfig from the sim config</p>
 </div>
 
 
                             </div>
-                            <div id="SimConfig.GetSystems" class="classattr">
+                            <div id="SimConfig.AddFieldEffect" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">GetSystems</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">AddFieldEffect</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SimConfig.GetSystems"></a>
+    <a class="headerlink" href="#SimConfig.AddFieldEffect"></a>
     
-            <div class="docstring"><p>GetSystems(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> list[<a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a>]</p>
+            <div class="docstring"><p>AddFieldEffect(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, config: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> None</p>
+
+<p>Adds a (assumed-properly-initialized) FieldEffectConfig to the sim config</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.RemoveFieldEffect" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">RemoveFieldEffect</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.RemoveFieldEffect"></a>
+    
+            <div class="docstring"><p>RemoveFieldEffect(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, config: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> None</p>
+
+<p>Removes this referenced FieldEffectConfig from the sim config</p>
 </div>
 
 
@@ -3465,6 +4002,178 @@ Overloaded function.</p>
             <div class="docstring"><p>RemoveTaskflow(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, config: <a href="#TaskflowConfig">spaceteams.SC_Compute_Server.TaskflowConfig</a>) -> None</p>
 
 <p>Removes this referenced Taskflow instance from the sim config.</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.GetSystems" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetSystems</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.GetSystems"></a>
+    
+            <div class="docstring"><p>GetSystems(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> list[<a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a>]</p>
+
+<p>Get the SystemConfigs for all systems on this sim config</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.GetTaskflows" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetTaskflows</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.GetTaskflows"></a>
+    
+            <div class="docstring"><p>GetTaskflows(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> list[<a href="#TaskflowConfig">spaceteams.SC_Compute_Server.TaskflowConfig</a>]</p>
+
+<p>Get the TaskflowConfigs for all taskflows on this sim config</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.GetFieldEffects" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetFieldEffects</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.GetFieldEffects"></a>
+    
+            <div class="docstring"><p>GetFieldEffects(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> list[<a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>]</p>
+
+<p>Get the FieldEffectConfigs for all FieldEffects on this sim config</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.UsesCurrentTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">UsesCurrentTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.UsesCurrentTime"></a>
+    
+            <div class="docstring"><p>UsesCurrentTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> bool</p>
+
+<p>True if the sim sets the time to real-world time when starting the sim.</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.GetSimStartTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetSimStartTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.GetSimStartTime"></a>
+    
+            <div class="docstring"><p>GetSimStartTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a></p>
+
+<p>Get the time of the sim clock will read at the beginning of the sim. 
+                        This value will not be applicable if UsCurrentTime = true</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.SetSimStartTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">SetSimStartTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.SetSimStartTime"></a>
+    
+            <div class="docstring"><p>SetSimStartTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, start_simtime: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> None</p>
+
+<p>Set the time the sim clock will read when beginning the sim. This value
+                        is not applicable if UseCurrentTime = True.</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.HasSimEndTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">HasSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.HasSimEndTime"></a>
+    
+            <div class="docstring"><p>HasSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> bool</p>
+
+<p>True if the sim has an end time (EndDateTAI)</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.GetSimEndTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.GetSimEndTime"></a>
+    
+            <div class="docstring"><p>GetSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a></p>
+
+<p>Get the time the sim will automatically end.</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.SetSimEndTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">SetSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.SetSimEndTime"></a>
+    
+            <div class="docstring"><p>SetSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, end_simtime: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> None</p>
+
+<p>Set the time the sim will automatically end.</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.RemoveSimEndTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">RemoveSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.RemoveSimEndTime"></a>
+    
+            <div class="docstring"><p>RemoveSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> None</p>
+
+<p>Removes the timestamped-based sim end condition</p>
 </div>
 
 
@@ -3539,7 +4248,7 @@ Overloaded function.</p>
                             <div id="AssetType.UNDEFINED" class="classattr">
                                 <div class="attr variable">
             <span class="name">UNDEFINED</span>        =
-<span class="default_value">&lt;<a href="#AssetType.UNDEFINED">AssetType.UNDEFINED</a>: 0&gt;</span>
+<span class="default_value">&lt;<a href="#AssetType.UNDEFINED">AssetType.UNDEFINED</a>: 255&gt;</span>
 
         
     </div>
@@ -3551,7 +4260,7 @@ Overloaded function.</p>
                             <div id="AssetType.Generic" class="classattr">
                                 <div class="attr variable">
             <span class="name">Generic</span>        =
-<span class="default_value">&lt;<a href="#AssetType.Generic">AssetType.Generic</a>: 1&gt;</span>
+<span class="default_value">&lt;<a href="#AssetType.Generic">AssetType.Generic</a>: 0&gt;</span>
 
         
     </div>
@@ -3563,7 +4272,7 @@ Overloaded function.</p>
                             <div id="AssetType.ParamMap" class="classattr">
                                 <div class="attr variable">
             <span class="name">ParamMap</span>        =
-<span class="default_value">&lt;<a href="#AssetType.ParamMap">AssetType.ParamMap</a>: 2&gt;</span>
+<span class="default_value">&lt;<a href="#AssetType.ParamMap">AssetType.ParamMap</a>: 1&gt;</span>
 
         
     </div>
@@ -3575,7 +4284,7 @@ Overloaded function.</p>
                             <div id="AssetType.SimConfig" class="classattr">
                                 <div class="attr variable">
             <span class="name">SimConfig</span>        =
-<span class="default_value">&lt;<a href="#AssetType.SimConfig">AssetType.SimConfig</a>: 3&gt;</span>
+<span class="default_value">&lt;<a href="#AssetType.SimConfig">AssetType.SimConfig</a>: 2&gt;</span>
 
         
     </div>
@@ -3587,7 +4296,7 @@ Overloaded function.</p>
                             <div id="AssetType.EntityConfig" class="classattr">
                                 <div class="attr variable">
             <span class="name">EntityConfig</span>        =
-<span class="default_value">&lt;<a href="#AssetType.EntityConfig">AssetType.EntityConfig</a>: 4&gt;</span>
+<span class="default_value">&lt;<a href="#AssetType.EntityConfig">AssetType.EntityConfig</a>: 3&gt;</span>
 
         
     </div>
@@ -3599,7 +4308,7 @@ Overloaded function.</p>
                             <div id="AssetType.SystemSource" class="classattr">
                                 <div class="attr variable">
             <span class="name">SystemSource</span>        =
-<span class="default_value">&lt;<a href="#AssetType.SystemSource">AssetType.SystemSource</a>: 5&gt;</span>
+<span class="default_value">&lt;<a href="#AssetType.SystemSource">AssetType.SystemSource</a>: 4&gt;</span>
 
         
     </div>
@@ -3703,6 +4412,464 @@ Overloaded function.</p>
     <a class="headerlink" href="#AssetFileCategory.Core"></a>
     
     
+
+                            </div>
+                </section>
+                <section id="PhysEffectType">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">PhysEffectType</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType"></a>
+    
+            <div class="docstring"><p>Members:</p>
+
+<p>UNDEFINED : </p>
+
+<p>Force : </p>
+
+<p>Torque : </p>
+
+<p>Impulse : </p>
+
+<p>AngImpulse : </p>
+
+<p>Acceleration : </p>
+
+<p>AngAcceleration : </p>
+
+<p>DeltaLocation : </p>
+
+<p>DeltaVelocity : </p>
+
+<p>DeltaRotation : </p>
+
+<p>DeltaAngVelocity : </p>
+
+<p>LocationOverride : </p>
+
+<p>VelocityOverride : </p>
+
+<p>AccelerationOverride : </p>
+
+<p>RotationOverride : </p>
+
+<p>AngVelocityOverride : </p>
+
+<p>AngAccelerationOverride :</p>
+</div>
+
+
+                            <div id="PhysEffectType.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">PhysEffectType</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#PhysEffectType">spaceteams.SC_Compute_Server.PhysEffectType</a>, value: int) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffectType.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.name"></a>
+    
+            <div class="docstring"><p>name(self: object) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffectType.value" class="classattr">
+                                <div class="attr variable">
+            <span class="name">value</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.value"></a>
+    
+            <div class="docstring"><p>(arg0: <a href="#PhysEffectType">spaceteams.SC_Compute_Server.PhysEffectType</a>) -> int</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffectType.UNDEFINED" class="classattr">
+                                <div class="attr variable">
+            <span class="name">UNDEFINED</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.UNDEFINED">PhysEffectType.UNDEFINED</a>: 0&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.UNDEFINED"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.Force" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Force</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.Force">PhysEffectType.Force</a>: 1&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.Force"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.Torque" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Torque</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.Torque">PhysEffectType.Torque</a>: 2&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.Torque"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.Impulse" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Impulse</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.Impulse">PhysEffectType.Impulse</a>: 3&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.Impulse"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.AngImpulse" class="classattr">
+                                <div class="attr variable">
+            <span class="name">AngImpulse</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.AngImpulse">PhysEffectType.AngImpulse</a>: 4&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.AngImpulse"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.Acceleration" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Acceleration</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.Acceleration">PhysEffectType.Acceleration</a>: 5&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.Acceleration"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.AngAcceleration" class="classattr">
+                                <div class="attr variable">
+            <span class="name">AngAcceleration</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.AngAcceleration">PhysEffectType.AngAcceleration</a>: 6&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.AngAcceleration"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.DeltaLocation" class="classattr">
+                                <div class="attr variable">
+            <span class="name">DeltaLocation</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.DeltaLocation">PhysEffectType.DeltaLocation</a>: 7&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.DeltaLocation"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.DeltaVelocity" class="classattr">
+                                <div class="attr variable">
+            <span class="name">DeltaVelocity</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.DeltaVelocity">PhysEffectType.DeltaVelocity</a>: 8&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.DeltaVelocity"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.DeltaRotation" class="classattr">
+                                <div class="attr variable">
+            <span class="name">DeltaRotation</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.DeltaRotation">PhysEffectType.DeltaRotation</a>: 9&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.DeltaRotation"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.DeltaAngVelocity" class="classattr">
+                                <div class="attr variable">
+            <span class="name">DeltaAngVelocity</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.DeltaAngVelocity">PhysEffectType.DeltaAngVelocity</a>: 10&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.DeltaAngVelocity"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.LocationOverride" class="classattr">
+                                <div class="attr variable">
+            <span class="name">LocationOverride</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.LocationOverride">PhysEffectType.LocationOverride</a>: 11&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.LocationOverride"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.VelocityOverride" class="classattr">
+                                <div class="attr variable">
+            <span class="name">VelocityOverride</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.VelocityOverride">PhysEffectType.VelocityOverride</a>: 12&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.VelocityOverride"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.AccelerationOverride" class="classattr">
+                                <div class="attr variable">
+            <span class="name">AccelerationOverride</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.AccelerationOverride">PhysEffectType.AccelerationOverride</a>: 13&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.AccelerationOverride"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.RotationOverride" class="classattr">
+                                <div class="attr variable">
+            <span class="name">RotationOverride</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.RotationOverride">PhysEffectType.RotationOverride</a>: 14&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.RotationOverride"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.AngVelocityOverride" class="classattr">
+                                <div class="attr variable">
+            <span class="name">AngVelocityOverride</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.AngVelocityOverride">PhysEffectType.AngVelocityOverride</a>: 15&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.AngVelocityOverride"></a>
+    
+    
+
+                            </div>
+                            <div id="PhysEffectType.AngAccelerationOverride" class="classattr">
+                                <div class="attr variable">
+            <span class="name">AngAccelerationOverride</span>        =
+<span class="default_value">&lt;<a href="#PhysEffectType.AngAccelerationOverride">PhysEffectType.AngAccelerationOverride</a>: 16&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffectType.AngAccelerationOverride"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="PhysEffect">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">PhysEffect</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect"></a>
+    
+    
+
+                            <div id="PhysEffect.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">PhysEffect</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.__init__"></a>
+    
+            <div class="docstring"><p>__init__(<em>args, *</em>kwargs)
+Overloaded function.</p>
+
+<ol>
+<li><p>__init__(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> None</p></li>
+<li><p>__init__(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, arg0: <a href="#PhysEffectType">spaceteams.SC_Compute_Server.PhysEffectType</a>, arg1: spaceteams.SC_Compute_Server.frames.Frame) -> None</p></li>
+</ol>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.effectType" class="classattr">
+                                <div class="attr variable">
+            <span class="name">effectType</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.effectType"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> <a href="#PhysEffectType">spaceteams.SC_Compute_Server.PhysEffectType</a></p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.frame" class="classattr">
+                                <div class="attr variable">
+            <span class="name">frame</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.frame"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> spaceteams.SC_Compute_Server.frames.Frame</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.direction" class="classattr">
+                                <div class="attr variable">
+            <span class="name">direction</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.direction"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.magnitude" class="classattr">
+                                <div class="attr variable">
+            <span class="name">magnitude</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.magnitude"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> float</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.applicationLoc" class="classattr">
+                                <div class="attr variable">
+            <span class="name">applicationLoc</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.applicationLoc"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.useStartTime" class="classattr">
+                                <div class="attr variable">
+            <span class="name">useStartTime</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.useStartTime"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> bool</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.startTime" class="classattr">
+                                <div class="attr variable">
+            <span class="name">startTime</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.startTime"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> datetime.timedelta</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.useEndTime" class="classattr">
+                                <div class="attr variable">
+            <span class="name">useEndTime</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.useEndTime"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> bool</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.endTime" class="classattr">
+                                <div class="attr variable">
+            <span class="name">endTime</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.endTime"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> datetime.timedelta</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.setVector" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">setVector</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.setVector"></a>
+    
+            <div class="docstring"><p>setVector(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, arg0: numpy.ndarray[numpy.float64[3, 1]]) -> None</p>
+</div>
+
 
                             </div>
                 </section>
@@ -4465,6 +5632,81 @@ Overloaded function.</p>
 
 
                             </div>
+                            <div id="Entity.GetPropagator" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetPropagator</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Entity.GetPropagator"></a>
+    
+            <div class="docstring"><p>GetPropagator(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#PropagatorChoice">spaceteams.SC_Compute_Server.PropagatorChoice</a></p>
+</div>
+
+
+                            </div>
+                            <div id="Entity.SetPropagator" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">SetPropagator</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Entity.SetPropagator"></a>
+    
+            <div class="docstring"><p>SetPropagator(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: <a href="#PropagatorChoice">spaceteams.SC_Compute_Server.PropagatorChoice</a>, arg1: bool) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="Entity.getPhysEffects" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">getPhysEffects</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Entity.getPhysEffects"></a>
+    
+            <div class="docstring"><p>getPhysEffects(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> dict</p>
+</div>
+
+
+                            </div>
+                            <div id="Entity.setPhysEffect" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">setPhysEffect</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Entity.setPhysEffect"></a>
+    
+            <div class="docstring"><p>setPhysEffect(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: str, arg1: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="Entity.removePhysEffect" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">removePhysEffect</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Entity.removePhysEffect"></a>
+    
+            <div class="docstring"><p>removePhysEffect(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: str) -> None</p>
+</div>
+
+
+                            </div>
                             <div class="inherited">
                                 <h5>Inherited Members</h5>
                                 <dl>
@@ -4487,6 +5729,7 @@ Overloaded function.</p>
                 <dd id="Entity.AddOrSetParam" class="function"><a href="#ParamMap.AddOrSetParam">AddOrSetParam</a></dd>
                 <dd id="Entity.AddCopiesOfAllParamsFrom" class="function"><a href="#ParamMap.AddCopiesOfAllParamsFrom">AddCopiesOfAllParamsFrom</a></dd>
                 <dd id="Entity.ForEachParam" class="function"><a href="#ParamMap.ForEachParam">ForEachParam</a></dd>
+                <dd id="Entity.ForEachParamMap" class="function"><a href="#ParamMap.ForEachParamMap">ForEachParamMap</a></dd>
                 <dd id="Entity.DeleteParam" class="function"><a href="#ParamMap.DeleteParam">DeleteParam</a></dd>
                 <dd id="Entity.GetParamAsString" class="function"><a href="#ParamMap.GetParamAsString">GetParamAsString</a></dd>
 
