@@ -519,6 +519,9 @@
                                 <a class="function" href="#EntityConfig.__init__">EntityConfig</a>
                         </li>
                         <li>
+                                <a class="variable" href="#EntityConfig.system_nametags">system_nametags</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#EntityConfig.getName">getName</a>
                         </li>
                 </ul>
@@ -550,6 +553,33 @@
                         </li>
                         <li>
                                 <a class="variable" href="#SystemConfig.freqType">freqType</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#FieldEffectConfig">FieldEffectConfig</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#FieldEffectConfig.__init__">FieldEffectConfig</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectConfig.active">active</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectConfig.singleton">singleton</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectConfig.source">source</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectConfig.nametag">nametag</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectConfig.fieldName">fieldName</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#FieldEffectConfig.type">type</a>
                         </li>
                 </ul>
 
@@ -597,6 +627,42 @@
                                 <a class="function" href="#SimConfig.GetSimEntity">GetSimEntity</a>
                         </li>
                         <li>
+                                <a class="function" href="#SimConfig.SetSimEntity">SetSimEntity</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.GetEntities">GetEntities</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.AddSystem">AddSystem</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.RemoveSystem">RemoveSystem</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.AddFieldEffect">AddFieldEffect</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.RemoveFieldEffect">RemoveFieldEffect</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.AddTaskflow">AddTaskflow</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.RemoveTaskflow">RemoveTaskflow</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.GetSystems">GetSystems</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.GetTaskflows">GetTaskflows</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.GetFieldEffects">GetFieldEffects</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#SimConfig.UsesCurrentTime">UsesCurrentTime</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#SimConfig.GetSimStartTime">GetSimStartTime</a>
                         </li>
                         <li>
@@ -613,27 +679,6 @@
                         </li>
                         <li>
                                 <a class="function" href="#SimConfig.RemoveSimEndTime">RemoveSimEndTime</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.GetEntities">GetEntities</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.GetEntityTemplates">GetEntityTemplates</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.AddSystem">AddSystem</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.RemoveSystem">RemoveSystem</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.GetSystems">GetSystems</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.AddTaskflow">AddTaskflow</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#SimConfig.RemoveTaskflow">RemoveTaskflow</a>
                         </li>
                 </ul>
 
@@ -3302,6 +3347,19 @@ Overloaded function.</p>
 
 
                             </div>
+                            <div id="EntityConfig.system_nametags" class="classattr">
+                                <div class="attr variable">
+            <span class="name">system_nametags</span>
+
+        
+    </div>
+    <a class="headerlink" href="#EntityConfig.system_nametags"></a>
+    
+            <div class="docstring"><p>(self: <a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a>) -> list[str]</p>
+</div>
+
+
+                            </div>
                             <div id="EntityConfig.getName" class="classattr">
                                 <div class="attr function">
             
@@ -3496,6 +3554,140 @@ Overloaded function.</p>
                                 </dl>
                             </div>
                 </section>
+                <section id="FieldEffectConfig">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">FieldEffectConfig</span><wbr>(<span class="base"><a href="#ParamMap">ParamMap</a></span>):
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig"></a>
+    
+    
+
+                            <div id="FieldEffectConfig.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">FieldEffectConfig</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectConfig.active" class="classattr">
+                                <div class="attr variable">
+            <span class="name">active</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.active"></a>
+    
+            <div class="docstring"><p>(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> bool</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectConfig.singleton" class="classattr">
+                                <div class="attr variable">
+            <span class="name">singleton</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.singleton"></a>
+    
+            <div class="docstring"><p>(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> bool</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectConfig.source" class="classattr">
+                                <div class="attr variable">
+            <span class="name">source</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.source"></a>
+    
+            <div class="docstring"><p>(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectConfig.nametag" class="classattr">
+                                <div class="attr variable">
+            <span class="name">nametag</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.nametag"></a>
+    
+            <div class="docstring"><p>(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectConfig.fieldName" class="classattr">
+                                <div class="attr variable">
+            <span class="name">fieldName</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.fieldName"></a>
+    
+            <div class="docstring"><p>(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="FieldEffectConfig.type" class="classattr">
+                                <div class="attr variable">
+            <span class="name">type</span>
+
+        
+    </div>
+    <a class="headerlink" href="#FieldEffectConfig.type"></a>
+    
+            <div class="docstring"><p>(self: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> <a href="#FieldEffectType">spaceteams.SC_Compute_Server.FieldEffectType</a></p>
+</div>
+
+
+                            </div>
+                            <div class="inherited">
+                                <h5>Inherited Members</h5>
+                                <dl>
+                                    <div><dt><a href="#ParamMap">ParamMap</a></dt>
+                                <dd id="FieldEffectConfig.unique_id" class="function"><a href="#ParamMap.unique_id">unique_id</a></dd>
+                <dd id="FieldEffectConfig.HasParam" class="function"><a href="#ParamMap.HasParam">HasParam</a></dd>
+                <dd id="FieldEffectConfig.ToString" class="function"><a href="#ParamMap.ToString">ToString</a></dd>
+                <dd id="FieldEffectConfig.ToStringMultiline" class="function"><a href="#ParamMap.ToStringMultiline">ToStringMultiline</a></dd>
+                <dd id="FieldEffectConfig.HasParamArray" class="function"><a href="#ParamMap.HasParamArray">HasParamArray</a></dd>
+                <dd id="FieldEffectConfig.GetParamType" class="function"><a href="#ParamMap.GetParamType">GetParamType</a></dd>
+                <dd id="FieldEffectConfig.GetParamArrayType" class="function"><a href="#ParamMap.GetParamArrayType">GetParamArrayType</a></dd>
+                <dd id="FieldEffectConfig.GetParamTime" class="function"><a href="#ParamMap.GetParamTime">GetParamTime</a></dd>
+                <dd id="FieldEffectConfig.GetParamMap" class="function"><a href="#ParamMap.GetParamMap">GetParamMap</a></dd>
+                <dd id="FieldEffectConfig.GetParam" class="function"><a href="#ParamMap.GetParam">GetParam</a></dd>
+                <dd id="FieldEffectConfig.SetParam" class="function"><a href="#ParamMap.SetParam">SetParam</a></dd>
+                <dd id="FieldEffectConfig.AddParam" class="function"><a href="#ParamMap.AddParam">AddParam</a></dd>
+                <dd id="FieldEffectConfig.SetParamArray" class="function"><a href="#ParamMap.SetParamArray">SetParamArray</a></dd>
+                <dd id="FieldEffectConfig.AddParamArray" class="function"><a href="#ParamMap.AddParamArray">AddParamArray</a></dd>
+                <dd id="FieldEffectConfig.GetParamArray" class="function"><a href="#ParamMap.GetParamArray">GetParamArray</a></dd>
+                <dd id="FieldEffectConfig.AddOrSetParam" class="function"><a href="#ParamMap.AddOrSetParam">AddOrSetParam</a></dd>
+                <dd id="FieldEffectConfig.AddCopiesOfAllParamsFrom" class="function"><a href="#ParamMap.AddCopiesOfAllParamsFrom">AddCopiesOfAllParamsFrom</a></dd>
+                <dd id="FieldEffectConfig.ForEachParam" class="function"><a href="#ParamMap.ForEachParam">ForEachParam</a></dd>
+                <dd id="FieldEffectConfig.ForEachParamMap" class="function"><a href="#ParamMap.ForEachParamMap">ForEachParamMap</a></dd>
+                <dd id="FieldEffectConfig.DeleteParam" class="function"><a href="#ParamMap.DeleteParam">DeleteParam</a></dd>
+                <dd id="FieldEffectConfig.GetParamAsString" class="function"><a href="#ParamMap.GetParamAsString">GetParamAsString</a></dd>
+
+            </div>
+                                </dl>
+                            </div>
+                </section>
                 <section id="TaskflowConfig">
                     <div class="attr class">
             
@@ -3673,104 +3865,24 @@ Overloaded function.</p>
     
             <div class="docstring"><p>GetSimEntity(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> <a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a></p>
 
-<p>Identify the name of the EntityConfig</p>
+<p>Get the EntityConfig for the (singleton) SimEntity.</p>
 </div>
 
 
                             </div>
-                            <div id="SimConfig.GetSimStartTime" class="classattr">
+                            <div id="SimConfig.SetSimEntity" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">GetSimStartTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">SetSimEntity</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SimConfig.GetSimStartTime"></a>
+    <a class="headerlink" href="#SimConfig.SetSimEntity"></a>
     
-            <div class="docstring"><p>GetSimStartTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a></p>
+            <div class="docstring"><p>SetSimEntity(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, new_sim_entity: <a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a>) -> None</p>
 
-<p>Get the time of the sim clock will read at the beginning of the sim. 
-                        This value will not be applicable if UsCurrentTime = true</p>
-</div>
-
-
-                            </div>
-                            <div id="SimConfig.SetSimStartTime" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SetSimStartTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.SetSimStartTime"></a>
-    
-            <div class="docstring"><p>SetSimStartTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, simtime: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="SimConfig.HasSimEndTime" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">HasSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.HasSimEndTime"></a>
-    
-            <div class="docstring"><p>HasSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> bool</p>
-
-<p>Return the boolean of if this sim has an end time</p>
-</div>
-
-
-                            </div>
-                            <div id="SimConfig.GetSimEndTime" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.GetSimEndTime"></a>
-    
-            <div class="docstring"><p>GetSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a></p>
-</div>
-
-
-                            </div>
-                            <div id="SimConfig.SetSimEndTime" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">SetSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.SetSimEndTime"></a>
-    
-            <div class="docstring"><p>SetSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, simtime: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="SimConfig.RemoveSimEndTime" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">RemoveSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.RemoveSimEndTime"></a>
-    
-            <div class="docstring"><p>RemoveSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> None</p>
-
-<p>Removes the timestamped-based sim end condition</p>
+<p>Set the EntityConfig for the (singleton) SimEntity.</p>
 </div>
 
 
@@ -3786,21 +3898,8 @@ Overloaded function.</p>
     <a class="headerlink" href="#SimConfig.GetEntities"></a>
     
             <div class="docstring"><p>GetEntities(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> list[<a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a>]</p>
-</div>
 
-
-                            </div>
-                            <div id="SimConfig.GetEntityTemplates" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetEntityTemplates</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimConfig.GetEntityTemplates"></a>
-    
-            <div class="docstring"><p>GetEntityTemplates(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> list[<a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a>]</p>
+<p>Get the EntityConfigs for all entities on this sim config, besides the SimEntity</p>
 </div>
 
 
@@ -3833,21 +3932,42 @@ Overloaded function.</p>
     <a class="headerlink" href="#SimConfig.RemoveSystem"></a>
     
             <div class="docstring"><p>RemoveSystem(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, config: <a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a>) -> None</p>
+
+<p>Removes this referenced SystemConfig from the sim config</p>
 </div>
 
 
                             </div>
-                            <div id="SimConfig.GetSystems" class="classattr">
+                            <div id="SimConfig.AddFieldEffect" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">GetSystems</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">AddFieldEffect</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SimConfig.GetSystems"></a>
+    <a class="headerlink" href="#SimConfig.AddFieldEffect"></a>
     
-            <div class="docstring"><p>GetSystems(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> list[<a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a>]</p>
+            <div class="docstring"><p>AddFieldEffect(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, config: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> None</p>
+
+<p>Adds a (assumed-properly-initialized) FieldEffectConfig to the sim config</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.RemoveFieldEffect" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">RemoveFieldEffect</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.RemoveFieldEffect"></a>
+    
+            <div class="docstring"><p>RemoveFieldEffect(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, config: <a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>) -> None</p>
+
+<p>Removes this referenced FieldEffectConfig from the sim config</p>
 </div>
 
 
@@ -3882,6 +4002,178 @@ Overloaded function.</p>
             <div class="docstring"><p>RemoveTaskflow(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, config: <a href="#TaskflowConfig">spaceteams.SC_Compute_Server.TaskflowConfig</a>) -> None</p>
 
 <p>Removes this referenced Taskflow instance from the sim config.</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.GetSystems" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetSystems</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.GetSystems"></a>
+    
+            <div class="docstring"><p>GetSystems(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> list[<a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a>]</p>
+
+<p>Get the SystemConfigs for all systems on this sim config</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.GetTaskflows" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetTaskflows</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.GetTaskflows"></a>
+    
+            <div class="docstring"><p>GetTaskflows(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> list[<a href="#TaskflowConfig">spaceteams.SC_Compute_Server.TaskflowConfig</a>]</p>
+
+<p>Get the TaskflowConfigs for all taskflows on this sim config</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.GetFieldEffects" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetFieldEffects</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.GetFieldEffects"></a>
+    
+            <div class="docstring"><p>GetFieldEffects(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> list[<a href="#FieldEffectConfig">spaceteams.SC_Compute_Server.FieldEffectConfig</a>]</p>
+
+<p>Get the FieldEffectConfigs for all FieldEffects on this sim config</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.UsesCurrentTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">UsesCurrentTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.UsesCurrentTime"></a>
+    
+            <div class="docstring"><p>UsesCurrentTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> bool</p>
+
+<p>True if the sim sets the time to real-world time when starting the sim.</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.GetSimStartTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetSimStartTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.GetSimStartTime"></a>
+    
+            <div class="docstring"><p>GetSimStartTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a></p>
+
+<p>Get the time of the sim clock will read at the beginning of the sim. 
+                        This value will not be applicable if UsCurrentTime = true</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.SetSimStartTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">SetSimStartTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.SetSimStartTime"></a>
+    
+            <div class="docstring"><p>SetSimStartTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, start_simtime: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> None</p>
+
+<p>Set the time the sim clock will read when beginning the sim. This value
+                        is not applicable if UseCurrentTime = True.</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.HasSimEndTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">HasSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.HasSimEndTime"></a>
+    
+            <div class="docstring"><p>HasSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> bool</p>
+
+<p>True if the sim has an end time (EndDateTAI)</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.GetSimEndTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.GetSimEndTime"></a>
+    
+            <div class="docstring"><p>GetSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a></p>
+
+<p>Get the time the sim will automatically end.</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.SetSimEndTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">SetSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.SetSimEndTime"></a>
+    
+            <div class="docstring"><p>SetSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, end_simtime: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> None</p>
+
+<p>Set the time the sim will automatically end.</p>
+</div>
+
+
+                            </div>
+                            <div id="SimConfig.RemoveSimEndTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">RemoveSimEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimConfig.RemoveSimEndTime"></a>
+    
+            <div class="docstring"><p>RemoveSimEndTime(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>) -> None</p>
+
+<p>Removes the timestamped-based sim end condition</p>
 </div>
 
 
