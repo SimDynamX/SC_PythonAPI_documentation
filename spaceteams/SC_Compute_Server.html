@@ -257,6 +257,9 @@
                         <li>
                                 <a class="variable" href="#PropagatorChoice.Custom">Custom</a>
                         </li>
+                        <li>
+                                <a class="variable" href="#PropagatorChoice.Static">Static</a>
+                        </li>
                 </ul>
 
             </li>
@@ -867,10 +870,10 @@
                                 <a class="function" href="#Entity.getRotation">getRotation</a>
                         </li>
                         <li>
-                                <a class="function" href="#Entity.getRV">getRV</a>
+                                <a class="function" href="#Entity.getLocVel">getLocVel</a>
                         </li>
                         <li>
-                                <a class="function" href="#Entity.getRVA">getRVA</a>
+                                <a class="function" href="#Entity.getLocVelAcc">getLocVelAcc</a>
                         </li>
                         <li>
                                 <a class="function" href="#Entity.getVelocity">getVelocity</a>
@@ -891,31 +894,13 @@
                                 <a class="function" href="#Entity.getInertia">getInertia</a>
                         </li>
                         <li>
-                                <a class="function" href="#Entity.getForce">getForce</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getTorque">getTorque</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getImpulses">getImpulses</a>
-                        </li>
-                        <li>
                                 <a class="function" href="#Entity.setLocation">setLocation</a>
                         </li>
                         <li>
                                 <a class="function" href="#Entity.setLocationD">setLocationD</a>
                         </li>
                         <li>
-                                <a class="function" href="#Entity.setVelocity">setVelocity</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setVelocityD">setVelocityD</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setAcceleration">setAcceleration</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setAccelerationD">setAccelerationD</a>
+                                <a class="function" href="#Entity.setLocVelAcc">setLocVelAcc</a>
                         </li>
                         <li>
                                 <a class="function" href="#Entity.setRotation">setRotation</a>
@@ -931,24 +916,6 @@
                         </li>
                         <li>
                                 <a class="function" href="#Entity.setAngVelocityD">setAngVelocityD</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setForce">setForce</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setTorque">setTorque</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.addImpulse">addImpulse</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.addLocationOffset">addLocationOffset</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.addVelocityOffset">addVelocityOffset</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.addAngVelocityOffset">addAngVelocityOffset</a>
                         </li>
                         <li>
                                 <a class="function" href="#Entity.getResidentFrame">getResidentFrame</a>
@@ -1125,7 +1092,7 @@ spaceteams<wbr>.SC_Compute_Server    </h1>
     </div>
     <a class="headerlink" href="#standalone_sim"></a>
     
-            <div class="docstring"><p>standalone_sim(path: os.PathLike) -> None</p>
+            <div class="docstring"><p>standalone_sim(path: os.PathLike | str | bytes) -> None</p>
 
 <p>Run a simulation that is self-contained within this Python process.
 path - Filepath of sim config.</p>
@@ -1143,7 +1110,7 @@ path - Filepath of sim config.</p>
     </div>
     <a class="headerlink" href="#connect_to_sim"></a>
     
-            <div class="docstring"><p>connect_to_sim(sys_argv: list[str]) -> None</p>
+            <div class="docstring"><p>connect_to_sim(sys_argv: collections.abc.Sequence[str]) -> None</p>
 
 <p>Connect to a running simulation as a ServerAsLocalClient.
 sys_argv - insert python sys.argv here.</p>
@@ -1223,7 +1190,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#SimState.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#SimState">spaceteams.SC_Compute_Server.SimState</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#SimState">spaceteams.SC_Compute_Server.SimState</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -1236,7 +1203,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#SimState.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -1416,7 +1383,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#VarType.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -1429,7 +1396,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#VarType.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -1885,7 +1852,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#PropagationType.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#PropagationType">spaceteams.SC_Compute_Server.PropagationType</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#PropagationType">spaceteams.SC_Compute_Server.PropagationType</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -1898,7 +1865,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#PropagationType.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -2048,6 +2015,8 @@ sys_argv - insert python sys.argv here.</p>
 <p>Unreal_Pawn</p>
 
 <p>Custom</p>
+
+<p>Static</p>
 </div>
 
 
@@ -2060,7 +2029,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#PropagatorChoice.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#PropagatorChoice">spaceteams.SC_Compute_Server.PropagatorChoice</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#PropagatorChoice">spaceteams.SC_Compute_Server.PropagatorChoice</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -2073,7 +2042,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#PropagatorChoice.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -2163,6 +2132,18 @@ sys_argv - insert python sys.argv here.</p>
     
 
                             </div>
+                            <div id="PropagatorChoice.Static" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Static</span>        =
+<span class="default_value">&lt;<a href="#PropagatorChoice.Static">PropagatorChoice.Static</a>: 6&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PropagatorChoice.Static"></a>
+    
+    
+
+                            </div>
                 </section>
                 <section id="Severity">
                     <div class="attr class">
@@ -2197,7 +2178,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#Severity.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -2210,7 +2191,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#Severity.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -2322,7 +2303,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#SystemType.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#SystemType">spaceteams.SC_Compute_Server.SystemType</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#SystemType">spaceteams.SC_Compute_Server.SystemType</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -2335,7 +2316,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#SystemType.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -2439,7 +2420,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#TaskflowType.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#TaskflowType">spaceteams.SC_Compute_Server.TaskflowType</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#TaskflowType">spaceteams.SC_Compute_Server.TaskflowType</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -2452,7 +2433,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#TaskflowType.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -2512,7 +2493,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#UpdateTimeDomain.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#UpdateTimeDomain">spaceteams.SC_Compute_Server.UpdateTimeDomain</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#UpdateTimeDomain">spaceteams.SC_Compute_Server.UpdateTimeDomain</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -2525,7 +2506,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#UpdateTimeDomain.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -2609,7 +2590,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#FieldEffectType.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#FieldEffectType">spaceteams.SC_Compute_Server.FieldEffectType</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#FieldEffectType">spaceteams.SC_Compute_Server.FieldEffectType</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -2622,7 +2603,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#FieldEffectType.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -2711,7 +2692,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#Notation.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#Notation">spaceteams.SC_Compute_Server.Notation</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#Notation">spaceteams.SC_Compute_Server.Notation</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -2724,7 +2705,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#Notation.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -2990,7 +2971,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#ParamMap.ToString"></a>
     
-            <div class="docstring"><p>ToString(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, notation: <a href="#Notation">spaceteams.SC_Compute_Server.Notation</a> = Select decimal notation, precision: int = Number of significant digits printed) -> str</p>
+            <div class="docstring"><p>ToString(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, notation: <a href="#Notation">spaceteams.SC_Compute_Server.Notation</a> = Select decimal notation, precision: typing.SupportsInt = Number of significant digits printed) -> str</p>
 
 <p>Returns a string of the keys/values of this ParamMap, with a certain notation and precision. Avoids newline characters.</p>
 </div>
@@ -3007,7 +2988,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#ParamMap.ToStringMultiline"></a>
     
-            <div class="docstring"><p>ToStringMultiline(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, notation: <a href="#Notation">spaceteams.SC_Compute_Server.Notation</a> = Select decimal notation, precision: int = Number of significant digits printed) -> str</p>
+            <div class="docstring"><p>ToStringMultiline(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, notation: <a href="#Notation">spaceteams.SC_Compute_Server.Notation</a> = Select decimal notation, precision: typing.SupportsInt = Number of significant digits printed) -> str</p>
 
 <p>Returns a string of the keys/values of this ParamMap, with a certain notation and precision. Avoids newline characters.</p>
 </div>
@@ -3259,7 +3240,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#ParamMap.ForEachParam"></a>
     
-            <div class="docstring"><p>ForEachParam(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, operations: Callable[[str, <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>], None]) -> None</p>
+            <div class="docstring"><p>ForEachParam(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, operations: collections.abc.Callable[[str, <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>], None]) -> None</p>
 
 <p>For each of the parameters in this ParamMap, supply the key and type and do "operations".
                         Doesn’t allow access to pointer because it's non-const.
@@ -3278,7 +3259,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#ParamMap.ForEachParamMap"></a>
     
-            <div class="docstring"><p>ForEachParamMap(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, operations: Callable[[str, <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>], None]) -> None</p>
+            <div class="docstring"><p>ForEachParamMap(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, operations: collections.abc.Callable[[str, <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>], None]) -> None</p>
 
 <p>For each of the parameters in this ParamMap, supply the key, ParamMap pointer, and type and do "operations".
                         The operations passed in here are a std::function, which is usually made as a lambda function.</p>
@@ -4214,7 +4195,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#AssetType.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#AssetType">spaceteams.SC_Compute_Server.AssetType</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#AssetType">spaceteams.SC_Compute_Server.AssetType</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -4227,7 +4208,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#AssetType.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -4347,7 +4328,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#AssetFileCategory.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#AssetFileCategory">spaceteams.SC_Compute_Server.AssetFileCategory</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#AssetFileCategory">spaceteams.SC_Compute_Server.AssetFileCategory</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -4360,7 +4341,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#AssetFileCategory.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -4472,7 +4453,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#PhysEffectType.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#PhysEffectType">spaceteams.SC_Compute_Server.PhysEffectType</a>, value: int) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#PhysEffectType">spaceteams.SC_Compute_Server.PhysEffectType</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
@@ -4485,7 +4466,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#PhysEffectType.name"></a>
     
-            <div class="docstring"><p>name(self: object) -> str</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
@@ -4774,7 +4755,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#PhysEffect.direction"></a>
     
-            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> typing.Annotated[numpy.typing.NDArray[numpy.float64], "[3, 1]"]</p>
 </div>
 
 
@@ -4800,7 +4781,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#PhysEffect.applicationLoc"></a>
     
-            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> numpy.ndarray[numpy.float64[3, 1]]</p>
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> typing.Annotated[numpy.typing.NDArray[numpy.float64], "[3, 1]"]</p>
 </div>
 
 
@@ -4867,7 +4848,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#PhysEffect.setVector"></a>
     
-            <div class="docstring"><p>setVector(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, arg0: numpy.ndarray[numpy.float64[3, 1]]) -> None</p>
+            <div class="docstring"><p>setVector(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, arg0: typing.Annotated[numpy.typing.ArrayLike, numpy.float64, "[3, 1]"]) -> None</p>
 </div>
 
 
@@ -4984,34 +4965,34 @@ Overloaded function.</p>
 
 
                             </div>
-                            <div id="Entity.getRV" class="classattr">
+                            <div id="Entity.getLocVel" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">getRV</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">getLocVel</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#Entity.getRV"></a>
+    <a class="headerlink" href="#Entity.getLocVel"></a>
     
-            <div class="docstring"><p>getRV(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedLocVel</p>
+            <div class="docstring"><p>getLocVel(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedLocVel</p>
 
 <p>Get time-extrapolated location and velocity of this entity (meters, meters/second, right handed coordinates).</p>
 </div>
 
 
                             </div>
-                            <div id="Entity.getRVA" class="classattr">
+                            <div id="Entity.getLocVelAcc" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">getRVA</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">getLocVelAcc</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#Entity.getRVA"></a>
+    <a class="headerlink" href="#Entity.getLocVelAcc"></a>
     
-            <div class="docstring"><p>getRVA(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedLocVelAcc</p>
+            <div class="docstring"><p>getLocVelAcc(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedLocVelAcc</p>
 
 <p>Get time-extrapolated location, velocity, and acceleration of this entity (meters, meters/second, meters/second^2, right handed coordinates).</p>
 </div>
@@ -5115,73 +5096,9 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getInertia"></a>
     
-            <div class="docstring"><p>getInertia(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, inFrame: spaceteams.SC_Compute_Server.frames.Frame) -> numpy.ndarray[numpy.float64[3, 3]]</p>
+            <div class="docstring"><p>getInertia(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, inFrame: spaceteams.SC_Compute_Server.frames.Frame) -> typing.Annotated[numpy.typing.NDArray[numpy.float64], "[3, 3]"]</p>
 
 <p>Get the inertia tensor of this entity (kg*m^2)</p>
-</div>
-
-
-                            </div>
-                            <div id="Entity.getForce" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getForce</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Entity.getForce"></a>
-    
-            <div class="docstring"><p>getForce(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: spaceteams.SC_Compute_Server.frames.Frame) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-
-<p>Get the force applied to this entity (N)</p>
-</div>
-
-
-                            </div>
-                            <div id="Entity.getTorque" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getTorque</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Entity.getTorque"></a>
-    
-            <div class="docstring"><p>getTorque(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: spaceteams.SC_Compute_Server.frames.Frame) -> numpy.ndarray[numpy.float64[3, 1]]</p>
-
-<p>Get the torque applied to this entity (N*m)</p>
-</div>
-
-
-                            </div>
-                            <div id="Entity.getImpulses" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">getImpulses</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Entity.getImpulses"></a>
-    
-            <div class="docstring"><p>getImpulses(<em>args, *</em>kwargs)
-Overloaded function.</p>
-
-<ol>
-<li>getImpulses(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: spaceteams.SC_Compute_Server.frames.Frame) -> list[numpy.ndarray[numpy.float64[3, 1]]]</li>
-</ol>
-
-<p>Get the impulses applied to this entity (N*s)</p>
-
-<ol start="2">
-<li>getImpulses(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, inFrame: spaceteams.SC_Compute_Server.frames.Frame) -> list[numpy.ndarray[numpy.float64[3, 1]]]</li>
-</ol>
-
-<p>Get Entity Impulses (Newton-seconds, right handed coordinates). 
-                        Interim solution for modular propagators before we have PhysicalEffects. 
-                        Consumes the impulses!</p>
 </div>
 
 
@@ -5213,77 +5130,26 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setLocationD"></a>
     
-            <div class="docstring"><p>setLocationD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, loc: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
+            <div class="docstring"><p>setLocationD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, loc: typing.Annotated[numpy.typing.ArrayLike, numpy.float64, "[3, 1]"], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Set entity location (meters, right handed coordinates)</p>
 </div>
 
 
                             </div>
-                            <div id="Entity.setVelocity" class="classattr">
+                            <div id="Entity.setLocVelAcc" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">setVelocity</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+        <span class="name">setLocVelAcc</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#Entity.setVelocity"></a>
+    <a class="headerlink" href="#Entity.setLocVelAcc"></a>
     
-            <div class="docstring"><p>setVelocity(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, vel: spaceteams.SC_Compute_Server.frames.FramedLocVel) -> None</p>
+            <div class="docstring"><p>setLocVelAcc(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, loc: spaceteams.SC_Compute_Server.frames.FramedLocVelAcc, fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
-<p>Set the velocity of this entity (meters/sec, right handed coordinates)</p>
-</div>
-
-
-                            </div>
-                            <div id="Entity.setVelocityD" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">setVelocityD</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Entity.setVelocityD"></a>
-    
-            <div class="docstring"><p>setVelocityD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, vel: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
-
-<p>Set the velocity of this entity (meters/sec, right handed coordinates)</p>
-</div>
-
-
-                            </div>
-                            <div id="Entity.setAcceleration" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">setAcceleration</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Entity.setAcceleration"></a>
-    
-            <div class="docstring"><p>setAcceleration(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, acc: spaceteams.SC_Compute_Server.frames.FramedLocVelAcc) -> None</p>
-
-<p>Get time-extrapolated acceleration of this entity (meters/sec ^ 2, right handed coordinates)</p>
-</div>
-
-
-                            </div>
-                            <div id="Entity.setAccelerationD" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">setAccelerationD</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Entity.setAccelerationD"></a>
-    
-            <div class="docstring"><p>setAccelerationD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, acc: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
-
-<p>Get time-extrapolated acceleration of this entity (meters/sec ^ 2, right handed coordinates)</p>
+<p>Set entity location (meters, right handed coordinates)</p>
 </div>
 
 
@@ -5319,7 +5185,7 @@ Overloaded function.</p>
 Overloaded function.</p>
 
 <ol>
-<li>setRotation_Quat(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, rot_quat_xyzw: numpy.ndarray[numpy.float64[4, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</li>
+<li>setRotation_Quat(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, rot_quat_xyzw: typing.Annotated[numpy.typing.ArrayLike, numpy.float64, "[4, 1]"], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</li>
 </ol>
 
 <p>Set entity rotation (passive quaternion, right hand coordinate). 
@@ -5345,7 +5211,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setRotation_DCM"></a>
     
-            <div class="docstring"><p>setRotation_DCM(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, rot: numpy.ndarray[numpy.float64[3, 3]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
+            <div class="docstring"><p>setRotation_DCM(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, rot: typing.Annotated[numpy.typing.ArrayLike, numpy.float64, "[3, 3]"], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Set entity rotation (passiveDCM, right hand coordinate)</p>
 </div>
@@ -5381,119 +5247,11 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setAngVelocityD"></a>
     
-            <div class="docstring"><p>setAngVelocityD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, angvel: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
+            <div class="docstring"><p>setAngVelocityD(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, angvel: typing.Annotated[numpy.typing.ArrayLike, numpy.float64, "[3, 1]"], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
 <p>Set time-extrapolated angular velocity of this entity (rad/sec, right handed coordinates) 
                         The vector direction is the axis of rotation, and the magnitude of the vector is the speed of the right-handed 
                         rotation around that axis</p>
-</div>
-
-
-                            </div>
-                            <div id="Entity.setForce" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">setForce</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Entity.setForce"></a>
-    
-            <div class="docstring"><p>setForce(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, force: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
-
-<p>Set Entity Force (Newtons, right handed coordinates).
-                        Interim solution for modular propagators before we have PhysicalEffects.</p>
-</div>
-
-
-                            </div>
-                            <div id="Entity.setTorque" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">setTorque</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Entity.setTorque"></a>
-    
-            <div class="docstring"><p>setTorque(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, torque: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
-
-<p>Set Entity Torque (Newton-meters, right handed coordinates).
-                        Interim solution for modular propagators before we have PhysicalEffects.</p>
-</div>
-
-
-                            </div>
-                            <div id="Entity.addImpulse" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">addImpulse</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Entity.addImpulse"></a>
-    
-            <div class="docstring"><p>addImpulse(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, key: str, impulse: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
-
-<p>Add named Entity Impulse (Newton-seconds, right handed coordinates). 
-                        Interim solution for modular propagators before we have PhysicalEffects.</p>
-</div>
-
-
-                            </div>
-                            <div id="Entity.addLocationOffset" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">addLocationOffset</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Entity.addLocationOffset"></a>
-    
-            <div class="docstring"><p>addLocationOffset(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, offset: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
-
-<p>Add Entity Location Offset (meters, right handed coordinates).
-                        Interim solution for modular propagators before we have PhysicalEffects.</p>
-</div>
-
-
-                            </div>
-                            <div id="Entity.addVelocityOffset" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">addVelocityOffset</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Entity.addVelocityOffset"></a>
-    
-            <div class="docstring"><p>addVelocityOffset(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, offset: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
-
-<p>Add Entity Velocity Offset (meters/sec, right handed coordinates).
-                        Interim solution for modular propagators before we have PhysicalEffects.</p>
-</div>
-
-
-                            </div>
-                            <div id="Entity.addAngVelocityOffset" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">addAngVelocityOffset</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#Entity.addAngVelocityOffset"></a>
-    
-            <div class="docstring"><p>addAngVelocityOffset(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, offset: numpy.ndarray[numpy.float64[3, 1]], fromFrame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
-
-<p>Add Entity Angular Velocity Offset (rad/sec, right handed coordinates).
-                        Interim solution for modular propagators before we have PhysicalEffects.</p>
 </div>
 
 
