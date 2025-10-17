@@ -975,6 +975,36 @@
                     <a class="function" href="#OnScreenAlert">OnScreenAlert</a>
             </li>
             <li>
+                    <a class="class" href="#OutputMode">OutputMode</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#OutputMode.__init__">OutputMode</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#OutputMode.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#OutputMode.value">value</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#OutputMode.Default">Default</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#OutputMode.RGB_LDR_sRGB">RGB_LDR_sRGB</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#OutputMode.RGB_LDR">RGB_LDR</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#OutputMode.RGB_HDR">RGB_HDR</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#OutputMode.Depth_cm">Depth_cm</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#PhysicalCameraProperties">PhysicalCameraProperties</a>
                             <ul class="memberlist">
                         <li>
@@ -1033,6 +1063,15 @@
                         </li>
                         <li>
                                 <a class="variable" href="#CaptureImageProperties.FOV">FOV</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#CaptureImageProperties.uses_custom_projection">uses_custom_projection</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#CaptureImageProperties.ProjectionMatrix">ProjectionMatrix</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#CaptureImageProperties.output_mode">output_mode</a>
                         </li>
                         <li>
                                 <a class="variable" href="#CaptureImageProperties.is_physical">is_physical</a>
@@ -1094,7 +1133,7 @@ spaceteams<wbr>.SC_Compute_Server    </h1>
     
             <div class="docstring"><p>standalone_sim(path: os.PathLike | str | bytes) -> None</p>
 
-<p>that is self-contained within this Python process.
+<p>Run a simulation that is self-contained within this Python process.
 path - Filepath of sim config.</p>
 </div>
 
@@ -5574,6 +5613,131 @@ Overloaded function.</p>
 
 
                 </section>
+                <section id="OutputMode">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">OutputMode</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode"></a>
+    
+            <div class="docstring"><p>Members:</p>
+
+<p>Default : What people "expect" from a typical image.</p>
+
+<p>RGB_LDR_sRGB : Red-Green-Blue channels in sRGB color space, 8 bits each.</p>
+
+<p>RGB_LDR : Red-Green-Blue channels in linear color space, 8 bits each.</p>
+
+<p>RGB_HDR : (UNIMPLEMENTED) Red-Green-Blue channels in linear color space, 16-bit float each.</p>
+
+<p>Depth_cm : Single channel, 32-bit float, linear depth in cm.</p>
+</div>
+
+
+                            <div id="OutputMode.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">OutputMode</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#OutputMode">spaceteams.SC_Compute_Server.OutputMode</a>, value: typing.SupportsInt) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="OutputMode.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.name"></a>
+    
+            <div class="docstring"><p>name(self: object, /) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="OutputMode.value" class="classattr">
+                                <div class="attr variable">
+            <span class="name">value</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.value"></a>
+    
+            <div class="docstring"><p>(arg0: <a href="#OutputMode">spaceteams.SC_Compute_Server.OutputMode</a>) -> int</p>
+</div>
+
+
+                            </div>
+                            <div id="OutputMode.Default" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Default</span>        =
+<span class="default_value">&lt;<a href="#OutputMode.Default">OutputMode.Default</a>: 0&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.Default"></a>
+    
+    
+
+                            </div>
+                            <div id="OutputMode.RGB_LDR_sRGB" class="classattr">
+                                <div class="attr variable">
+            <span class="name">RGB_LDR_sRGB</span>        =
+<span class="default_value">&lt;<a href="#OutputMode.Default">OutputMode.Default</a>: 0&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.RGB_LDR_sRGB"></a>
+    
+    
+
+                            </div>
+                            <div id="OutputMode.RGB_LDR" class="classattr">
+                                <div class="attr variable">
+            <span class="name">RGB_LDR</span>        =
+<span class="default_value">&lt;<a href="#OutputMode.RGB_LDR">OutputMode.RGB_LDR</a>: 1&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.RGB_LDR"></a>
+    
+    
+
+                            </div>
+                            <div id="OutputMode.RGB_HDR" class="classattr">
+                                <div class="attr variable">
+            <span class="name">RGB_HDR</span>        =
+<span class="default_value">&lt;<a href="#OutputMode.RGB_HDR">OutputMode.RGB_HDR</a>: 2&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.RGB_HDR"></a>
+    
+    
+
+                            </div>
+                            <div id="OutputMode.Depth_cm" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Depth_cm</span>        =
+<span class="default_value">&lt;<a href="#OutputMode.Depth_cm">OutputMode.Depth_cm</a>: 3&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.Depth_cm"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="PhysicalCameraProperties">
                     <div class="attr class">
             
@@ -5806,6 +5970,45 @@ Overloaded function.</p>
     <a class="headerlink" href="#CaptureImageProperties.FOV"></a>
     
             <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> float</p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.uses_custom_projection" class="classattr">
+                                <div class="attr variable">
+            <span class="name">uses_custom_projection</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.uses_custom_projection"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> bool</p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.ProjectionMatrix" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ProjectionMatrix</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.ProjectionMatrix"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> typing.Annotated[numpy.typing.NDArray[numpy.float64], "[4, 4]"]</p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.output_mode" class="classattr">
+                                <div class="attr variable">
+            <span class="name">output_mode</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.output_mode"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> <a href="#OutputMode">spaceteams.SC_Compute_Server.OutputMode</a></p>
 </div>
 
 
