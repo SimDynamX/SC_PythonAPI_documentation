@@ -19,6 +19,11 @@
         <div>
 
 
+            <h2>Contents</h2>
+            <ul>
+  <li><a href="#space-teams-pro-python-api">Space Teams PRO Python API</a></li>
+</ul>
+
 
             <h2>Submodules</h2>
             <ul>
@@ -456,6 +461,27 @@
 
             </li>
             <li>
+                    <a class="class" href="#UUID">UUID</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#UUID.__init__">UUID</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#UUID.FromString">FromString</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#UUID.IsValid">IsValid</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#UUID.IsValidStr">IsValidStr</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#UUID.Generate">Generate</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#ParamMap">ParamMap</a>
                             <ul class="memberlist">
                         <li>
@@ -857,6 +883,9 @@
                         <li>
                                 <a class="function" href="#PhysEffect.setVector">setVector</a>
                         </li>
+                        <li>
+                                <a class="function" href="#PhysEffect.setQuaternion">setQuaternion</a>
+                        </li>
                 </ul>
 
             </li>
@@ -1101,6 +1130,24 @@
 
             </li>
             <li>
+                    <a class="class" href="#ResponderHandle">ResponderHandle</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#ResponderHandle.__init__">ResponderHandle</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ResponderHandle.handle_id">handle_id</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ResponderHandle.entityId">entityId</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ResponderHandle.topic">topic</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="function" href="#logger_info">logger_info</a>
             </li>
             <li>
@@ -1128,7 +1175,13 @@
                     <h1 class="modulename">
 spaceteams<wbr>.SC_Compute_Server    </h1>
 
-                
+                        <div class="docstring"><h1 id="space-teams-pro-python-api">Space Teams PRO Python API</h1>
+
+<p>Used to write code that either interacts with running simulations,
+edits config files and runs sims, or just uses utility functions 
+like our math library.</p>
+</div>
+
                 
                 
                 
@@ -3009,6 +3062,100 @@ network nodes.</p>
 
                             </div>
                 </section>
+                <section id="UUID">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">UUID</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#UUID"></a>
+    
+    
+
+                            <div id="UUID.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">UUID</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#UUID.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="UUID.FromString" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">FromString</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#UUID.FromString"></a>
+    
+            <div class="docstring"><p>FromString(uuid_str: str, use_hyphens: bool = True) -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
+
+<p>Parse UUID string. Currently assuming all hex alpha chars are lowercase.</p>
+</div>
+
+
+                            </div>
+                            <div id="UUID.IsValid" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">IsValid</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#UUID.IsValid"></a>
+    
+            <div class="docstring"><p>IsValid(uuid: <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a>) -> bool</p>
+
+<p>Validate UUID bytes (true if valid UUID).</p>
+</div>
+
+
+                            </div>
+                            <div id="UUID.IsValidStr" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">IsValidStr</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#UUID.IsValidStr"></a>
+    
+            <div class="docstring"><p>IsValidStr(uuid_str: str) -> bool</p>
+
+<p>Validate UUID string (true if valid UUID).
+                        This does not check proper version or anything other than proper formatting.</p>
+</div>
+
+
+                            </div>
+                            <div id="UUID.Generate" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">Generate</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#UUID.Generate"></a>
+    
+            <div class="docstring"><p>Generate() -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
+
+<p>Randomly generate a version 4, variant 1 UUID.</p>
+</div>
+
+
+                            </div>
+                </section>
                 <section id="ParamMap">
                     <div class="attr class">
             
@@ -3060,26 +3207,26 @@ network nodes.</p>
     </div>
     <a class="headerlink" href="#ParamMap.HasParam"></a>
     
-            <div class="docstring"><p>HasParam(<em>args, *</em>kwargs)
+            <div class="docstring"><p>HasParam(*args, **kwargs)
 Overloaded function.</p>
 
 <ol>
 <li>HasParam(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, key: str) -> bool</li>
 </ol>
 
-<p>Checks if this Entity has a parameter at the given key.</p>
+<p>Checks if this Entity_Base has a parameter at the given key.</p>
 
 <ol start="2">
 <li>HasParam(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, key: object) -> bool</li>
 </ol>
 
-<p>Checks if this Entity has a parameter at the given key.</p>
+<p>Checks if this Entity_Base has a parameter at the given key.</p>
 
 <ol start="3">
 <li>HasParam(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, type: <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>, key: object) -> bool</li>
 </ol>
 
-<p>Checks if this Entity has a parameter at the given key with the given type.</p>
+<p>Checks if this Entity_Base has a parameter at the given key with the given type.</p>
 </div>
 
 
@@ -3094,9 +3241,11 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#ParamMap.ToString"></a>
     
-            <div class="docstring"><p>ToString(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, notation: <a href="#Notation">spaceteams.SC_Compute_Server.Notation</a> = Select decimal notation, precision: typing.SupportsInt = Number of significant digits printed) -> str</p>
+            <div class="docstring"><p>ToString(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, notation: <a href="#Notation">spaceteams.SC_Compute_Server.Notation</a> = st.Notation.Default, precision: typing.SupportsInt = 17) -> str</p>
 
-<p>Returns a string of the keys/values of this ParamMap, with a certain notation and precision. Avoids newline characters.</p>
+<p>Returns a string of the keys/values of this ParamMap, with a certain notation and precision. Avoids newline characters.
+                        - notation: Select decimal notation
+                        - precision: Number of significant digits printed</p>
 </div>
 
 
@@ -3111,9 +3260,11 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#ParamMap.ToStringMultiline"></a>
     
-            <div class="docstring"><p>ToStringMultiline(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, notation: <a href="#Notation">spaceteams.SC_Compute_Server.Notation</a> = Select decimal notation, precision: typing.SupportsInt = Number of significant digits printed) -> str</p>
+            <div class="docstring"><p>ToStringMultiline(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, notation: <a href="#Notation">spaceteams.SC_Compute_Server.Notation</a> = st.Notation.Default, precision: typing.SupportsInt = 17) -> str</p>
 
-<p>Returns a string of the keys/values of this ParamMap, with a certain notation and precision. Avoids newline characters.</p>
+<p>Returns a string of the keys/values of this ParamMap, with a certain notation and precision. Avoids newline characters.
+                        - notation: Select decimal notation
+                        - precision: Number of significant digits printed</p>
 </div>
 
 
@@ -3128,20 +3279,20 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#ParamMap.HasParamArray"></a>
     
-            <div class="docstring"><p>HasParamArray(<em>args, *</em>kwargs)
+            <div class="docstring"><p>HasParamArray(*args, **kwargs)
 Overloaded function.</p>
 
 <ol>
 <li>HasParamArray(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, key: object) -> bool</li>
 </ol>
 
-<p>Checks if this Entity has a param array at the given key with any member type.</p>
+<p>Checks if this Entity_Base has a param array at the given key with any member type.</p>
 
 <ol start="2">
 <li>HasParamArray(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, type: <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>, key: object) -> bool</li>
 </ol>
 
-<p>Checks if this Entity has a param array at the given key with the given member type.</p>
+<p>Checks if this Entity_Base has a param array at the given key with the given member type.</p>
 </div>
 
 
@@ -3225,6 +3376,14 @@ Overloaded function.</p>
     <a class="headerlink" href="#ParamMap.GetParam"></a>
     
             <div class="docstring"><p>GetParam(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, type: <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>, key: object) -> object</p>
+
+<p>Get a copy of the value of the Parameter at the given key on this ParamMap.
+                        Usage: 
+                                value = TheParamMap.GetParam(st.VarType.VarTypeOfParameter, "KeyOfParameter")
+                                value = TheParamMap.GetParam(st.VarType.VarTypeOfParameter, ["TopMapKey", "MiddleMapKey", "KeyOfParameter"])
+                        Example: 
+                                messageOnThisEntity = en1.GetParam(st.VarType.string, "Message")
+                        There is a runtime check for if this parameter is actually the type you specified it to be.</p>
 </div>
 
 
@@ -3952,7 +4111,7 @@ Overloaded function.</p>
     
             <div class="docstring"><p>RemoveEntity(self: <a href="#SimConfig">spaceteams.SC_Compute_Server.SimConfig</a>, config: <a href="#EntityConfig">spaceteams.SC_Compute_Server.EntityConfig</a>) -> None</p>
 
-<p>Removes this referenced Entity from the sim config</p>
+<p>Removes this referenced Entity_Base from the sim config</p>
 </div>
 
 
@@ -4833,7 +4992,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#PhysEffect.__init__"></a>
     
-            <div class="docstring"><p>__init__(<em>args, *</em>kwargs)
+            <div class="docstring"><p>__init__(*args, **kwargs)
 Overloaded function.</p>
 
 <ol>
@@ -4976,6 +5135,21 @@ Overloaded function.</p>
 
 
                             </div>
+                            <div id="PhysEffect.setQuaternion" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">setQuaternion</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.setQuaternion"></a>
+    
+            <div class="docstring"><p>setQuaternion(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, arg0: Eigen::Quaternion<double,0>) -> None</p>
+</div>
+
+
+                            </div>
                 </section>
                 <section id="Entity">
                     <div class="attr class">
@@ -4992,15 +5166,13 @@ Overloaded function.</p>
                             <div id="Entity.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">Entity</span><span class="signature pdoc-code condensed">()</span>
+        <span class="name">Entity</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
     <a class="headerlink" href="#Entity.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> None</p>
-</div>
-
+    
 
                             </div>
                             <div id="Entity.getName" class="classattr">
@@ -5015,7 +5187,7 @@ Overloaded function.</p>
     
             <div class="docstring"><p>getName(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> str</p>
 
-<p>Returns the name of the Entity</p>
+<p>Returns the name of the Entity_Base</p>
 </div>
 
 
@@ -5030,9 +5202,9 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getId"></a>
     
-            <div class="docstring"><p>getId(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams::uuid::UUID_t</p>
+            <div class="docstring"><p>getId(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
 
-<p>Returns the id of the Entity</p>
+<p>Returns the id of the Entity_Base</p>
 </div>
 
 
@@ -5049,7 +5221,7 @@ Overloaded function.</p>
     
             <div class="docstring"><p>getId_str(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> str</p>
 
-<p>Returns the id of the Entity as string type</p>
+<p>Returns the id of the Entity_Base as string type</p>
 </div>
 
 
@@ -5134,7 +5306,7 @@ Overloaded function.</p>
     
             <div class="docstring"><p>getVelocity(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams.SC_Compute_Server.frames.FramedLocVel</p>
 
-<p>Get the orientation of this entity’s body frame in Quat (right handed coordinates, wxyz)</p>
+<p>Get time-extrapolated velocity of this entity (meters/second, right handed coordinates).</p>
 </div>
 
 
@@ -5304,7 +5476,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setRotation_Quat"></a>
     
-            <div class="docstring"><p>setRotation_Quat(<em>args, *</em>kwargs)
+            <div class="docstring"><p>setRotation_Quat(*args, **kwargs)
 Overloaded function.</p>
 
 <ol>
@@ -5440,9 +5612,9 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getResidentFrameBody"></a>
     
-            <div class="docstring"><p>getResidentFrameBody(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> spaceteams::Entity_Base</p>
+            <div class="docstring"><p>getResidentFrameBody(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a></p>
 
-<p>Get the entity whose body-fixed frame is used as the frame in which this Entity's state parameters are defined.</p>
+<p>Get the entity whose body-fixed frame is used as the frame in which this Entity_Base's state parameters are defined.</p>
 </div>
 
 
@@ -5459,7 +5631,7 @@ Overloaded function.</p>
     
             <div class="docstring"><p>setResidentFrame(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, frame: spaceteams.SC_Compute_Server.frames.Frame) -> None</p>
 
-<p>Set the frame in which this Entity's state parameters are defined, and transform state. parameters to line up with the existing state.</p>
+<p>Set the frame in which this Entity_Base's state parameters are defined, and transform state. parameters to line up with the existing state.</p>
 </div>
 
 
@@ -5476,7 +5648,7 @@ Overloaded function.</p>
     
             <div class="docstring"><p>AddStateParamsIfMissing(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> None</p>
 
-<p>Adds the Location, Velocity, Rotation, AngVelocity, etc params to this Entity if they don't exist.</p>
+<p>Adds the Location, Velocity, Rotation, AngVelocity, etc params to this Entity_Base if they don't exist.</p>
 </div>
 
 
@@ -5493,7 +5665,7 @@ Overloaded function.</p>
     
             <div class="docstring"><p>AddDynamicsParamsIfMissing(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> None</p>
 
-<p>pbdoc(Adds the remainder of the dynamics params to this Entity if they don't exist.</p>
+<p>pbdoc(Adds the remainder of the dynamics params to this Entity_Base if they don't exist.</p>
 </div>
 
 
@@ -5673,9 +5845,10 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#OnScreenLogMessage"></a>
     
-            <div class="docstring"><p>OnScreenLogMessage(message: str, category: str, severity: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>) -> None</p>
+            <div class="docstring"><p>OnScreenLogMessage(message: str, category: str, severity: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>, transmit: bool = True) -> None</p>
 
-<p>Send message that is shown on all app screens, and stays in a log.</p>
+<p>Send message that is shown on all app screens, and stays in a log.
+                If transmit is false, the message is only shown inside this app.</p>
 </div>
 
 
@@ -5690,9 +5863,10 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#OnScreenAlert"></a>
     
-            <div class="docstring"><p>OnScreenAlert(message: str, topic: str, severity: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>) -> None</p>
+            <div class="docstring"><p>OnScreenAlert(message: str, topic: str, severity: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>, transmit: bool = True) -> None</p>
 
-<p>Send alert that is shown on all app screens, is deduplicated by topic name, and is erased after a few seconds.</p>
+<p>Send alert that is shown on all app screens, is deduplicated by topic name, and is erased after a few seconds.
+                If transmit is false, the alert is only shown inside this app.</p>
 </div>
 
 
@@ -5707,7 +5881,9 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#OutputMode"></a>
     
-            <div class="docstring"><p>Members:</p>
+            <div class="docstring"><p>"Camera output modes, which affect the content and pixel format of a capture's pixels, but not its geometry."</p>
+
+<p>Members:</p>
 
 <p>Default : What people "expect" from a typical image.</p>
 
@@ -5832,7 +6008,9 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#PhysicalCameraProperties"></a>
     
-    
+            <div class="docstring"><p>"Physical properties of the camera that affect the image"</p>
+</div>
+
 
                             <div id="PhysicalCameraProperties.__init__" class="classattr">
                                 <div class="attr function">
@@ -5950,7 +6128,9 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#ArtCameraProperties"></a>
     
-    
+            <div class="docstring"><p>"Non-physical changes to apply to the image"</p>
+</div>
+
 
                             <div id="ArtCameraProperties.__init__" class="classattr">
                                 <div class="attr function">
@@ -5990,7 +6170,9 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#CaptureImageProperties"></a>
     
-    
+            <div class="docstring"><p>"All properties of an image to capture besides the choice of camera entity."</p>
+</div>
+
 
                             <div id="CaptureImageProperties.__init__" class="classattr">
                                 <div class="attr function">
@@ -6145,6 +6327,70 @@ Overloaded function.</p>
     <a class="headerlink" href="#CaptureImageProperties.art"></a>
     
             <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> <a href="#ArtCameraProperties">spaceteams.SC_Compute_Server.ArtCameraProperties</a></p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="ResponderHandle">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ResponderHandle</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ResponderHandle"></a>
+    
+    
+
+                            <div id="ResponderHandle.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">ResponderHandle</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ResponderHandle.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="ResponderHandle.handle_id" class="classattr">
+                                <div class="attr variable">
+            <span class="name">handle_id</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ResponderHandle.handle_id"></a>
+    
+            <div class="docstring"><p>(self: <a href="#ResponderHandle">spaceteams.SC_Compute_Server.ResponderHandle</a>) -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
+</div>
+
+
+                            </div>
+                            <div id="ResponderHandle.entityId" class="classattr">
+                                <div class="attr variable">
+            <span class="name">entityId</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ResponderHandle.entityId"></a>
+    
+            <div class="docstring"><p>(self: <a href="#ResponderHandle">spaceteams.SC_Compute_Server.ResponderHandle</a>) -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
+</div>
+
+
+                            </div>
+                            <div id="ResponderHandle.topic" class="classattr">
+                                <div class="attr variable">
+            <span class="name">topic</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ResponderHandle.topic"></a>
+    
+            <div class="docstring"><p>(self: <a href="#ResponderHandle">spaceteams.SC_Compute_Server.ResponderHandle</a>) -> str</p>
 </div>
 
 
