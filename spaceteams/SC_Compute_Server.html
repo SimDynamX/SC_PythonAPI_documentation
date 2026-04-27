@@ -50,43 +50,25 @@
                     <a class="function" href="#stop_sim">stop_sim</a>
             </li>
             <li>
-                    <a class="class" href="#SimState">SimState</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#SimState.__init__">SimState</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#SimState.name">name</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#SimState.value">value</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#SimState.Loading">Loading</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#SimState.Lobby">Lobby</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#SimState.Sync">Sync</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#SimState.Init">Init</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#SimState.Runtime">Runtime</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#SimState.Paused">Paused</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#SimState.Playback">Playback</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#SimState.Stopping">Stopping</a>
-                        </li>
-                </ul>
-
+                    <a class="function" href="#get_entities">get_entities</a>
+            </li>
+            <li>
+                    <a class="function" href="#GetThisSystem">GetThisSystem</a>
+            </li>
+            <li>
+                    <a class="function" href="#get_nametag">get_nametag</a>
+            </li>
+            <li>
+                    <a class="function" href="#logger_info">logger_info</a>
+            </li>
+            <li>
+                    <a class="function" href="#logger_warn">logger_warn</a>
+            </li>
+            <li>
+                    <a class="function" href="#logger_error">logger_error</a>
+            </li>
+            <li>
+                    <a class="function" href="#logger_fatal">logger_fatal</a>
             </li>
             <li>
                     <a class="class" href="#VarType">VarType</a>
@@ -281,36 +263,6 @@
 
             </li>
             <li>
-                    <a class="class" href="#Severity">Severity</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#Severity.__init__">Severity</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#Severity.name">name</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#Severity.value">value</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#Severity.Info">Info</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#Severity.Warning">Warning</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#Severity.Error">Error</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#Severity.Fatal">Fatal</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#Severity.Chat">Chat</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
                     <a class="class" href="#SystemType">SystemType</a>
                             <ul class="memberlist">
                         <li>
@@ -407,25 +359,31 @@
 
             </li>
             <li>
-                    <a class="class" href="#Notation">Notation</a>
+                    <a class="class" href="#UUID">UUID</a>
                             <ul class="memberlist">
                         <li>
-                                <a class="function" href="#Notation.__init__">Notation</a>
+                                <a class="function" href="#UUID.__init__">UUID</a>
                         </li>
                         <li>
-                                <a class="variable" href="#Notation.name">name</a>
+                                <a class="function" href="#UUID.FromString">FromString</a>
                         </li>
                         <li>
-                                <a class="variable" href="#Notation.value">value</a>
+                                <a class="function" href="#UUID.IsValid">IsValid</a>
                         </li>
                         <li>
-                                <a class="variable" href="#Notation.Default">Default</a>
+                                <a class="function" href="#UUID.IsValidStr">IsValidStr</a>
                         </li>
                         <li>
-                                <a class="variable" href="#Notation.DigitsAfterDecimal">DigitsAfterDecimal</a>
+                                <a class="function" href="#UUID.Generate">Generate</a>
                         </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#EntityRef_Unresolved">EntityRef_Unresolved</a>
+                            <ul class="memberlist">
                         <li>
-                                <a class="variable" href="#Notation.Scientific">Scientific</a>
+                                <a class="function" href="#EntityRef_Unresolved.__init__">EntityRef_Unresolved</a>
                         </li>
                 </ul>
 
@@ -452,31 +410,118 @@
 
             </li>
             <li>
-                    <a class="class" href="#EntityRef_Unresolved">EntityRef_Unresolved</a>
+                    <a class="class" href="#Notation">Notation</a>
                             <ul class="memberlist">
                         <li>
-                                <a class="function" href="#EntityRef_Unresolved.__init__">EntityRef_Unresolved</a>
+                                <a class="function" href="#Notation.__init__">Notation</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Notation.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Notation.value">value</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Notation.Default">Default</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Notation.DigitsAfterDecimal">DigitsAfterDecimal</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Notation.Scientific">Scientific</a>
                         </li>
                 </ul>
 
             </li>
             <li>
-                    <a class="class" href="#UUID">UUID</a>
+                    <a class="class" href="#Severity">Severity</a>
                             <ul class="memberlist">
                         <li>
-                                <a class="function" href="#UUID.__init__">UUID</a>
+                                <a class="function" href="#Severity.__init__">Severity</a>
                         </li>
                         <li>
-                                <a class="function" href="#UUID.FromString">FromString</a>
+                                <a class="variable" href="#Severity.name">name</a>
                         </li>
                         <li>
-                                <a class="function" href="#UUID.IsValid">IsValid</a>
+                                <a class="variable" href="#Severity.value">value</a>
                         </li>
                         <li>
-                                <a class="function" href="#UUID.IsValidStr">IsValidStr</a>
+                                <a class="variable" href="#Severity.Info">Info</a>
                         </li>
                         <li>
-                                <a class="function" href="#UUID.Generate">Generate</a>
+                                <a class="variable" href="#Severity.Warning">Warning</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Severity.Error">Error</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Severity.Fatal">Fatal</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Severity.Chat">Chat</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#SimState">SimState</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#SimState.__init__">SimState</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SimState.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SimState.value">value</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SimState.Loading">Loading</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SimState.Lobby">Lobby</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SimState.Sync">Sync</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SimState.Init">Init</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SimState.Runtime">Runtime</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SimState.Paused">Paused</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SimState.Playback">Playback</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SimState.Stopping">Stopping</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="function" href="#OnScreenLogMessage">OnScreenLogMessage</a>
+            </li>
+            <li>
+                    <a class="function" href="#OnScreenAlert">OnScreenAlert</a>
+            </li>
+            <li>
+                    <a class="class" href="#ResponderHandle">ResponderHandle</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#ResponderHandle.__init__">ResponderHandle</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ResponderHandle.handle_id">handle_id</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ResponderHandle.entityId">entityId</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ResponderHandle.topic">topic</a>
                         </li>
                 </ul>
 
@@ -872,13 +917,7 @@
                                 <a class="variable" href="#PhysEffect.useStartTime">useStartTime</a>
                         </li>
                         <li>
-                                <a class="variable" href="#PhysEffect.startTime">startTime</a>
-                        </li>
-                        <li>
                                 <a class="variable" href="#PhysEffect.useEndTime">useEndTime</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#PhysEffect.endTime">endTime</a>
                         </li>
                         <li>
                                 <a class="function" href="#PhysEffect.setVector">setVector</a>
@@ -886,134 +925,14 @@
                         <li>
                                 <a class="function" href="#PhysEffect.setQuaternion">setQuaternion</a>
                         </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#Entity">Entity</a>
-                            <ul class="memberlist">
                         <li>
-                                <a class="function" href="#Entity.__init__">Entity</a>
+                                <a class="function" href="#PhysEffect.setStartTime">setStartTime</a>
                         </li>
                         <li>
-                                <a class="function" href="#Entity.getName">getName</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getId">getId</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getId_str">getId_str</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getLocation">getLocation</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getRotation">getRotation</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getLocVel">getLocVel</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getLocVelAcc">getLocVelAcc</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getVelocity">getVelocity</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getAcceleration">getAcceleration</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getAngAcceleration">getAngAcceleration</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getAngVelocity">getAngVelocity</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getMass">getMass</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getInertia">getInertia</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setLocation">setLocation</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setLocationD">setLocationD</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setLocVelAcc">setLocVelAcc</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setRotation">setRotation</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setRotation_Quat">setRotation_Quat</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setRotation_DCM">setRotation_DCM</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setAngVelocity">setAngVelocity</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setAngVelocityD">setAngVelocityD</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getResidentFrame">getResidentFrame</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.GetBodyFixedFrame">GetBodyFixedFrame</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.GetBodyCenteredFrame">GetBodyCenteredFrame</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getResidentFrameBody">getResidentFrameBody</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setResidentFrame">setResidentFrame</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.AddStateParamsIfMissing">AddStateParamsIfMissing</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.AddDynamicsParamsIfMissing">AddDynamicsParamsIfMissing</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.GetPropagationType">GetPropagationType</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.GetPropagator">GetPropagator</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.SetPropagator">SetPropagator</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.getPhysEffects">getPhysEffects</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.setPhysEffect">setPhysEffect</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#Entity.removePhysEffect">removePhysEffect</a>
+                                <a class="function" href="#PhysEffect.setEndTime">setEndTime</a>
                         </li>
                 </ul>
 
-            </li>
-            <li>
-                    <a class="function" href="#get_entities">get_entities</a>
-            </li>
-            <li>
-                    <a class="function" href="#GetThisSystem">GetThisSystem</a>
-            </li>
-            <li>
-                    <a class="function" href="#get_nametag">get_nametag</a>
-            </li>
-            <li>
-                    <a class="function" href="#OnScreenLogMessage">OnScreenLogMessage</a>
-            </li>
-            <li>
-                    <a class="function" href="#OnScreenAlert">OnScreenAlert</a>
             </li>
             <li>
                     <a class="class" href="#OutputMode">OutputMode</a>
@@ -1130,34 +1049,115 @@
 
             </li>
             <li>
-                    <a class="class" href="#ResponderHandle">ResponderHandle</a>
+                    <a class="class" href="#Entity">Entity</a>
                             <ul class="memberlist">
                         <li>
-                                <a class="function" href="#ResponderHandle.__init__">ResponderHandle</a>
+                                <a class="function" href="#Entity.__init__">Entity</a>
                         </li>
                         <li>
-                                <a class="variable" href="#ResponderHandle.handle_id">handle_id</a>
+                                <a class="function" href="#Entity.getName">getName</a>
                         </li>
                         <li>
-                                <a class="variable" href="#ResponderHandle.entityId">entityId</a>
+                                <a class="function" href="#Entity.getId">getId</a>
                         </li>
                         <li>
-                                <a class="variable" href="#ResponderHandle.topic">topic</a>
+                                <a class="function" href="#Entity.getId_str">getId_str</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getLocation">getLocation</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getRotation">getRotation</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getLocVel">getLocVel</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getLocVelAcc">getLocVelAcc</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getVelocity">getVelocity</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getAcceleration">getAcceleration</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getAngAcceleration">getAngAcceleration</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getAngVelocity">getAngVelocity</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getMass">getMass</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getInertia">getInertia</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.setLocation">setLocation</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.setLocationD">setLocationD</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.setLocVelAcc">setLocVelAcc</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.setRotation">setRotation</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.setRotation_Quat">setRotation_Quat</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.setRotation_DCM">setRotation_DCM</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.setAngVelocity">setAngVelocity</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.setAngVelocityD">setAngVelocityD</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getResidentFrame">getResidentFrame</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.GetBodyFixedFrame">GetBodyFixedFrame</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.GetBodyCenteredFrame">GetBodyCenteredFrame</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getResidentFrameBody">getResidentFrameBody</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.setResidentFrame">setResidentFrame</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.AddStateParamsIfMissing">AddStateParamsIfMissing</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.AddDynamicsParamsIfMissing">AddDynamicsParamsIfMissing</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.GetPropagationType">GetPropagationType</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.GetPropagator">GetPropagator</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.SetPropagator">SetPropagator</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.getPhysEffects">getPhysEffects</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.setPhysEffect">setPhysEffect</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Entity.removePhysEffect">removePhysEffect</a>
                         </li>
                 </ul>
 
-            </li>
-            <li>
-                    <a class="function" href="#logger_info">logger_info</a>
-            </li>
-            <li>
-                    <a class="function" href="#logger_warn">logger_warn</a>
-            </li>
-            <li>
-                    <a class="function" href="#logger_error">logger_error</a>
-            </li>
-            <li>
-                    <a class="function" href="#logger_fatal">logger_fatal</a>
             </li>
     </ul>
 
@@ -1232,7 +1232,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#BeforeInit"></a>
     
-            <div class="docstring"><p>BeforeInit(delegateFn: collections.abc.Callable[[], None]) -> None</p>
+            <div class="docstring"><p>BeforeInit(delegateFn: std::function<void __cdecl(void)&gt;) -> None</p>
 
 <p>Set a function to be called before the simulation is allowed to continue to Init state.</p>
 </div>
@@ -1249,7 +1249,7 @@ sys_argv - insert python sys.argv here.</p>
     </div>
     <a class="headerlink" href="#BeforeRuntime"></a>
     
-            <div class="docstring"><p>BeforeRuntime(delegateFn: collections.abc.Callable[[], None]) -> None</p>
+            <div class="docstring"><p>BeforeRuntime(delegateFn: std::function<void __cdecl(void)&gt;) -> None</p>
 
 <p>Set a function to be called before the simulation is allowed to continue to Runtime state.</p>
 </div>
@@ -1290,185 +1290,118 @@ sys_argv - insert python sys.argv here.</p>
 
 
                 </section>
-                <section id="SimState">
-                    <div class="attr class">
+                <section id="get_entities">
+                    <div class="attr function">
             
-    <span class="def">class</span>
-    <span class="name">SimState</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+        <span class="def">def</span>
+        <span class="name">get_entities</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SimState"></a>
+    <a class="headerlink" href="#get_entities"></a>
     
-            <div class="docstring"><p>Members:</p>
-
-<p>Loading : Load the sim config as a starting point, independent of any other clients.</p>
-
-<p>Lobby :  Wait for other clients to finish connecting/loading, hang out (if applicable).</p>
-
-<p>Sync : With a final client list known, enter a process where we ensure all clients 
-are joined and warmed up before Init/Running Simstate is made available. 
-Additionally, if a certain option is chosen, stay in SimState::Sync to 
-enable a Sim Editing mode that hasn't run system init or update functions.</p>
-
-<p>Init : In this state and future, operations that would result in a SaveSim having 
-many differences are accepted. Without impinging on timing of updates as 
-the Runtime state is hit, we do a final step where everything runs their 
-init() functions, optionally with order dependencies where applicable, and 
-we wait for ALL inits on ALL programs to finish.
-(TBD) For sims that are resuming from a snapshot, this MIGHT be skipped/modified?</p>
-
-<p>Runtime : Timed updates begin. Physics starts moving.</p>
-
-<p>Paused :  (UNUSED, MAY CHANGE) In this state, we stop all network nodes
-if possible so something big like a host migration can happen.</p>
-
-<p>Playback : (UNUSED, MAY CHANGE) In this state, the state of the Platform
-is being driven by recorded transactional state changes
-that are being streamed as PlatformOrders by one (?) of the
-network nodes.</p>
-
-<p>Stopping : In this state, the platform is treated as undefined because network nodes are expected to disconnect at any moment. Any time a network node is in this state, the network 
-                node should work to and/close the local representation of the simulation</p>
+            <div class="docstring"><p>get_entities() -> list[spaceteams::Entity_Base]</p>
 </div>
 
 
-                            <div id="SimState.__init__" class="classattr">
-                                <div class="attr function">
+                </section>
+                <section id="GetThisSystem">
+                    <div class="attr function">
             
-        <span class="name">SimState</span><span class="signature pdoc-code condensed">()</span>
+        <span class="def">def</span>
+        <span class="name">GetThisSystem</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SimState.__init__"></a>
+    <a class="headerlink" href="#GetThisSystem"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#SimState">spaceteams.SC_Compute_Server.SimState</a>, value: typing.SupportsInt) -> None</p>
+            <div class="docstring"><p>GetThisSystem() -> spaceteams::SystemConfig</p>
 </div>
 
 
-                            </div>
-                            <div id="SimState.name" class="classattr">
-                                <div class="attr variable">
-            <span class="name">name</span>
+                </section>
+                <section id="get_nametag">
+                    <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">get_nametag</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SimState.name"></a>
+    <a class="headerlink" href="#get_nametag"></a>
     
-            <div class="docstring"><p>name(self: object, /) -> str</p>
+            <div class="docstring"><p>get_nametag() -> str</p>
 </div>
 
 
-                            </div>
-                            <div id="SimState.value" class="classattr">
-                                <div class="attr variable">
-            <span class="name">value</span>
+                </section>
+                <section id="logger_info">
+                    <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">logger_info</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SimState.value"></a>
+    <a class="headerlink" href="#logger_info"></a>
     
-            <div class="docstring"><p>(arg0: <a href="#SimState">spaceteams.SC_Compute_Server.SimState</a>) -> int</p>
+            <div class="docstring"><p>logger_info(msg: str) -> None</p>
+
+<p>Output logger information</p>
 </div>
 
 
-                            </div>
-                            <div id="SimState.Loading" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Loading</span>        =
-<span class="default_value">&lt;<a href="#SimState.Loading">SimState.Loading</a>: 0&gt;</span>
+                </section>
+                <section id="logger_warn">
+                    <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">logger_warn</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SimState.Loading"></a>
+    <a class="headerlink" href="#logger_warn"></a>
     
-    
+            <div class="docstring"><p>logger_warn(msg: str) -> None</p>
 
-                            </div>
-                            <div id="SimState.Lobby" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Lobby</span>        =
-<span class="default_value">&lt;<a href="#SimState.Lobby">SimState.Lobby</a>: 1&gt;</span>
+<p>Output logger warnings</p>
+</div>
 
-        
-    </div>
-    <a class="headerlink" href="#SimState.Lobby"></a>
-    
-    
 
-                            </div>
-                            <div id="SimState.Sync" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Sync</span>        =
-<span class="default_value">&lt;<a href="#SimState.Sync">SimState.Sync</a>: 2&gt;</span>
+                </section>
+                <section id="logger_error">
+                    <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">logger_error</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SimState.Sync"></a>
+    <a class="headerlink" href="#logger_error"></a>
     
-    
+            <div class="docstring"><p>logger_error(msg: str) -> None</p>
 
-                            </div>
-                            <div id="SimState.Init" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Init</span>        =
-<span class="default_value">&lt;<a href="#SimState.Init">SimState.Init</a>: 3&gt;</span>
+<p>Output logger error</p>
+</div>
 
-        
-    </div>
-    <a class="headerlink" href="#SimState.Init"></a>
-    
-    
 
-                            </div>
-                            <div id="SimState.Runtime" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Runtime</span>        =
-<span class="default_value">&lt;<a href="#SimState.Runtime">SimState.Runtime</a>: 6&gt;</span>
+                </section>
+                <section id="logger_fatal">
+                    <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">logger_fatal</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
-    <a class="headerlink" href="#SimState.Runtime"></a>
+    <a class="headerlink" href="#logger_fatal"></a>
     
-    
+            <div class="docstring"><p>logger_fatal(msg: str) -> None</p>
 
-                            </div>
-                            <div id="SimState.Paused" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Paused</span>        =
-<span class="default_value">&lt;<a href="#SimState.Runtime">SimState.Runtime</a>: 6&gt;</span>
+<p>Output logger fatal error</p>
+</div>
 
-        
-    </div>
-    <a class="headerlink" href="#SimState.Paused"></a>
-    
-    
 
-                            </div>
-                            <div id="SimState.Playback" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Playback</span>        =
-<span class="default_value">&lt;<a href="#SimState.Runtime">SimState.Runtime</a>: 6&gt;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimState.Playback"></a>
-    
-    
-
-                            </div>
-                            <div id="SimState.Stopping" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Stopping</span>        =
-<span class="default_value">&lt;<a href="#SimState.Stopping">SimState.Stopping</a>: 7&gt;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#SimState.Stopping"></a>
-    
-    
-
-                            </div>
                 </section>
                 <section id="VarType">
                     <div class="attr class">
@@ -2321,131 +2254,6 @@ network nodes.</p>
 
                             </div>
                 </section>
-                <section id="Severity">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">Severity</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#Severity"></a>
-    
-            <div class="docstring"><p>Members:</p>
-
-<p>Info</p>
-
-<p>Warning</p>
-
-<p>Error</p>
-
-<p>Fatal</p>
-
-<p>Chat</p>
-</div>
-
-
-                            <div id="Severity.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">Severity</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Severity.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>, value: typing.SupportsInt) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="Severity.name" class="classattr">
-                                <div class="attr variable">
-            <span class="name">name</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Severity.name"></a>
-    
-            <div class="docstring"><p>name(self: object, /) -> str</p>
-</div>
-
-
-                            </div>
-                            <div id="Severity.value" class="classattr">
-                                <div class="attr variable">
-            <span class="name">value</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Severity.value"></a>
-    
-            <div class="docstring"><p>(arg0: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="Severity.Info" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Info</span>        =
-<span class="default_value">&lt;<a href="#Severity.Info">Severity.Info</a>: 0&gt;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Severity.Info"></a>
-    
-    
-
-                            </div>
-                            <div id="Severity.Warning" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Warning</span>        =
-<span class="default_value">&lt;<a href="#Severity.Warning">Severity.Warning</a>: 1&gt;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Severity.Warning"></a>
-    
-    
-
-                            </div>
-                            <div id="Severity.Error" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Error</span>        =
-<span class="default_value">&lt;<a href="#Severity.Error">Severity.Error</a>: 2&gt;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Severity.Error"></a>
-    
-    
-
-                            </div>
-                            <div id="Severity.Fatal" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Fatal</span>        =
-<span class="default_value">&lt;<a href="#Severity.Fatal">Severity.Fatal</a>: 3&gt;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Severity.Fatal"></a>
-    
-    
-
-                            </div>
-                            <div id="Severity.Chat" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Chat</span>        =
-<span class="default_value">&lt;<a href="#Severity.Chat">Severity.Chat</a>: 4&gt;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Severity.Chat"></a>
-    
-    
-
-                            </div>
-                </section>
                 <section id="SystemType">
                     <div class="attr class">
             
@@ -2834,6 +2642,230 @@ network nodes.</p>
 
                             </div>
                 </section>
+                <section id="UUID">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">UUID</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#UUID"></a>
+    
+    
+
+                            <div id="UUID.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">UUID</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#UUID.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="UUID.FromString" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">FromString</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#UUID.FromString"></a>
+    
+            <div class="docstring"><p>FromString(uuid_str: str, use_hyphens: bool = True) -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
+
+<p>Parse UUID string. Currently assuming all hex alpha chars are lowercase.</p>
+</div>
+
+
+                            </div>
+                            <div id="UUID.IsValid" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">IsValid</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#UUID.IsValid"></a>
+    
+            <div class="docstring"><p>IsValid(uuid: <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a>) -> bool</p>
+
+<p>Validate UUID bytes (true if valid UUID).</p>
+</div>
+
+
+                            </div>
+                            <div id="UUID.IsValidStr" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">IsValidStr</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#UUID.IsValidStr"></a>
+    
+            <div class="docstring"><p>IsValidStr(uuid_str: str) -> bool</p>
+
+<p>Validate UUID string (true if valid UUID).
+                        This does not check proper version or anything other than proper formatting.</p>
+</div>
+
+
+                            </div>
+                            <div id="UUID.Generate" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">Generate</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#UUID.Generate"></a>
+    
+            <div class="docstring"><p>Generate() -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
+
+<p>Randomly generate a version 4, variant 1 UUID.</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="EntityRef_Unresolved">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">EntityRef_Unresolved</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#EntityRef_Unresolved"></a>
+    
+    
+
+                            <div id="EntityRef_Unresolved.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">EntityRef_Unresolved</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#EntityRef_Unresolved.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#EntityRef_Unresolved">spaceteams.SC_Compute_Server.EntityRef_Unresolved</a>, entity_name: str) -> None</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="timestamp">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">timestamp</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#timestamp"></a>
+    
+    
+
+                            <div id="timestamp.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">timestamp</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#timestamp.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="timestamp.as_datetime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">as_datetime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#timestamp.as_datetime"></a>
+    
+            <div class="docstring"><p>as_datetime(self: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> object</p>
+
+<p>Gets the timestamp as a Python datetime. This converts the time from the TAI clock to UTC.</p>
+
+<pre><code>            Raises ValueError if the UTC instant falls during a leap second, because Python datetime
+            cannot represent 23:59:60.
+</code></pre>
+</div>
+
+
+                            </div>
+                            <div id="timestamp.from_datetime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">from_datetime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#timestamp.from_datetime"></a>
+    
+            <div class="docstring"><p>from_datetime(arg0: object) -> <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a></p>
+
+<p>Construct a timestamp object from a Python datetime. This interprets the
+                input as UTC (converting from any timezone if needed) and then converts
+                that UTC time to the simulation's TAI clock.</p>
+</div>
+
+
+                            </div>
+                            <div id="timestamp.as_tai_string" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">as_tai_string</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#timestamp.as_tai_string"></a>
+    
+            <div class="docstring"><p>as_tai_string(self: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> str</p>
+
+<p>Return a string of the timestamp, keeping it as TAI clock.
+                        See this for more clock choice details: <a href="https://stackoverflow.com/a/64084510/11502722">https://stackoverflow.com/a/64084510/11502722</a></p>
+</div>
+
+
+                            </div>
+                            <div id="timestamp.as_utc_string" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">as_utc_string</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#timestamp.as_utc_string"></a>
+    
+            <div class="docstring"><p>as_utc_string(self: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> str</p>
+
+<p>Return a string of the timestamp after converting it to UTC.
+                        See this for more clock choice details: <a href="https://stackoverflow.com/a/64084510/11502722">https://stackoverflow.com/a/64084510/11502722</a></p>
+</div>
+
+
+                            </div>
+                </section>
                 <section id="Notation">
                     <div class="attr class">
             
@@ -2936,221 +2968,406 @@ network nodes.</p>
 
                             </div>
                 </section>
-                <section id="timestamp">
+                <section id="Severity">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">timestamp</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+    <span class="name">Severity</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
 
         
     </div>
-    <a class="headerlink" href="#timestamp"></a>
+    <a class="headerlink" href="#Severity"></a>
     
-    
+            <div class="docstring"><p>Members:</p>
 
-                            <div id="timestamp.__init__" class="classattr">
+<p>Info</p>
+
+<p>Warning</p>
+
+<p>Error</p>
+
+<p>Fatal</p>
+
+<p>Chat</p>
+</div>
+
+
+                            <div id="Severity.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">timestamp</span><span class="signature pdoc-code condensed">()</span>
+        <span class="name">Severity</span><span class="signature pdoc-code condensed">()</span>
 
         
     </div>
-    <a class="headerlink" href="#timestamp.__init__"></a>
+    <a class="headerlink" href="#Severity.__init__"></a>
     
-            <div class="docstring"><p>__init__(self: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>, value: typing.SupportsInt) -> None</p>
 </div>
 
 
                             </div>
-                            <div id="timestamp.as_datetime" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">as_datetime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div id="Severity.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span>
 
         
     </div>
-    <a class="headerlink" href="#timestamp.as_datetime"></a>
+    <a class="headerlink" href="#Severity.name"></a>
     
-            <div class="docstring"><p>as_datetime(self: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> object</p>
-
-<p>Gets the timestamp as a Python datetime. This converts the time from the TAI clock to UTC.</p>
+            <div class="docstring"><p>name(self: object, /) -> str</p>
 </div>
 
 
                             </div>
-                            <div id="timestamp.from_datetime" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">from_datetime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div id="Severity.value" class="classattr">
+                                <div class="attr variable">
+            <span class="name">value</span>
 
         
     </div>
-    <a class="headerlink" href="#timestamp.from_datetime"></a>
+    <a class="headerlink" href="#Severity.value"></a>
     
-            <div class="docstring"><p>from_datetime(arg0: object) -> <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a></p>
-
-<p>Construct a timestamp object from a Python datetime. This interprets the
-                input as UTC (converting from any timezone if needed) and then converts
-                that UTC time to the simulation's TAI clock.</p>
+            <div class="docstring"><p>(arg0: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>) -> int</p>
 </div>
 
 
                             </div>
-                            <div id="timestamp.as_tai_string" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">as_tai_string</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div id="Severity.Info" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Info</span>        =
+<span class="default_value">&lt;<a href="#Severity.Info">Severity.Info</a>: 0&gt;</span>
 
         
     </div>
-    <a class="headerlink" href="#timestamp.as_tai_string"></a>
+    <a class="headerlink" href="#Severity.Info"></a>
     
-            <div class="docstring"><p>as_tai_string(self: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> str</p>
-
-<p>Return a string of the timestamp, keeping it as TAI clock.
-                        See this for more clock choice details: <a href="https://stackoverflow.com/a/64084510/11502722">https://stackoverflow.com/a/64084510/11502722</a></p>
-</div>
-
+    
 
                             </div>
-                            <div id="timestamp.as_utc_string" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">as_utc_string</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div id="Severity.Warning" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Warning</span>        =
+<span class="default_value">&lt;<a href="#Severity.Warning">Severity.Warning</a>: 1&gt;</span>
 
         
     </div>
-    <a class="headerlink" href="#timestamp.as_utc_string"></a>
+    <a class="headerlink" href="#Severity.Warning"></a>
     
-            <div class="docstring"><p>as_utc_string(self: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> str</p>
+    
 
-<p>Return a string of the timestamp after converting it to UTC.
-                        See this for more clock choice details: <a href="https://stackoverflow.com/a/64084510/11502722">https://stackoverflow.com/a/64084510/11502722</a></p>
-</div>
+                            </div>
+                            <div id="Severity.Error" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Error</span>        =
+<span class="default_value">&lt;<a href="#Severity.Error">Severity.Error</a>: 2&gt;</span>
 
+        
+    </div>
+    <a class="headerlink" href="#Severity.Error"></a>
+    
+    
+
+                            </div>
+                            <div id="Severity.Fatal" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Fatal</span>        =
+<span class="default_value">&lt;<a href="#Severity.Fatal">Severity.Fatal</a>: 3&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Severity.Fatal"></a>
+    
+    
+
+                            </div>
+                            <div id="Severity.Chat" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Chat</span>        =
+<span class="default_value">&lt;<a href="#Severity.Chat">Severity.Chat</a>: 4&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Severity.Chat"></a>
+    
+    
 
                             </div>
                 </section>
-                <section id="EntityRef_Unresolved">
+                <section id="SimState">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">EntityRef_Unresolved</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+    <span class="name">SimState</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
 
         
     </div>
-    <a class="headerlink" href="#EntityRef_Unresolved"></a>
+    <a class="headerlink" href="#SimState"></a>
     
-    
+            <div class="docstring"><p>Members:</p>
 
-                            <div id="EntityRef_Unresolved.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">EntityRef_Unresolved</span><span class="signature pdoc-code condensed">()</span>
+<p>Loading : Load the sim config as a starting point, independent of any other clients.</p>
 
-        
-    </div>
-    <a class="headerlink" href="#EntityRef_Unresolved.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#EntityRef_Unresolved">spaceteams.SC_Compute_Server.EntityRef_Unresolved</a>, entity_name: str) -> None</p>
+<p>Lobby :  Wait for other clients to finish connecting/loading, hang out (if applicable).</p>
+
+<p>Sync : With a final client list known, enter a process where we ensure all clients 
+are joined and warmed up before Init/Running Simstate is made available. 
+Additionally, if a certain option is chosen, stay in SimState::Sync to 
+enable a Sim Editing mode that hasn't run system init or update functions.</p>
+
+<p>Init : In this state and future, operations that would result in a SaveSim having 
+many differences are accepted. Without impinging on timing of updates as 
+the Runtime state is hit, we do a final step where everything runs their 
+init() functions, optionally with order dependencies where applicable, and 
+we wait for ALL inits on ALL programs to finish.
+(TBD) For sims that are resuming from a snapshot, this MIGHT be skipped/modified?</p>
+
+<p>Runtime : Timed updates begin. Physics starts moving.</p>
+
+<p>Paused :  (UNUSED, MAY CHANGE) In this state, we stop all network nodes
+if possible so something big like a host migration can happen.</p>
+
+<p>Playback : (UNUSED, MAY CHANGE) In this state, the state of the Platform
+is being driven by recorded transactional state changes
+that are being streamed as PlatformOrders by one (?) of the
+network nodes.</p>
+
+<p>Stopping : In this state, the platform is treated as undefined because network nodes are expected to disconnect at any moment. Any time a network node is in this state, the network 
+                node should work to and/close the local representation of the simulation</p>
 </div>
 
+
+                            <div id="SimState.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">SimState</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimState.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#SimState">spaceteams.SC_Compute_Server.SimState</a>, value: typing.SupportsInt) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="SimState.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimState.name"></a>
+    
+            <div class="docstring"><p>name(self: object, /) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="SimState.value" class="classattr">
+                                <div class="attr variable">
+            <span class="name">value</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimState.value"></a>
+    
+            <div class="docstring"><p>(arg0: <a href="#SimState">spaceteams.SC_Compute_Server.SimState</a>) -> int</p>
+</div>
+
+
+                            </div>
+                            <div id="SimState.Loading" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Loading</span>        =
+<span class="default_value">&lt;<a href="#SimState.Loading">SimState.Loading</a>: 0&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimState.Loading"></a>
+    
+    
+
+                            </div>
+                            <div id="SimState.Lobby" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Lobby</span>        =
+<span class="default_value">&lt;<a href="#SimState.Lobby">SimState.Lobby</a>: 1&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimState.Lobby"></a>
+    
+    
+
+                            </div>
+                            <div id="SimState.Sync" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Sync</span>        =
+<span class="default_value">&lt;<a href="#SimState.Sync">SimState.Sync</a>: 2&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimState.Sync"></a>
+    
+    
+
+                            </div>
+                            <div id="SimState.Init" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Init</span>        =
+<span class="default_value">&lt;<a href="#SimState.Init">SimState.Init</a>: 3&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimState.Init"></a>
+    
+    
+
+                            </div>
+                            <div id="SimState.Runtime" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Runtime</span>        =
+<span class="default_value">&lt;<a href="#SimState.Runtime">SimState.Runtime</a>: 6&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimState.Runtime"></a>
+    
+    
+
+                            </div>
+                            <div id="SimState.Paused" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Paused</span>        =
+<span class="default_value">&lt;<a href="#SimState.Runtime">SimState.Runtime</a>: 6&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimState.Paused"></a>
+    
+    
+
+                            </div>
+                            <div id="SimState.Playback" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Playback</span>        =
+<span class="default_value">&lt;<a href="#SimState.Runtime">SimState.Runtime</a>: 6&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimState.Playback"></a>
+    
+    
+
+                            </div>
+                            <div id="SimState.Stopping" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Stopping</span>        =
+<span class="default_value">&lt;<a href="#SimState.Stopping">SimState.Stopping</a>: 7&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SimState.Stopping"></a>
+    
+    
 
                             </div>
                 </section>
-                <section id="UUID">
+                <section id="OnScreenLogMessage">
+                    <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">OnScreenLogMessage</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#OnScreenLogMessage"></a>
+    
+            <div class="docstring"><p>OnScreenLogMessage(message: str, category: str, severity: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>, transmit: bool = True) -> None</p>
+
+<p>Send message that is shown on all app screens, and stays in a log.
+                If transmit is false, the message is only shown inside this app.</p>
+</div>
+
+
+                </section>
+                <section id="OnScreenAlert">
+                    <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">OnScreenAlert</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#OnScreenAlert"></a>
+    
+            <div class="docstring"><p>OnScreenAlert(message: str, topic: str, severity: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>, transmit: bool = True) -> None</p>
+
+<p>Send alert that is shown on all app screens, is deduplicated by topic name, and is erased after a few seconds.
+                If transmit is false, the alert is only shown inside this app.</p>
+</div>
+
+
+                </section>
+                <section id="ResponderHandle">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">UUID</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+    <span class="name">ResponderHandle</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
 
         
     </div>
-    <a class="headerlink" href="#UUID"></a>
+    <a class="headerlink" href="#ResponderHandle"></a>
     
     
 
-                            <div id="UUID.__init__" class="classattr">
+                            <div id="ResponderHandle.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">UUID</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
+        <span class="name">ResponderHandle</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
 
         
     </div>
-    <a class="headerlink" href="#UUID.__init__"></a>
+    <a class="headerlink" href="#ResponderHandle.__init__"></a>
     
     
 
                             </div>
-                            <div id="UUID.FromString" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">FromString</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div id="ResponderHandle.handle_id" class="classattr">
+                                <div class="attr variable">
+            <span class="name">handle_id</span>
 
         
     </div>
-    <a class="headerlink" href="#UUID.FromString"></a>
+    <a class="headerlink" href="#ResponderHandle.handle_id"></a>
     
-            <div class="docstring"><p>FromString(uuid_str: str, use_hyphens: bool = True) -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
-
-<p>Parse UUID string. Currently assuming all hex alpha chars are lowercase.</p>
+            <div class="docstring"><p>(self: <a href="#ResponderHandle">spaceteams.SC_Compute_Server.ResponderHandle</a>) -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
 </div>
 
 
                             </div>
-                            <div id="UUID.IsValid" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">IsValid</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div id="ResponderHandle.entityId" class="classattr">
+                                <div class="attr variable">
+            <span class="name">entityId</span>
 
         
     </div>
-    <a class="headerlink" href="#UUID.IsValid"></a>
+    <a class="headerlink" href="#ResponderHandle.entityId"></a>
     
-            <div class="docstring"><p>IsValid(uuid: <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a>) -> bool</p>
-
-<p>Validate UUID bytes (true if valid UUID).</p>
+            <div class="docstring"><p>(self: <a href="#ResponderHandle">spaceteams.SC_Compute_Server.ResponderHandle</a>) -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
 </div>
 
 
                             </div>
-                            <div id="UUID.IsValidStr" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">IsValidStr</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+                            <div id="ResponderHandle.topic" class="classattr">
+                                <div class="attr variable">
+            <span class="name">topic</span>
 
         
     </div>
-    <a class="headerlink" href="#UUID.IsValidStr"></a>
+    <a class="headerlink" href="#ResponderHandle.topic"></a>
     
-            <div class="docstring"><p>IsValidStr(uuid_str: str) -> bool</p>
-
-<p>Validate UUID string (true if valid UUID).
-                        This does not check proper version or anything other than proper formatting.</p>
-</div>
-
-
-                            </div>
-                            <div id="UUID.Generate" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">Generate</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#UUID.Generate"></a>
-    
-            <div class="docstring"><p>Generate() -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
-
-<p>Randomly generate a version 4, variant 1 UUID.</p>
+            <div class="docstring"><p>(self: <a href="#ResponderHandle">spaceteams.SC_Compute_Server.ResponderHandle</a>) -> str</p>
 </div>
 
 
@@ -3522,7 +3739,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#ParamMap.ForEachParam"></a>
     
-            <div class="docstring"><p>ForEachParam(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, operations: collections.abc.Callable[[str, <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>], None]) -> None</p>
+            <div class="docstring"><p>ForEachParam(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, operations: std::function<void __cdecl(std::basic_string<char,std::char_traits<char>,std::allocator<char> &gt;,spaceteams::SCVarType)&gt;) -> None</p>
 
 <p>For each of the parameters in this ParamMap, supply the key and type and do "operations".
                         Doesn’t allow access to pointer because it's non-const.
@@ -3541,7 +3758,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#ParamMap.ForEachParamMap"></a>
     
-            <div class="docstring"><p>ForEachParamMap(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, operations: collections.abc.Callable[[str, <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>], None]) -> None</p>
+            <div class="docstring"><p>ForEachParamMap(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, operations: std::function<void __cdecl(std::basic_string<char,std::char_traits<char>,std::allocator<char> &gt;,std::shared_ptr<spaceteams::GenParamMap>)&gt;) -> None</p>
 
 <p>For each of the parameters in this ParamMap, supply the key, ParamMap pointer, and type and do "operations".
                         The operations passed in here are a std::function, which is usually made as a lambda function.</p>
@@ -4981,7 +5198,9 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#PhysEffect"></a>
     
-    
+            <div class="docstring"><p>Physical Effect that can be applied to an Entity.</p>
+</div>
+
 
                             <div id="PhysEffect.__init__" class="classattr">
                                 <div class="attr function">
@@ -4996,9 +5215,16 @@ Overloaded function.</p>
 Overloaded function.</p>
 
 <ol>
-<li><p>__init__(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> None</p></li>
-<li><p>__init__(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, arg0: <a href="#PhysEffectType">spaceteams.SC_Compute_Server.PhysEffectType</a>, arg1: spaceteams.SC_Compute_Server.frames.Frame) -> None</p></li>
+<li>__init__(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> None</li>
 </ol>
+
+<p>Prefer using the other constructor.</p>
+
+<ol start="2">
+<li>__init__(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, effectType: <a href="#PhysEffectType">spaceteams.SC_Compute_Server.PhysEffectType</a>, frame: spaceteams::frames::Frame) -> None</li>
+</ol>
+
+<p>Standard constructor that produces a valid minimal PhysEffect.</p>
 </div>
 
 
@@ -5024,7 +5250,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#PhysEffect.frame"></a>
     
-            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> spaceteams.SC_Compute_Server.frames.Frame</p>
+            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> spaceteams::frames::Frame</p>
 </div>
 
 
@@ -5081,19 +5307,6 @@ Overloaded function.</p>
 
 
                             </div>
-                            <div id="PhysEffect.startTime" class="classattr">
-                                <div class="attr variable">
-            <span class="name">startTime</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PhysEffect.startTime"></a>
-    
-            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> datetime.timedelta</p>
-</div>
-
-
-                            </div>
                             <div id="PhysEffect.useEndTime" class="classattr">
                                 <div class="attr variable">
             <span class="name">useEndTime</span>
@@ -5103,19 +5316,6 @@ Overloaded function.</p>
     <a class="headerlink" href="#PhysEffect.useEndTime"></a>
     
             <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> bool</p>
-</div>
-
-
-                            </div>
-                            <div id="PhysEffect.endTime" class="classattr">
-                                <div class="attr variable">
-            <span class="name">endTime</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PhysEffect.endTime"></a>
-    
-            <div class="docstring"><p>(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> datetime.timedelta</p>
 </div>
 
 
@@ -5130,7 +5330,9 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#PhysEffect.setVector"></a>
     
-            <div class="docstring"><p>setVector(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, arg0: typing.Annotated[numpy.typing.ArrayLike, numpy.float64, "[3, 1]"]) -> None</p>
+            <div class="docstring"><p>setVector(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, vector: typing.Annotated[numpy.typing.ArrayLike, numpy.float64, "[3, 1]"]) -> None</p>
+
+<p>Set magnitude and direction at the same time.</p>
 </div>
 
 
@@ -5145,7 +5347,504 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#PhysEffect.setQuaternion"></a>
     
-            <div class="docstring"><p>setQuaternion(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, arg0: Eigen::Quaternion<double,0>) -> None</p>
+            <div class="docstring"><p>setQuaternion(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, quat_array: typing.Annotated[numpy.typing.ArrayLike, numpy.float64, "[4, 1]"]) -> None</p>
+
+<p>Set quaternion, for Rotation.</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.setStartTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">setStartTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.setStartTime"></a>
+    
+            <div class="docstring"><p>setStartTime(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, startTime: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> None</p>
+
+<p>Enable and set start time.</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysEffect.setEndTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">setEndTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysEffect.setEndTime"></a>
+    
+            <div class="docstring"><p>setEndTime(self: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>, endTime: <a href="#timestamp">spaceteams.SC_Compute_Server.timestamp</a>) -> None</p>
+
+<p>Enable and set end time.</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="OutputMode">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">OutputMode</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode"></a>
+    
+            <div class="docstring"><p>"Camera output modes, which affect the content and pixel format of a capture's pixels, but not its geometry."</p>
+
+<p>Members:</p>
+
+<p>Default : What people "expect" from a typical image.</p>
+
+<p>RGB_LDR_sRGB : Red-Green-Blue channels in sRGB color space, 8 bits each.</p>
+
+<p>RGB_LDR : Red-Green-Blue channels in linear color space, 8 bits each.</p>
+
+<p>RGB_HDR : (UNIMPLEMENTED) Red-Green-Blue channels in linear color space, 16-bit float each.</p>
+
+<p>Depth_cm : Single channel, 32-bit float, linear depth in cm.</p>
+</div>
+
+
+                            <div id="OutputMode.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">OutputMode</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#OutputMode">spaceteams.SC_Compute_Server.OutputMode</a>, value: typing.SupportsInt) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="OutputMode.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.name"></a>
+    
+            <div class="docstring"><p>name(self: object, /) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="OutputMode.value" class="classattr">
+                                <div class="attr variable">
+            <span class="name">value</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.value"></a>
+    
+            <div class="docstring"><p>(arg0: <a href="#OutputMode">spaceteams.SC_Compute_Server.OutputMode</a>) -> int</p>
+</div>
+
+
+                            </div>
+                            <div id="OutputMode.Default" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Default</span>        =
+<span class="default_value">&lt;<a href="#OutputMode.Default">OutputMode.Default</a>: 0&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.Default"></a>
+    
+    
+
+                            </div>
+                            <div id="OutputMode.RGB_LDR_sRGB" class="classattr">
+                                <div class="attr variable">
+            <span class="name">RGB_LDR_sRGB</span>        =
+<span class="default_value">&lt;<a href="#OutputMode.Default">OutputMode.Default</a>: 0&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.RGB_LDR_sRGB"></a>
+    
+    
+
+                            </div>
+                            <div id="OutputMode.RGB_LDR" class="classattr">
+                                <div class="attr variable">
+            <span class="name">RGB_LDR</span>        =
+<span class="default_value">&lt;<a href="#OutputMode.RGB_LDR">OutputMode.RGB_LDR</a>: 1&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.RGB_LDR"></a>
+    
+    
+
+                            </div>
+                            <div id="OutputMode.RGB_HDR" class="classattr">
+                                <div class="attr variable">
+            <span class="name">RGB_HDR</span>        =
+<span class="default_value">&lt;<a href="#OutputMode.RGB_HDR">OutputMode.RGB_HDR</a>: 2&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.RGB_HDR"></a>
+    
+    
+
+                            </div>
+                            <div id="OutputMode.Depth_cm" class="classattr">
+                                <div class="attr variable">
+            <span class="name">Depth_cm</span>        =
+<span class="default_value">&lt;<a href="#OutputMode.Depth_cm">OutputMode.Depth_cm</a>: 3&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OutputMode.Depth_cm"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="PhysicalCameraProperties">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">PhysicalCameraProperties</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#PhysicalCameraProperties"></a>
+    
+            <div class="docstring"><p>"Physical properties of the camera that affect the image"</p>
+</div>
+
+
+                            <div id="PhysicalCameraProperties.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">PhysicalCameraProperties</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysicalCameraProperties.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysicalCameraProperties.ISO" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ISO</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysicalCameraProperties.ISO"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> float</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysicalCameraProperties.fStop" class="classattr">
+                                <div class="attr variable">
+            <span class="name">fStop</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysicalCameraProperties.fStop"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> float</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysicalCameraProperties.minfStop" class="classattr">
+                                <div class="attr variable">
+            <span class="name">minfStop</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysicalCameraProperties.minfStop"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> float</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysicalCameraProperties.shutterSpeed_Hz" class="classattr">
+                                <div class="attr variable">
+            <span class="name">shutterSpeed_Hz</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysicalCameraProperties.shutterSpeed_Hz"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> float</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysicalCameraProperties.numApertureBlades" class="classattr">
+                                <div class="attr variable">
+            <span class="name">numApertureBlades</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysicalCameraProperties.numApertureBlades"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> int</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysicalCameraProperties.chrom_abbr_intensity" class="classattr">
+                                <div class="attr variable">
+            <span class="name">chrom_abbr_intensity</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysicalCameraProperties.chrom_abbr_intensity"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> float</p>
+</div>
+
+
+                            </div>
+                            <div id="PhysicalCameraProperties.focus_distance_m" class="classattr">
+                                <div class="attr variable">
+            <span class="name">focus_distance_m</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PhysicalCameraProperties.focus_distance_m"></a>
+    
+            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> float</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="ArtCameraProperties">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ArtCameraProperties</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ArtCameraProperties"></a>
+    
+            <div class="docstring"><p>"Non-physical changes to apply to the image"</p>
+</div>
+
+
+                            <div id="ArtCameraProperties.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">ArtCameraProperties</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ArtCameraProperties.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#ArtCameraProperties">spaceteams.SC_Compute_Server.ArtCameraProperties</a>) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="ArtCameraProperties.chrom_abbr_offset" class="classattr">
+                                <div class="attr variable">
+            <span class="name">chrom_abbr_offset</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ArtCameraProperties.chrom_abbr_offset"></a>
+    
+            <div class="docstring"><p>(self: <a href="#ArtCameraProperties">spaceteams.SC_Compute_Server.ArtCameraProperties</a>) -> float</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="CaptureImageProperties">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">CaptureImageProperties</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties"></a>
+    
+            <div class="docstring"><p>"All properties of an image to capture besides the choice of camera entity."</p>
+</div>
+
+
+                            <div id="CaptureImageProperties.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">CaptureImageProperties</span><span class="signature pdoc-code condensed">()</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.__init__"></a>
+    
+            <div class="docstring"><p>__init__(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.CaptureID" class="classattr">
+                                <div class="attr variable">
+            <span class="name">CaptureID</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.CaptureID"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> int</p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.ResolutionX" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ResolutionX</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.ResolutionX"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> int</p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.ResolutionY" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ResolutionY</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.ResolutionY"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> int</p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.FOV" class="classattr">
+                                <div class="attr variable">
+            <span class="name">FOV</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.FOV"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> float</p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.uses_custom_projection" class="classattr">
+                                <div class="attr variable">
+            <span class="name">uses_custom_projection</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.uses_custom_projection"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> bool</p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.ProjectionMatrix" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ProjectionMatrix</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.ProjectionMatrix"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> typing.Annotated[numpy.typing.NDArray[numpy.float64], "[4, 4]"]</p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.output_mode" class="classattr">
+                                <div class="attr variable">
+            <span class="name">output_mode</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.output_mode"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> <a href="#OutputMode">spaceteams.SC_Compute_Server.OutputMode</a></p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.is_physical" class="classattr">
+                                <div class="attr variable">
+            <span class="name">is_physical</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.is_physical"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> bool</p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.nonphys_EV" class="classattr">
+                                <div class="attr variable">
+            <span class="name">nonphys_EV</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.nonphys_EV"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> float</p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.phys" class="classattr">
+                                <div class="attr variable">
+            <span class="name">phys</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.phys"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a></p>
+</div>
+
+
+                            </div>
+                            <div id="CaptureImageProperties.art" class="classattr">
+                                <div class="attr variable">
+            <span class="name">art</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CaptureImageProperties.art"></a>
+    
+            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> <a href="#ArtCameraProperties">spaceteams.SC_Compute_Server.ArtCameraProperties</a></p>
 </div>
 
 
@@ -5161,7 +5860,9 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity"></a>
     
-    
+            <div class="docstring"><p>Entity class representing an entity in a running simulation.</p>
+</div>
+
 
                             <div id="Entity.__init__" class="classattr">
                                 <div class="attr function">
@@ -5710,7 +6411,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.SetPropagator"></a>
     
-            <div class="docstring"><p>SetPropagator(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: <a href="#PropagatorChoice">spaceteams.SC_Compute_Server.PropagatorChoice</a>, arg1: bool) -> None</p>
+            <div class="docstring"><p>SetPropagator(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, propagator: <a href="#PropagatorChoice">spaceteams.SC_Compute_Server.PropagatorChoice</a>, transmit: bool = True) -> None</p>
 </div>
 
 
@@ -5725,7 +6426,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.getPhysEffects"></a>
     
-            <div class="docstring"><p>getPhysEffects(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> dict</p>
+            <div class="docstring"><p>getPhysEffects(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>) -> dict[str, <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>]</p>
 </div>
 
 
@@ -5740,7 +6441,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.setPhysEffect"></a>
     
-            <div class="docstring"><p>setPhysEffect(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: str, arg1: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> None</p>
+            <div class="docstring"><p>setPhysEffect(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, key: str, effect: <a href="#PhysEffect">spaceteams.SC_Compute_Server.PhysEffect</a>) -> None</p>
 </div>
 
 
@@ -5755,7 +6456,7 @@ Overloaded function.</p>
     </div>
     <a class="headerlink" href="#Entity.removePhysEffect"></a>
     
-            <div class="docstring"><p>removePhysEffect(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, arg0: str) -> None</p>
+            <div class="docstring"><p>removePhysEffect(self: <a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>, key: str) -> None</p>
 </div>
 
 
@@ -5789,680 +6490,6 @@ Overloaded function.</p>
             </div>
                                 </dl>
                             </div>
-                </section>
-                <section id="get_entities">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">get_entities</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#get_entities"></a>
-    
-            <div class="docstring"><p>get_entities() -> list[<a href="#Entity">spaceteams.SC_Compute_Server.Entity</a>]</p>
-</div>
-
-
-                </section>
-                <section id="GetThisSystem">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">GetThisSystem</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#GetThisSystem"></a>
-    
-            <div class="docstring"><p>GetThisSystem() -> <a href="#SystemConfig">spaceteams.SC_Compute_Server.SystemConfig</a></p>
-</div>
-
-
-                </section>
-                <section id="get_nametag">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">get_nametag</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#get_nametag"></a>
-    
-            <div class="docstring"><p>get_nametag() -> str</p>
-</div>
-
-
-                </section>
-                <section id="OnScreenLogMessage">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">OnScreenLogMessage</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#OnScreenLogMessage"></a>
-    
-            <div class="docstring"><p>OnScreenLogMessage(message: str, category: str, severity: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>, transmit: bool = True) -> None</p>
-
-<p>Send message that is shown on all app screens, and stays in a log.
-                If transmit is false, the message is only shown inside this app.</p>
-</div>
-
-
-                </section>
-                <section id="OnScreenAlert">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">OnScreenAlert</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#OnScreenAlert"></a>
-    
-            <div class="docstring"><p>OnScreenAlert(message: str, topic: str, severity: <a href="#Severity">spaceteams.SC_Compute_Server.Severity</a>, transmit: bool = True) -> None</p>
-
-<p>Send alert that is shown on all app screens, is deduplicated by topic name, and is erased after a few seconds.
-                If transmit is false, the alert is only shown inside this app.</p>
-</div>
-
-
-                </section>
-                <section id="OutputMode">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">OutputMode</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#OutputMode"></a>
-    
-            <div class="docstring"><p>"Camera output modes, which affect the content and pixel format of a capture's pixels, but not its geometry."</p>
-
-<p>Members:</p>
-
-<p>Default : What people "expect" from a typical image.</p>
-
-<p>RGB_LDR_sRGB : Red-Green-Blue channels in sRGB color space, 8 bits each.</p>
-
-<p>RGB_LDR : Red-Green-Blue channels in linear color space, 8 bits each.</p>
-
-<p>RGB_HDR : (UNIMPLEMENTED) Red-Green-Blue channels in linear color space, 16-bit float each.</p>
-
-<p>Depth_cm : Single channel, 32-bit float, linear depth in cm.</p>
-</div>
-
-
-                            <div id="OutputMode.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">OutputMode</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#OutputMode.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#OutputMode">spaceteams.SC_Compute_Server.OutputMode</a>, value: typing.SupportsInt) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="OutputMode.name" class="classattr">
-                                <div class="attr variable">
-            <span class="name">name</span>
-
-        
-    </div>
-    <a class="headerlink" href="#OutputMode.name"></a>
-    
-            <div class="docstring"><p>name(self: object, /) -> str</p>
-</div>
-
-
-                            </div>
-                            <div id="OutputMode.value" class="classattr">
-                                <div class="attr variable">
-            <span class="name">value</span>
-
-        
-    </div>
-    <a class="headerlink" href="#OutputMode.value"></a>
-    
-            <div class="docstring"><p>(arg0: <a href="#OutputMode">spaceteams.SC_Compute_Server.OutputMode</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="OutputMode.Default" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Default</span>        =
-<span class="default_value">&lt;<a href="#OutputMode.Default">OutputMode.Default</a>: 0&gt;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#OutputMode.Default"></a>
-    
-    
-
-                            </div>
-                            <div id="OutputMode.RGB_LDR_sRGB" class="classattr">
-                                <div class="attr variable">
-            <span class="name">RGB_LDR_sRGB</span>        =
-<span class="default_value">&lt;<a href="#OutputMode.Default">OutputMode.Default</a>: 0&gt;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#OutputMode.RGB_LDR_sRGB"></a>
-    
-    
-
-                            </div>
-                            <div id="OutputMode.RGB_LDR" class="classattr">
-                                <div class="attr variable">
-            <span class="name">RGB_LDR</span>        =
-<span class="default_value">&lt;<a href="#OutputMode.RGB_LDR">OutputMode.RGB_LDR</a>: 1&gt;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#OutputMode.RGB_LDR"></a>
-    
-    
-
-                            </div>
-                            <div id="OutputMode.RGB_HDR" class="classattr">
-                                <div class="attr variable">
-            <span class="name">RGB_HDR</span>        =
-<span class="default_value">&lt;<a href="#OutputMode.RGB_HDR">OutputMode.RGB_HDR</a>: 2&gt;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#OutputMode.RGB_HDR"></a>
-    
-    
-
-                            </div>
-                            <div id="OutputMode.Depth_cm" class="classattr">
-                                <div class="attr variable">
-            <span class="name">Depth_cm</span>        =
-<span class="default_value">&lt;<a href="#OutputMode.Depth_cm">OutputMode.Depth_cm</a>: 3&gt;</span>
-
-        
-    </div>
-    <a class="headerlink" href="#OutputMode.Depth_cm"></a>
-    
-    
-
-                            </div>
-                </section>
-                <section id="PhysicalCameraProperties">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">PhysicalCameraProperties</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#PhysicalCameraProperties"></a>
-    
-            <div class="docstring"><p>"Physical properties of the camera that affect the image"</p>
-</div>
-
-
-                            <div id="PhysicalCameraProperties.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">PhysicalCameraProperties</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PhysicalCameraProperties.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="PhysicalCameraProperties.ISO" class="classattr">
-                                <div class="attr variable">
-            <span class="name">ISO</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PhysicalCameraProperties.ISO"></a>
-    
-            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="PhysicalCameraProperties.fStop" class="classattr">
-                                <div class="attr variable">
-            <span class="name">fStop</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PhysicalCameraProperties.fStop"></a>
-    
-            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="PhysicalCameraProperties.minfStop" class="classattr">
-                                <div class="attr variable">
-            <span class="name">minfStop</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PhysicalCameraProperties.minfStop"></a>
-    
-            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="PhysicalCameraProperties.shutterSpeed_Hz" class="classattr">
-                                <div class="attr variable">
-            <span class="name">shutterSpeed_Hz</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PhysicalCameraProperties.shutterSpeed_Hz"></a>
-    
-            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="PhysicalCameraProperties.numApertureBlades" class="classattr">
-                                <div class="attr variable">
-            <span class="name">numApertureBlades</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PhysicalCameraProperties.numApertureBlades"></a>
-    
-            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="PhysicalCameraProperties.chrom_abbr_intensity" class="classattr">
-                                <div class="attr variable">
-            <span class="name">chrom_abbr_intensity</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PhysicalCameraProperties.chrom_abbr_intensity"></a>
-    
-            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="PhysicalCameraProperties.focus_distance_m" class="classattr">
-                                <div class="attr variable">
-            <span class="name">focus_distance_m</span>
-
-        
-    </div>
-    <a class="headerlink" href="#PhysicalCameraProperties.focus_distance_m"></a>
-    
-            <div class="docstring"><p>(self: <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a>) -> float</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="ArtCameraProperties">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">ArtCameraProperties</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#ArtCameraProperties"></a>
-    
-            <div class="docstring"><p>"Non-physical changes to apply to the image"</p>
-</div>
-
-
-                            <div id="ArtCameraProperties.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">ArtCameraProperties</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ArtCameraProperties.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#ArtCameraProperties">spaceteams.SC_Compute_Server.ArtCameraProperties</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="ArtCameraProperties.chrom_abbr_offset" class="classattr">
-                                <div class="attr variable">
-            <span class="name">chrom_abbr_offset</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ArtCameraProperties.chrom_abbr_offset"></a>
-    
-            <div class="docstring"><p>(self: <a href="#ArtCameraProperties">spaceteams.SC_Compute_Server.ArtCameraProperties</a>) -> float</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="CaptureImageProperties">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">CaptureImageProperties</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties"></a>
-    
-            <div class="docstring"><p>"All properties of an image to capture besides the choice of camera entity."</p>
-</div>
-
-
-                            <div id="CaptureImageProperties.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">CaptureImageProperties</span><span class="signature pdoc-code condensed">()</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties.__init__"></a>
-    
-            <div class="docstring"><p>__init__(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="CaptureImageProperties.CaptureID" class="classattr">
-                                <div class="attr variable">
-            <span class="name">CaptureID</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties.CaptureID"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="CaptureImageProperties.ResolutionX" class="classattr">
-                                <div class="attr variable">
-            <span class="name">ResolutionX</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties.ResolutionX"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="CaptureImageProperties.ResolutionY" class="classattr">
-                                <div class="attr variable">
-            <span class="name">ResolutionY</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties.ResolutionY"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="CaptureImageProperties.FOV" class="classattr">
-                                <div class="attr variable">
-            <span class="name">FOV</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties.FOV"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="CaptureImageProperties.uses_custom_projection" class="classattr">
-                                <div class="attr variable">
-            <span class="name">uses_custom_projection</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties.uses_custom_projection"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> bool</p>
-</div>
-
-
-                            </div>
-                            <div id="CaptureImageProperties.ProjectionMatrix" class="classattr">
-                                <div class="attr variable">
-            <span class="name">ProjectionMatrix</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties.ProjectionMatrix"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> typing.Annotated[numpy.typing.NDArray[numpy.float64], "[4, 4]"]</p>
-</div>
-
-
-                            </div>
-                            <div id="CaptureImageProperties.output_mode" class="classattr">
-                                <div class="attr variable">
-            <span class="name">output_mode</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties.output_mode"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> <a href="#OutputMode">spaceteams.SC_Compute_Server.OutputMode</a></p>
-</div>
-
-
-                            </div>
-                            <div id="CaptureImageProperties.is_physical" class="classattr">
-                                <div class="attr variable">
-            <span class="name">is_physical</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties.is_physical"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> bool</p>
-</div>
-
-
-                            </div>
-                            <div id="CaptureImageProperties.nonphys_EV" class="classattr">
-                                <div class="attr variable">
-            <span class="name">nonphys_EV</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties.nonphys_EV"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> float</p>
-</div>
-
-
-                            </div>
-                            <div id="CaptureImageProperties.phys" class="classattr">
-                                <div class="attr variable">
-            <span class="name">phys</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties.phys"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> <a href="#PhysicalCameraProperties">spaceteams.SC_Compute_Server.PhysicalCameraProperties</a></p>
-</div>
-
-
-                            </div>
-                            <div id="CaptureImageProperties.art" class="classattr">
-                                <div class="attr variable">
-            <span class="name">art</span>
-
-        
-    </div>
-    <a class="headerlink" href="#CaptureImageProperties.art"></a>
-    
-            <div class="docstring"><p>(self: <a href="#CaptureImageProperties">spaceteams.SC_Compute_Server.CaptureImageProperties</a>) -> <a href="#ArtCameraProperties">spaceteams.SC_Compute_Server.ArtCameraProperties</a></p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="ResponderHandle">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">ResponderHandle</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#ResponderHandle"></a>
-    
-    
-
-                            <div id="ResponderHandle.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">ResponderHandle</span><span class="signature pdoc-code condensed">(<span class="param"><span class="o">*</span><span class="n">args</span>, </span><span class="param"><span class="o">**</span><span class="n">kwargs</span></span>)</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ResponderHandle.__init__"></a>
-    
-    
-
-                            </div>
-                            <div id="ResponderHandle.handle_id" class="classattr">
-                                <div class="attr variable">
-            <span class="name">handle_id</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ResponderHandle.handle_id"></a>
-    
-            <div class="docstring"><p>(self: <a href="#ResponderHandle">spaceteams.SC_Compute_Server.ResponderHandle</a>) -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
-</div>
-
-
-                            </div>
-                            <div id="ResponderHandle.entityId" class="classattr">
-                                <div class="attr variable">
-            <span class="name">entityId</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ResponderHandle.entityId"></a>
-    
-            <div class="docstring"><p>(self: <a href="#ResponderHandle">spaceteams.SC_Compute_Server.ResponderHandle</a>) -> <a href="#UUID">spaceteams.SC_Compute_Server.UUID</a></p>
-</div>
-
-
-                            </div>
-                            <div id="ResponderHandle.topic" class="classattr">
-                                <div class="attr variable">
-            <span class="name">topic</span>
-
-        
-    </div>
-    <a class="headerlink" href="#ResponderHandle.topic"></a>
-    
-            <div class="docstring"><p>(self: <a href="#ResponderHandle">spaceteams.SC_Compute_Server.ResponderHandle</a>) -> str</p>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="logger_info">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">logger_info</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#logger_info"></a>
-    
-            <div class="docstring"><p>logger_info(msg: str) -> None</p>
-
-<p>Output logger information</p>
-</div>
-
-
-                </section>
-                <section id="logger_warn">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">logger_warn</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#logger_warn"></a>
-    
-            <div class="docstring"><p>logger_warn(msg: str) -> None</p>
-
-<p>Output logger warnings</p>
-</div>
-
-
-                </section>
-                <section id="logger_error">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">logger_error</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#logger_error"></a>
-    
-            <div class="docstring"><p>logger_error(msg: str) -> None</p>
-
-<p>Output logger error</p>
-</div>
-
-
-                </section>
-                <section id="logger_fatal">
-                    <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">logger_fatal</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#logger_fatal"></a>
-    
-            <div class="docstring"><p>logger_fatal(msg: str) -> None</p>
-
-<p>Output logger fatal error</p>
-</div>
-
-
                 </section>
     </main>
 </body>
