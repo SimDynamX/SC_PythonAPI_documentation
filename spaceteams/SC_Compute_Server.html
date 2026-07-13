@@ -584,6 +584,9 @@
                                 <a class="function" href="#ParamMap.HasParamArray">HasParamArray</a>
                         </li>
                         <li>
+                                <a class="function" href="#ParamMap.HasParamWithValue">HasParamWithValue</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#ParamMap.GetParamType">GetParamType</a>
                         </li>
                         <li>
@@ -596,7 +599,22 @@
                                 <a class="function" href="#ParamMap.GetParamMap">GetParamMap</a>
                         </li>
                         <li>
+                                <a class="function" href="#ParamMap.GetMap">GetMap</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#ParamMap.HasMap">HasMap</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#ParamMap.GetParam">GetParam</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#ParamMap.IfHas_GetParam">IfHas_GetParam</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#ParamMap.IfHas_GetParamArray">IfHas_GetParamArray</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#ParamMap.IfHas_GetParamWithTime">IfHas_GetParamWithTime</a>
                         </li>
                         <li>
                                 <a class="function" href="#ParamMap.SetParam">SetParam</a>
@@ -612,6 +630,9 @@
                         </li>
                         <li>
                                 <a class="function" href="#ParamMap.GetParamArray">GetParamArray</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#ParamMap.GetParamArraySize">GetParamArraySize</a>
                         </li>
                         <li>
                                 <a class="function" href="#ParamMap.AddOrSetParam">AddOrSetParam</a>
@@ -630,6 +651,9 @@
                         </li>
                         <li>
                                 <a class="function" href="#ParamMap.GetParamAsString">GetParamAsString</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#ParamMap.ClearParams">ClearParams</a>
                         </li>
                 </ul>
 
@@ -3725,6 +3749,23 @@ Overloaded function.</p>
 
 
                             </div>
+                            <div id="ParamMap.HasParamWithValue" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">HasParamWithValue</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ParamMap.HasParamWithValue"></a>
+    
+            <div class="docstring"><p>HasParamWithValue(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, type: <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>, key: object, value: object) -> bool</p>
+
+<p>Checks if this ParamMap has a parameter at the given key with the given type and if the value of that parameter matches the given value.</p>
+</div>
+
+
+                            </div>
                             <div id="ParamMap.GetParamType" class="classattr">
                                 <div class="attr function">
             
@@ -3788,7 +3829,39 @@ Overloaded function.</p>
     
             <div class="docstring"><p>GetParamMap(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, keys: object) -> <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a></p>
 
+<p>Get pointer to the GenParamMap at this key. Duplicate of GetMap.</p>
+</div>
+
+
+                            </div>
+                            <div id="ParamMap.GetMap" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetMap</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ParamMap.GetMap"></a>
+    
+            <div class="docstring"><p>GetMap(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, keys: object) -> <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a></p>
+
 <p>Get pointer to the GenParamMap at this key.</p>
+</div>
+
+
+                            </div>
+                            <div id="ParamMap.HasMap" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">HasMap</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ParamMap.HasMap"></a>
+    
+            <div class="docstring"><p>HasMap(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, keys: object) -> bool</p>
 </div>
 
 
@@ -3812,6 +3885,60 @@ Usage:
 Example: 
         messageOnThisEntity = en1.GetParam(st.VarType.string, "Message")
 There is a runtime check for if this parameter is actually the type you specified it to be.</p>
+</div>
+
+
+                            </div>
+                            <div id="ParamMap.IfHas_GetParam" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">IfHas_GetParam</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ParamMap.IfHas_GetParam"></a>
+    
+            <div class="docstring"><p>IfHas_GetParam(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, type: <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>, key: object) -> tuple</p>
+
+<p>If a parameter with this type exists at the key, return [true, value].
+Otherwise, return [false, None].</p>
+</div>
+
+
+                            </div>
+                            <div id="ParamMap.IfHas_GetParamArray" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">IfHas_GetParamArray</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ParamMap.IfHas_GetParamArray"></a>
+    
+            <div class="docstring"><p>IfHas_GetParamArray(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, type: <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>, key: object) -> tuple</p>
+
+<p>If a parameter array with this member type exists at the key, return [true, array value].
+Otherwise, return [false, None].</p>
+</div>
+
+
+                            </div>
+                            <div id="ParamMap.IfHas_GetParamWithTime" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">IfHas_GetParamWithTime</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ParamMap.IfHas_GetParamWithTime"></a>
+    
+            <div class="docstring"><p>IfHas_GetParamWithTime(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, type: <a href="#VarType">spaceteams.SC_Compute_Server.VarType</a>, key: object) -> tuple</p>
+
+<p>If a parameter with this type exists at the key, return [true, value, timestamp].
+Otherwise, return [false, None, None].</p>
 </div>
 
 
@@ -3900,6 +4027,25 @@ the type you specified to it be. The array will resized itself as needed</p>
 
 <p>Get a copy of the values from the Parameter Array at the given key on this GenParamMap. 
 This copy is in the form of a std::vector.</p>
+</div>
+
+
+                            </div>
+                            <div id="ParamMap.GetParamArraySize" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">GetParamArraySize</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ParamMap.GetParamArraySize"></a>
+    
+            <div class="docstring"><p>GetParamArraySize(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, key: object) -> int</p>
+
+<p>Get the number of elements in the Parameter Array at the given key on this GenParamMap.
+This has the advantage of not copying the array, and is faster than len(GetParamArray(...)).
+There is a runtime check for if this parameter is actually an array.</p>
 </div>
 
 
@@ -4007,6 +4153,23 @@ The operations passed in here are a std::function, which is usually made as a la
             <div class="docstring"><p>GetParamAsString(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>, key: object) -> str</p>
 
 <p>Get what this parameter value's ToString() function would output, without needing to specify the type of parameter value to get.</p>
+</div>
+
+
+                            </div>
+                            <div id="ParamMap.ClearParams" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">ClearParams</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">unknown</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ParamMap.ClearParams"></a>
+    
+            <div class="docstring"><p>ClearParams(self: <a href="#ParamMap">spaceteams.SC_Compute_Server.ParamMap</a>) -> None</p>
+
+<p>Remove from map and free memory for a param</p>
 </div>
 
 
@@ -4778,22 +4941,30 @@ rotation around that axis</p>
                 <dd id="Entity.ToString" class="function"><a href="#ParamMap.ToString">ToString</a></dd>
                 <dd id="Entity.ToStringMultiline" class="function"><a href="#ParamMap.ToStringMultiline">ToStringMultiline</a></dd>
                 <dd id="Entity.HasParamArray" class="function"><a href="#ParamMap.HasParamArray">HasParamArray</a></dd>
+                <dd id="Entity.HasParamWithValue" class="function"><a href="#ParamMap.HasParamWithValue">HasParamWithValue</a></dd>
                 <dd id="Entity.GetParamType" class="function"><a href="#ParamMap.GetParamType">GetParamType</a></dd>
                 <dd id="Entity.GetParamArrayType" class="function"><a href="#ParamMap.GetParamArrayType">GetParamArrayType</a></dd>
                 <dd id="Entity.GetParamTime" class="function"><a href="#ParamMap.GetParamTime">GetParamTime</a></dd>
                 <dd id="Entity.GetParamMap" class="function"><a href="#ParamMap.GetParamMap">GetParamMap</a></dd>
+                <dd id="Entity.GetMap" class="function"><a href="#ParamMap.GetMap">GetMap</a></dd>
+                <dd id="Entity.HasMap" class="function"><a href="#ParamMap.HasMap">HasMap</a></dd>
                 <dd id="Entity.GetParam" class="function"><a href="#ParamMap.GetParam">GetParam</a></dd>
+                <dd id="Entity.IfHas_GetParam" class="function"><a href="#ParamMap.IfHas_GetParam">IfHas_GetParam</a></dd>
+                <dd id="Entity.IfHas_GetParamArray" class="function"><a href="#ParamMap.IfHas_GetParamArray">IfHas_GetParamArray</a></dd>
+                <dd id="Entity.IfHas_GetParamWithTime" class="function"><a href="#ParamMap.IfHas_GetParamWithTime">IfHas_GetParamWithTime</a></dd>
                 <dd id="Entity.SetParam" class="function"><a href="#ParamMap.SetParam">SetParam</a></dd>
                 <dd id="Entity.AddParam" class="function"><a href="#ParamMap.AddParam">AddParam</a></dd>
                 <dd id="Entity.SetParamArray" class="function"><a href="#ParamMap.SetParamArray">SetParamArray</a></dd>
                 <dd id="Entity.AddParamArray" class="function"><a href="#ParamMap.AddParamArray">AddParamArray</a></dd>
                 <dd id="Entity.GetParamArray" class="function"><a href="#ParamMap.GetParamArray">GetParamArray</a></dd>
+                <dd id="Entity.GetParamArraySize" class="function"><a href="#ParamMap.GetParamArraySize">GetParamArraySize</a></dd>
                 <dd id="Entity.AddOrSetParam" class="function"><a href="#ParamMap.AddOrSetParam">AddOrSetParam</a></dd>
                 <dd id="Entity.AddCopiesOfAllParamsFrom" class="function"><a href="#ParamMap.AddCopiesOfAllParamsFrom">AddCopiesOfAllParamsFrom</a></dd>
                 <dd id="Entity.ForEachParam" class="function"><a href="#ParamMap.ForEachParam">ForEachParam</a></dd>
                 <dd id="Entity.ForEachParamMap" class="function"><a href="#ParamMap.ForEachParamMap">ForEachParamMap</a></dd>
                 <dd id="Entity.DeleteParam" class="function"><a href="#ParamMap.DeleteParam">DeleteParam</a></dd>
                 <dd id="Entity.GetParamAsString" class="function"><a href="#ParamMap.GetParamAsString">GetParamAsString</a></dd>
+                <dd id="Entity.ClearParams" class="function"><a href="#ParamMap.ClearParams">ClearParams</a></dd>
 
             </div>
                                 </dl>
@@ -4864,22 +5035,30 @@ rotation around that axis</p>
                 <dd id="EntityConfig.ToString" class="function"><a href="#ParamMap.ToString">ToString</a></dd>
                 <dd id="EntityConfig.ToStringMultiline" class="function"><a href="#ParamMap.ToStringMultiline">ToStringMultiline</a></dd>
                 <dd id="EntityConfig.HasParamArray" class="function"><a href="#ParamMap.HasParamArray">HasParamArray</a></dd>
+                <dd id="EntityConfig.HasParamWithValue" class="function"><a href="#ParamMap.HasParamWithValue">HasParamWithValue</a></dd>
                 <dd id="EntityConfig.GetParamType" class="function"><a href="#ParamMap.GetParamType">GetParamType</a></dd>
                 <dd id="EntityConfig.GetParamArrayType" class="function"><a href="#ParamMap.GetParamArrayType">GetParamArrayType</a></dd>
                 <dd id="EntityConfig.GetParamTime" class="function"><a href="#ParamMap.GetParamTime">GetParamTime</a></dd>
                 <dd id="EntityConfig.GetParamMap" class="function"><a href="#ParamMap.GetParamMap">GetParamMap</a></dd>
+                <dd id="EntityConfig.GetMap" class="function"><a href="#ParamMap.GetMap">GetMap</a></dd>
+                <dd id="EntityConfig.HasMap" class="function"><a href="#ParamMap.HasMap">HasMap</a></dd>
                 <dd id="EntityConfig.GetParam" class="function"><a href="#ParamMap.GetParam">GetParam</a></dd>
+                <dd id="EntityConfig.IfHas_GetParam" class="function"><a href="#ParamMap.IfHas_GetParam">IfHas_GetParam</a></dd>
+                <dd id="EntityConfig.IfHas_GetParamArray" class="function"><a href="#ParamMap.IfHas_GetParamArray">IfHas_GetParamArray</a></dd>
+                <dd id="EntityConfig.IfHas_GetParamWithTime" class="function"><a href="#ParamMap.IfHas_GetParamWithTime">IfHas_GetParamWithTime</a></dd>
                 <dd id="EntityConfig.SetParam" class="function"><a href="#ParamMap.SetParam">SetParam</a></dd>
                 <dd id="EntityConfig.AddParam" class="function"><a href="#ParamMap.AddParam">AddParam</a></dd>
                 <dd id="EntityConfig.SetParamArray" class="function"><a href="#ParamMap.SetParamArray">SetParamArray</a></dd>
                 <dd id="EntityConfig.AddParamArray" class="function"><a href="#ParamMap.AddParamArray">AddParamArray</a></dd>
                 <dd id="EntityConfig.GetParamArray" class="function"><a href="#ParamMap.GetParamArray">GetParamArray</a></dd>
+                <dd id="EntityConfig.GetParamArraySize" class="function"><a href="#ParamMap.GetParamArraySize">GetParamArraySize</a></dd>
                 <dd id="EntityConfig.AddOrSetParam" class="function"><a href="#ParamMap.AddOrSetParam">AddOrSetParam</a></dd>
                 <dd id="EntityConfig.AddCopiesOfAllParamsFrom" class="function"><a href="#ParamMap.AddCopiesOfAllParamsFrom">AddCopiesOfAllParamsFrom</a></dd>
                 <dd id="EntityConfig.ForEachParam" class="function"><a href="#ParamMap.ForEachParam">ForEachParam</a></dd>
                 <dd id="EntityConfig.ForEachParamMap" class="function"><a href="#ParamMap.ForEachParamMap">ForEachParamMap</a></dd>
                 <dd id="EntityConfig.DeleteParam" class="function"><a href="#ParamMap.DeleteParam">DeleteParam</a></dd>
                 <dd id="EntityConfig.GetParamAsString" class="function"><a href="#ParamMap.GetParamAsString">GetParamAsString</a></dd>
+                <dd id="EntityConfig.ClearParams" class="function"><a href="#ParamMap.ClearParams">ClearParams</a></dd>
 
             </div>
                                 </dl>
@@ -5011,22 +5190,30 @@ rotation around that axis</p>
                 <dd id="SystemConfig.ToString" class="function"><a href="#ParamMap.ToString">ToString</a></dd>
                 <dd id="SystemConfig.ToStringMultiline" class="function"><a href="#ParamMap.ToStringMultiline">ToStringMultiline</a></dd>
                 <dd id="SystemConfig.HasParamArray" class="function"><a href="#ParamMap.HasParamArray">HasParamArray</a></dd>
+                <dd id="SystemConfig.HasParamWithValue" class="function"><a href="#ParamMap.HasParamWithValue">HasParamWithValue</a></dd>
                 <dd id="SystemConfig.GetParamType" class="function"><a href="#ParamMap.GetParamType">GetParamType</a></dd>
                 <dd id="SystemConfig.GetParamArrayType" class="function"><a href="#ParamMap.GetParamArrayType">GetParamArrayType</a></dd>
                 <dd id="SystemConfig.GetParamTime" class="function"><a href="#ParamMap.GetParamTime">GetParamTime</a></dd>
                 <dd id="SystemConfig.GetParamMap" class="function"><a href="#ParamMap.GetParamMap">GetParamMap</a></dd>
+                <dd id="SystemConfig.GetMap" class="function"><a href="#ParamMap.GetMap">GetMap</a></dd>
+                <dd id="SystemConfig.HasMap" class="function"><a href="#ParamMap.HasMap">HasMap</a></dd>
                 <dd id="SystemConfig.GetParam" class="function"><a href="#ParamMap.GetParam">GetParam</a></dd>
+                <dd id="SystemConfig.IfHas_GetParam" class="function"><a href="#ParamMap.IfHas_GetParam">IfHas_GetParam</a></dd>
+                <dd id="SystemConfig.IfHas_GetParamArray" class="function"><a href="#ParamMap.IfHas_GetParamArray">IfHas_GetParamArray</a></dd>
+                <dd id="SystemConfig.IfHas_GetParamWithTime" class="function"><a href="#ParamMap.IfHas_GetParamWithTime">IfHas_GetParamWithTime</a></dd>
                 <dd id="SystemConfig.SetParam" class="function"><a href="#ParamMap.SetParam">SetParam</a></dd>
                 <dd id="SystemConfig.AddParam" class="function"><a href="#ParamMap.AddParam">AddParam</a></dd>
                 <dd id="SystemConfig.SetParamArray" class="function"><a href="#ParamMap.SetParamArray">SetParamArray</a></dd>
                 <dd id="SystemConfig.AddParamArray" class="function"><a href="#ParamMap.AddParamArray">AddParamArray</a></dd>
                 <dd id="SystemConfig.GetParamArray" class="function"><a href="#ParamMap.GetParamArray">GetParamArray</a></dd>
+                <dd id="SystemConfig.GetParamArraySize" class="function"><a href="#ParamMap.GetParamArraySize">GetParamArraySize</a></dd>
                 <dd id="SystemConfig.AddOrSetParam" class="function"><a href="#ParamMap.AddOrSetParam">AddOrSetParam</a></dd>
                 <dd id="SystemConfig.AddCopiesOfAllParamsFrom" class="function"><a href="#ParamMap.AddCopiesOfAllParamsFrom">AddCopiesOfAllParamsFrom</a></dd>
                 <dd id="SystemConfig.ForEachParam" class="function"><a href="#ParamMap.ForEachParam">ForEachParam</a></dd>
                 <dd id="SystemConfig.ForEachParamMap" class="function"><a href="#ParamMap.ForEachParamMap">ForEachParamMap</a></dd>
                 <dd id="SystemConfig.DeleteParam" class="function"><a href="#ParamMap.DeleteParam">DeleteParam</a></dd>
                 <dd id="SystemConfig.GetParamAsString" class="function"><a href="#ParamMap.GetParamAsString">GetParamAsString</a></dd>
+                <dd id="SystemConfig.ClearParams" class="function"><a href="#ParamMap.ClearParams">ClearParams</a></dd>
 
             </div>
                                 </dl>
@@ -5145,22 +5332,30 @@ rotation around that axis</p>
                 <dd id="FieldEffectConfig.ToString" class="function"><a href="#ParamMap.ToString">ToString</a></dd>
                 <dd id="FieldEffectConfig.ToStringMultiline" class="function"><a href="#ParamMap.ToStringMultiline">ToStringMultiline</a></dd>
                 <dd id="FieldEffectConfig.HasParamArray" class="function"><a href="#ParamMap.HasParamArray">HasParamArray</a></dd>
+                <dd id="FieldEffectConfig.HasParamWithValue" class="function"><a href="#ParamMap.HasParamWithValue">HasParamWithValue</a></dd>
                 <dd id="FieldEffectConfig.GetParamType" class="function"><a href="#ParamMap.GetParamType">GetParamType</a></dd>
                 <dd id="FieldEffectConfig.GetParamArrayType" class="function"><a href="#ParamMap.GetParamArrayType">GetParamArrayType</a></dd>
                 <dd id="FieldEffectConfig.GetParamTime" class="function"><a href="#ParamMap.GetParamTime">GetParamTime</a></dd>
                 <dd id="FieldEffectConfig.GetParamMap" class="function"><a href="#ParamMap.GetParamMap">GetParamMap</a></dd>
+                <dd id="FieldEffectConfig.GetMap" class="function"><a href="#ParamMap.GetMap">GetMap</a></dd>
+                <dd id="FieldEffectConfig.HasMap" class="function"><a href="#ParamMap.HasMap">HasMap</a></dd>
                 <dd id="FieldEffectConfig.GetParam" class="function"><a href="#ParamMap.GetParam">GetParam</a></dd>
+                <dd id="FieldEffectConfig.IfHas_GetParam" class="function"><a href="#ParamMap.IfHas_GetParam">IfHas_GetParam</a></dd>
+                <dd id="FieldEffectConfig.IfHas_GetParamArray" class="function"><a href="#ParamMap.IfHas_GetParamArray">IfHas_GetParamArray</a></dd>
+                <dd id="FieldEffectConfig.IfHas_GetParamWithTime" class="function"><a href="#ParamMap.IfHas_GetParamWithTime">IfHas_GetParamWithTime</a></dd>
                 <dd id="FieldEffectConfig.SetParam" class="function"><a href="#ParamMap.SetParam">SetParam</a></dd>
                 <dd id="FieldEffectConfig.AddParam" class="function"><a href="#ParamMap.AddParam">AddParam</a></dd>
                 <dd id="FieldEffectConfig.SetParamArray" class="function"><a href="#ParamMap.SetParamArray">SetParamArray</a></dd>
                 <dd id="FieldEffectConfig.AddParamArray" class="function"><a href="#ParamMap.AddParamArray">AddParamArray</a></dd>
                 <dd id="FieldEffectConfig.GetParamArray" class="function"><a href="#ParamMap.GetParamArray">GetParamArray</a></dd>
+                <dd id="FieldEffectConfig.GetParamArraySize" class="function"><a href="#ParamMap.GetParamArraySize">GetParamArraySize</a></dd>
                 <dd id="FieldEffectConfig.AddOrSetParam" class="function"><a href="#ParamMap.AddOrSetParam">AddOrSetParam</a></dd>
                 <dd id="FieldEffectConfig.AddCopiesOfAllParamsFrom" class="function"><a href="#ParamMap.AddCopiesOfAllParamsFrom">AddCopiesOfAllParamsFrom</a></dd>
                 <dd id="FieldEffectConfig.ForEachParam" class="function"><a href="#ParamMap.ForEachParam">ForEachParam</a></dd>
                 <dd id="FieldEffectConfig.ForEachParamMap" class="function"><a href="#ParamMap.ForEachParamMap">ForEachParamMap</a></dd>
                 <dd id="FieldEffectConfig.DeleteParam" class="function"><a href="#ParamMap.DeleteParam">DeleteParam</a></dd>
                 <dd id="FieldEffectConfig.GetParamAsString" class="function"><a href="#ParamMap.GetParamAsString">GetParamAsString</a></dd>
+                <dd id="FieldEffectConfig.ClearParams" class="function"><a href="#ParamMap.ClearParams">ClearParams</a></dd>
 
             </div>
                                 </dl>
